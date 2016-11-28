@@ -1,0 +1,45 @@
+@mixin clearlist {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@mixin effect-fade() {
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+    -ms-transition: opacity .25s ease;
+    -o-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+}
+@mixin effect-invert() {
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+}
+
+@mixin flag-russian() {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 9px;
+    background: 0 0 no-repeat url(data:image/svg+xml;base64,PCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIg0KCSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczphPSJodHRwOi8vbnMuYWRvYmUuY29tL0Fkb2JlU1ZHVmlld2VyRXh0ZW5zaW9ucy8zLjAvIg0KCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE1LjVweCIgaGVpZ2h0PSI4LjZweCIgdmlld0JveD0iMCAwIDE1LjUgOC42IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNS41IDguNjsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6I0U1MDUwNTt9DQoJLnN0MXtmaWxsOiMxQTMwOTk7fQ0KCS5zdDJ7ZmlsbDojRkZGRkZGO30NCgkuc3Qze2ZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MC4xO3N0cm9rZS1taXRlcmxpbWl0OjEwO30NCjwvc3R5bGU+DQo8ZGVmcz4NCjwvZGVmcz4NCjxnPg0KCTxnPg0KCQk8cmVjdCB4PSIwLjEiIHk9IjUuNyIgY2xhc3M9InN0MCIgd2lkdGg9IjE1LjQiIGhlaWdodD0iMi44Ii8+DQoJCTxyZWN0IHg9IjAuMSIgeT0iMi45IiBjbGFzcz0ic3QxIiB3aWR0aD0iMTUuNCIgaGVpZ2h0PSIyLjgiLz4NCgkJPHJlY3QgeD0iMC4xIiB5PSIwLjEiIGNsYXNzPSJzdDIiIHdpZHRoPSIxNS40IiBoZWlnaHQ9IjIuOCIvPg0KCTwvZz4NCgk8cmVjdCB4PSIwLjEiIHk9IjAuMSIgY2xhc3M9InN0MyIgd2lkdGg9IjE1LjQiIGhlaWdodD0iOC41Ii8+DQo8L2c+DQo8L3N2Zz4=);
+    background-size: cover;
+}
+
+@mixin button() {
+    display: inline-block;
+    font: 2rem 'Molot';
+    color: #fff;
+    background-color: #000;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border: 2px solid transparent;
+    @include effect-invert;
+    &:hover {
+        color: #000;
+        background-color: #fff;
+        border-color: #000;
+    }
+}

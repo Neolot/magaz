@@ -1,0 +1,172 @@
+.cart {
+    display: block;
+    position: fixed;
+    width: 326px;
+    height: 100%;
+    padding-top: 32px;
+    transition: all .5s cubic-bezier(.645,.045,.355,1);
+    background: #000000;
+    background: -moz-linear-gradient(top,  #000000 0%, #282828 100%);
+    background: -webkit-linear-gradient(top,  #000000 0%,#282828 100%);
+    background: linear-gradient(to bottom,  #000000 0%,#282828 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#282828',GradientType=0 );
+    top: 0;
+    right: 0;
+    overflow: hidden !important;
+    min-height: 500px;
+    z-index: 9999;
+    margin-top: 0 !important;
+    -webkit-transform: translate3d(326px,0,0);
+    transform: translate3d(326px,0,0);
+    &-title {
+        height: 48px;
+        padding: 0 2rem;
+        position: relative;
+        font: 1.8rem/48px 'Molot';
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+    .close {
+        width: 16px;
+        height: 16px;
+        background: 0 0 no-repeat url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="18.1px" height="18.1px" viewBox="0 0 18.1 18.1" style="enable-background:new 0 0 18.1 18.1;" xml:space="preserve"> <style type="text/css"> .st0{fill:#FFFFFF;} </style> <defs> </defs> <polygon class="st0" points="18.1,2 16.1,0 9.1,7 2,0 0,2 7,9.1 0,16.1 2,18.1 9.1,11.1 16.1,18.1 18.1,16.1 11.1,9.1 "/> </svg>');
+        background-size: cover;
+        position: absolute;
+        top: 16px;
+        right: 2rem;
+        &:hover {
+            background-image: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15.6px" height="15.6px" viewBox="0 0 15.6 15.6" style="enable-background:new 0 0 15.6 15.6;" xml:space="preserve"> <style type="text/css"> .st0{fill:#D11825;} </style> <defs> </defs> <g> <rect x="-2.2" y="6.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 7.7782 -3.2218)" class="st0" width="20" height="2"/> <rect x="-2.2" y="6.8" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 18.7782 7.7782)" class="st0" width="20" height="2"/> </g> </svg>');
+        }
+    }
+
+    &-list {
+        max-height: 600px;
+        padding: 0 2rem;
+        overflow-y: auto;
+        .item {
+            min-height: 218px;
+            position: relative;
+            font: 1.2rem 'robotolight';
+            color: #fff;
+            padding: 3rem 0;
+            border-top: 1px solid #a5a5a5;
+            &:first-child {
+                min-height: 188px;
+                padding-top: 0;
+                border: none;
+                img {
+                    top: 0;
+                }
+            }
+            img {
+                position: absolute;
+                top: 3rem;
+                left: 0;
+            }
+            &-content {
+                padding-left: 115px;
+            }
+            &-title {
+                width: 50%;
+                float: left;
+                text-transform: uppercase;
+                margin-bottom: 3rem;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            &-price {
+                width: 50%;
+                float: right;
+                text-align: right;
+            }
+        }
+    }
+
+    &-bottom {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &-summary {
+        height: 34px;
+        background-color: #fff;
+        padding: 0 2rem;
+        font-size: 1.2rem;
+        line-height: 34px;
+        color: #000;
+        &-title {
+            width: 50%;
+            float: left;
+            font-family: 'robotolight';
+            text-transform: uppercase;
+        }
+        &-summ {
+            width: 50%;
+            float: right;
+            font-family: 'robotoregular';
+            text-align: right;
+        }
+    }
+    &-checkout {
+        padding: 2rem;
+        color: #fff;
+        &-button {
+            margin-bottom: 1.5rem;
+            a {
+                display: inline-block;
+                font: 2rem 'Molot';
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #fff;
+                border: 3px solid #fff;
+                padding: .5rem 1rem;
+                @include effect-invert;
+                &:hover {
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+        &-city {
+            margin-bottom: 1.5rem;
+            a {
+                font: 1.2rem 'robotoregular';
+                color: #fff;
+                border-bottom: 1px solid #a5a5a5;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 5px;
+                    height: 9px;
+                    background: 0 0 no-repeat url(data:image/svg+xml;base64,//48ACEALQAtACAARwBlAG4AZQByAGEAdABvAHIAOgAgAEEAZABvAGIAZQAgAEkAbABsAHUAcwB0AHIAYQB0AG8AcgAgADEAOQAuADAALgAxACwAIABTAFYARwAgAEUAeABwAG8AcgB0ACAAUABsAHUAZwAtAEkAbgAgACAALQAtAD4ADQAKADwAcwB2AGcAIAB2AGUAcgBzAGkAbwBuAD0AIgAxAC4AMQAiAA0ACgAJACAAeABtAGwAbgBzAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAwAC8AcwB2AGcAIgAgAHgAbQBsAG4AcwA6AHgAbABpAG4AawA9ACIAaAB0AHQAcAA6AC8ALwB3AHcAdwAuAHcAMwAuAG8AcgBnAC8AMQA5ADkAOQAvAHgAbABpAG4AawAiACAAeABtAGwAbgBzADoAYQA9ACIAaAB0AHQAcAA6AC8ALwBuAHMALgBhAGQAbwBiAGUALgBjAG8AbQAvAEEAZABvAGIAZQBTAFYARwBWAGkAZQB3AGUAcgBFAHgAdABlAG4AcwBpAG8AbgBzAC8AMwAuADAALwAiAA0ACgAJACAAeAA9ACIAMABwAHgAIgAgAHkAPQAiADAAcAB4ACIAIAB3AGkAZAB0AGgAPQAiADUAcAB4ACIAIABoAGUAaQBnAGgAdAA9ACIAOQAuADIAcAB4ACIAIAB2AGkAZQB3AEIAbwB4AD0AIgAwACAAMAAgADUAIAA5AC4AMgAiACAAcwB0AHkAbABlAD0AIgBlAG4AYQBiAGwAZQAtAGIAYQBjAGsAZwByAG8AdQBuAGQAOgBuAGUAdwAgADAAIAAwACAANQAgADkALgAyADsAIgAgAHgAbQBsADoAcwBwAGEAYwBlAD0AIgBwAHIAZQBzAGUAcgB2AGUAIgA+AA0ACgA8AHMAdAB5AGwAZQAgAHQAeQBwAGUAPQAiAHQAZQB4AHQALwBjAHMAcwAiAD4ADQAKAAkALgBzAHQAMAB7AGYAaQBsAGwAOgBuAG8AbgBlADsAcwB0AHIAbwBrAGUAOgAjAGYAZgBmAGYAZgBmADsAcwB0AHIAbwBrAGUALQB3AGkAZAB0AGgAOgAwAC4ANQA7AHMAdAByAG8AawBlAC0AbQBpAHQAZQByAGwAaQBtAGkAdAA6ADEAMAA7AH0ADQAKADwALwBzAHQAeQBsAGUAPgANAAoAPABkAGUAZgBzAD4ADQAKADwALwBkAGUAZgBzAD4ADQAKADwAcABvAGwAeQBsAGkAbgBlACAAYwBsAGEAcwBzAD0AIgBzAHQAMAAiACAAcABvAGkAbgB0AHMAPQAiADAALgAyACwAMAAuADIAIAA0AC4ANgAsADQALgA2ACAAMAAuADIALAA5AC4AMQAgACIALwA+AA0ACgA8AC8AcwB2AGcAPgANAAoA);
+                    background-size: cover;
+                    margin-left: .5rem;
+                }
+            }
+        }
+        &-shipment {
+            font: 1.2rem 'robotolight';
+            text-transform: uppercase;
+        }
+    }
+}
+
+.cart-open {
+    .site-header, .site-content, .site-footer {
+        -webkit-transform: translate3d(-326px,0,0);
+        transform: translate3d(-326px,0,0);
+    }
+    .cart {
+        transition: all .5s cubic-bezier(.645,.045,.355,1);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
