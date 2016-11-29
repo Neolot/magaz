@@ -43,3 +43,46 @@
         border-color: #000;
     }
 }
+
+@mixin respond-to($media) {
+    @if ($media == screen) {
+        @media only screen and (max-width: 1599px) {
+            @content;
+        }
+    }
+    @if ($media == laptop-wide) {
+        @media only screen and (max-width: 1399px) {
+            @content;
+        }
+    }
+
+    @if ($media == laptop) {
+        @media only screen and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @if ($media == tablet-landscape) {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @if ($media == tablet-portrait) {
+        @media only screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @if ($media == mobile-landscape) {
+        @media only screen and (max-width: 640px) {
+            @content;
+        }
+    }
+
+    @if ($media == mobile-portrait) {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    }
+}

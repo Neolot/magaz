@@ -1,6 +1,10 @@
 <div class="product-info">
-	<div class="row">
-		<div class="col-lg-7">
+    <div class="sliding-button visible-xs">
+        <a href="javascript:void(0);" id="sliding-button">Описание</a>
+    </div>
+    <div class="sliding-wrapper" id="sliding-wrapper">
+        <div class="row">
+		<div class="col-lg-7 col-md-7">
 			<div class="product-info-item">
 				<div class="product-info-item-title">Код товара:</div>
 				<p>012323AFS</p>
@@ -22,7 +26,7 @@
 			</div>
 		</div>
 
-		<div class="col-lg-6">
+		<div class="col-lg-6 col-md-6">
 			<div class="product-info-item">
 				<div class="product-info-item-title">Состав:</div>
 				<ul>
@@ -36,7 +40,7 @@
 			</div>
 		</div>
 
-		<div class="col-lg-8">
+		<div class="col-lg-8 col-md-8">
 			<div class="product-info-item">
 				<div class="product-info-item-title">Коллекция:</div>
 				<p>NNEDRE, OFFICE Весна-Лето 2017</p>
@@ -53,7 +57,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
+	    <div class="row">
 		<div class="product-info-links">
 			<div class="col-lg-24">
 				<a href="#">Доставка</a>
@@ -62,4 +66,10 @@
 			</div>
 		</div>
 	</div>
+        <a href="javascript:void(0);" class="sliding-button-close visible-xs" id="sliding-button-close" title="Свернуть"></a>
+    </div>
 </div> <!-- /.product-info -->
+
+<div class="visible-sm visible-xs">
+    <?php include 'parts/product/additional.php' ?>
+</div>
