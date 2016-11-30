@@ -9,6 +9,8 @@ body {
     overflow-x: hidden;
     left: 0;
     right: 0;
+    text-rendering: optimizeLegibility!important;
+    -webkit-font-smoothing: antialiased!important;
     &.no-scroll {
         overflow: hidden;
         -ms-touch-action: pan-x;
