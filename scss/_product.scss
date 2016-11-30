@@ -494,6 +494,9 @@
                         color: $text;
                     }
                 }
+                .quickview {
+                    width: 150px;
+                }
             }
             .owl-nav div {
                 &.owl-prev {
@@ -518,6 +521,9 @@
                 width: 228px;
                 &-thumb span {
                     padding: 1.5rem 0 1.2rem;
+                }
+                .quickview {
+                    width: 226px;
                 }
             }
         }

@@ -4,7 +4,7 @@
 		<div class="container">
             <ul class="nav-root">
                 <li>
-                    <a href="#"><span>Женское</span></a>
+                    <a href="#"><span>Одежда</span></a>
                     <div class="dropdown">
                         <div class="container">
                             <div class="col-lg-8">
@@ -92,7 +92,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#"><span>Мужское</span></a>
+                    <a href="#"><span>Косметика</span></a>
                     <div class="dropdown">
                         <div class="container">
                             <div class="col-lg-8">
@@ -179,20 +179,25 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="#"><span>Детское</span></a></li>
+            </ul>
+
+            <div class="divider"></div>
+
+            <ul class="nav-root">
+                <li><a href="#"><span>Дом</span></a></li>
+                <li><a href="#"><span>Еда</span></a></li>
             </ul>
 
             <div class="divider"></div>
 
             <ul class="nav-root">
                 <li><a href="#"><span>Сувениры</span></a></li>
-                <li><a href="#"><span>Дом</span></a></li>
             </ul>
 
             <div class="divider"></div>
 
             <ul class="nav-root">
-                <li><a href="#"><span>Бренды</span></a></li>
+                <li><a href="#"><span>Спорт</span></a></li>
             </ul>
 
             <div class="divider"></div>
