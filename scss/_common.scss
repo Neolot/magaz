@@ -18,17 +18,11 @@ body {
     }
 }
 
-.site-header, .site-content, .site-footer {
+.site-header, .site-content, .site-footer, .triangle {
     transition-property: -webkit-transform;
     transition-property: transform;
     transition-duration: .5s;
     transition-timing-function: cubic-bezier(.645,.045,.355,1);
-}
-
-.site-content {
-    position: relative;
-    top: -92px;
-    z-index: 1;
 }
 
 .quickview {

@@ -65,5 +65,7 @@
 		<div class="madeinrussia">Товары произведенные в России</div>
 	</div>
 
-	<?php include 'parts/navigation/navigation-desktop.php' ?>
+	<?php include 'parts/navigation/navigation.php' ?>
 </header>
+
+<div class="triangle"></div>

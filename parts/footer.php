@@ -196,6 +196,7 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/fancybox/jquery.fancybox.pack.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/verge.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

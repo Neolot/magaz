@@ -18,15 +18,6 @@
         // Dropdown menu
         var $navigation = $('#navigation');
         var $menu_roots = $('.nav-root > li', $navigation);
-        $menu_roots.hover(
-            function(e) {
-                $menu_roots.not(e).removeClass('active');
-                $(this).addClass('active');
-            },
-            function(e) {
-                $menu_roots.removeClass('active');
-            }
-        );
 
         // Popups
         $('.popup').fancybox({
@@ -123,6 +114,48 @@
         // Sliding product descriptions
         $('#sliding-button, #sliding-button-close').click(function() {
             $('#sliding-wrapper').toggleClass('open');
+        });
+
+        // Responsive
+        $.extend(verge);
+        var screen_width = $.viewport().width;
+        var media = {
+            screen: 1599,
+            laptopWide: 1399,
+            laptop: 1199,
+            tabletLandscape: 991,
+            tabletPortrait: 767,
+            mobileLandscape: 640,
+            mobilePortrait: 480
+        };
+        responsive_actions(screen_width, media);
+        $(window).resize(function() {
+            screen_width = $.viewport().width;
+            responsive_actions(screen_width, media);
+        });
+        function responsive_actions(screen_width, media) {
+            if ( screen_width <= media.tabletLandscape ) {
+                $('.nav-special', $navigation).detach().insertBefore('.navs', $navigation);
+            } else {
+                $('.nav-special', $navigation).detach().insertAfter('.navs', $navigation);
+            }
+        }
+
+        $(window).click(function() {
+            $navigation.removeClass('mobile-menu');
+            $menu_roots.removeClass('active');
+        });
+        $navigation.click(function(e){
+            e.stopPropagation();
+        });
+
+        $('.menu-link', $navigation).click(function() {
+            $navigation.toggleClass('mobile-menu');
+        });
+
+        $menu_roots.click(function() {
+            $(this).toggleClass('active');
+            $menu_roots.not($(this)).removeClass('active');
         });
     })
 })(jQuery)
