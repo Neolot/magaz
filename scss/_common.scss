@@ -118,7 +118,7 @@ body {
     line-height: 20px;
     color: #fff;
     padding: 0 12px;
-    vertical-align: baseline;
+    vertical-align: middle;
     font-style: normal !important;
 }
 
@@ -136,7 +136,7 @@ body {
         text-align: center;
         &-thumb {
             display: block;
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
             border: 1px solid transparent;
             &-wrapper {
                 position: relative;
@@ -153,10 +153,6 @@ body {
             }
             span {
                 display: block;
-                &.price {
-                    margin-top: 8px;
-
-                }
             }
         }
     }

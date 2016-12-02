@@ -26,6 +26,17 @@
             border-top: 1px solid #999 !important;
         }
     }
+    .navs {
+        float: left;
+    }
+    .nav-special {
+        float: right;
+    }
+    @include respond-to(tablet-landscape) {
+        .navs, .nav-special {
+
+        }
+    }
     &, &.mobile-menu {
         max-height: 96px;
         position: relative;
@@ -223,9 +234,6 @@
                 display: inline-block;
                 color: #fff;
                 text-decoration: none;
-                &:hover span {
-                    color: $red;
-                }
                 div {
                     font: 1rem 'robotoregular';
                     color: #fff;
@@ -246,8 +254,7 @@
             }
             &:hover, &.active {
                 & > a span {
-                    color: $red;
-                    border-bottom: 4px solid $red;
+                    border-bottom: 4px solid #fff;
                 }
                 .dropdown {
                     max-height: 700px;

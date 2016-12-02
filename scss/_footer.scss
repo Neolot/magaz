@@ -7,7 +7,7 @@
     background: linear-gradient(to bottom,  #000000 0%,#282828 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#282828',GradientType=0 );
     .slider {
-        padding: 2rem 0;
+        padding: 2rem 0 4rem;
         .carousel {
             &-header {
                 margin-bottom: 1rem;
@@ -36,7 +36,6 @@
                 }
                 &-bottom {
                     .price {
-                        line-height: 2;
                         .price-old {
                             font-size: 1rem;
                         }
@@ -79,9 +78,8 @@
         a {
             color: #fff;
             text-decoration: none;
-            @include effect-fade;
             &:hover {
-                opacity: .5;
+                text-decoration: underline;
             }
         }
         .socials {

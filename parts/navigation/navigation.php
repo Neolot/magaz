@@ -211,7 +211,7 @@
                     <li><a href="#"><span>Спорт</span></a></li>
                 </ul>
 
-                <div class="divider hidden-sm hidden-xs"></div>
+                <!-- <div class="divider hidden-sm hidden-xs"></div> -->
             </div>
 
             <ul class="nav-root nav-special">
