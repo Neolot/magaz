@@ -5,7 +5,7 @@
             <a href="#" class="item-thumb">
                 <img src="http://placehold.it/171x256" width="171" height="256" alt=""/>
             </a>
-            <div class="quickview clearfix">
+            <div class="quickview hidden-xs clearfix">
                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
             </div>
@@ -20,7 +20,7 @@
             <a href="#" class="item-thumb">
                 <img src="http://placehold.it/171x256" width="171" height="256" alt=""/>
             </a>
-            <div class="quickview clearfix">
+            <div class="quickview hidden-xs clearfix">
                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
             </div>

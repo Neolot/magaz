@@ -47,6 +47,9 @@
             }
             .dropdown {
                 top: 47px;
+                &-top {
+                    padding: 0 10px;
+                }
             }
             .searchline-nav {
                 display: none;
@@ -165,6 +168,17 @@
                                 -ms-transition-delay: 0s;
                                 -o-transition-delay: 0s;
                                 transition-delay: 0s;
+                                &-top {
+                                    padding-top: 2rem;
+                                    .row > div {
+                                        width: 100%;
+                                    }
+                                    .promo {
+                                        margin: 0;
+                                        padding: 2rem 4rem 0;
+                                        text-align: center;
+                                    }
+                                }
                                 li {
                                     min-height: 20px;
                                     font-size: 1.4rem;
@@ -181,7 +195,7 @@
                                         padding: 0;
                                     }
                                 }
-                                .brands, .title, .dropdown-top,.dropdown-bottom {
+                                .brands, .title, .dropdown-bottom {
                                     display: none;
                                 }
                             }

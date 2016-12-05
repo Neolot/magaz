@@ -11,7 +11,7 @@
                         <a href="#" class="item-thumb">
                             <img src="http://placehold.it/226x340" width="226" height="340" alt=""/>
                         </a>
-                        <div class="quickview clearfix">
+                        <div class="quickview hidden-xs clearfix">
                             <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                             <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                         </div>
@@ -32,7 +32,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/226x340" width="226" height="340" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -47,7 +47,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/226x340" width="226" height="340" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -62,7 +62,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/226x340" width="226" height="340" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -77,7 +77,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/226x340" width="226" height="340" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -92,7 +92,7 @@
                         <a href="#" class="item-thumb">
                             <img src="http://placehold.it/226x340" width="226" height="340" alt=""/>
                         </a>
-                        <div class="quickview clearfix">
+                        <div class="quickview hidden-xs clearfix">
                             <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                             <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                         </div>
@@ -119,7 +119,7 @@
                         <a href="#" class="item-thumb">
                             <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                         </a>
-                        <div class="quickview clearfix">
+                        <div class="quickview hidden-xs clearfix">
                             <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                             <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                         </div>
@@ -140,7 +140,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -155,7 +155,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -170,7 +170,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -185,7 +185,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -200,7 +200,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -215,7 +215,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -230,7 +230,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -245,7 +245,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -260,7 +260,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -275,7 +275,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -290,7 +290,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -305,7 +305,7 @@
                             <a href="#" class="item-thumb">
                                 <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview clearfix">
+                            <div class="quickview hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -320,7 +320,7 @@
                         <a href="#" class="item-thumb">
                             <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
                         </a>
-                        <div class="quickview clearfix">
+                        <div class="quickview hidden-xs clearfix">
                             <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                             <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                         </div>

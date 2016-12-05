@@ -40,7 +40,7 @@
 <body>
 
 <header class="site-header" id="site-header">
-	<div class="site-header-top">
+	<div class="site-header-top" id="top">
 		<div class="container">
 			<div class="col-lg-4 col-lg-offset-5 col-md-6 col-md-offset-3 visible-lg visible-md">
 				<div class="searchline">

@@ -102,22 +102,50 @@
     }
     &-wrapper {
         position: relative;
+        @include respond-to(mobile-portrait) {
+            min-height: 350px;
+        }
     }
     &-content {
-        min-height: 270px;
         margin-left: 178px;
         border-left: 3px solid #000;
         padding: 1.5rem;
+        @include respond-to(mobile-portrait) {
+            height: 100%;
+            border: none;
+            margin-left: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
     &-image {
         width: 178px;
-        height: 266px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include respond-to(mobile-portrait) {
+            width: 125px;
+            img {
+                width: 125px;
+                height: auto;
+                border-right: 2px solid #000;
+                border-bottom: 2px solid #000;
+            }
+        }
     }
     .product-title {
         font-size: 2rem;
         font-weight: bold;
         text-transform: uppercase;
         color: #000;
+        @include respond-to(tablet-portrait) {
+            text-align: left;
+        }
+        @include respond-to(mobile-portrait) {
+            padding-left: 125px;
+            font-size: 1.8rem;
+        }
     }
     .product-price {
         margin-bottom: 2rem;
@@ -139,6 +167,31 @@
             padding: 0 .7rem;
             border: 1px solid $text;
         }
+        @include respond-to(tablet-portrait) {
+            text-align: left;
+        }
+        @include respond-to(mobile-portrait) {
+            text-align: left;
+            padding-left: 125px;
+            font-size: 1.8rem;
+            .price-old {
+                font-size: 1.4rem;
+                &-wrapper {
+                    margin-top: 0;
+                }
+                .discount {
+                    width: 43px;
+                    height: 20px;
+                    line-height: 20px;
+                    background-size: cover;
+                    right: -50px;
+                    margin-top: -10px;
+                    font-size: 1.4rem;
+                    padding-left: 8px;
+
+                }
+            }
+        }
     }
     form {
         margin-top: 5rem;
@@ -152,15 +205,30 @@
             border-bottom: 1px solid #A5A5A5;
             background: none;
             outline: none;
+            &.error {
+                color: $red;
+                text-transform: uppercase;
+            }
         }
         button {
             @include add2cart;
         }
-    }
-    &-image {
-        position: absolute;
-        top: 0;
-        left: 0;
+        @include respond-to(mobile-portrait) {
+            width: 100%;
+            margin-top: 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 0 15px 15px;
+            input {
+                font-size: 1.4rem;
+                text-align: center;
+            }
+            button {
+                display: block;
+                margin: 0 auto;
+            }
+        }
     }
     .thanks {
         display: none;

@@ -532,8 +532,11 @@
                 color: $gray;
                 text-decoration: none;
             }
-            @include respond-to(mobile-portrait) {
+            @include respond-to(mobile-landscape) {
                 width: 152px;
+                .quickview {
+                    width: 150px !important;
+                }
             }
             &-thumb {
                 display: block;

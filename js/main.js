@@ -120,6 +120,16 @@
             $('#sliding-wrapper').toggleClass('open');
         });
 
+        // Smoothscroll
+        $('a[href^="#"]').bind('click.smoothscroll', function (e) {
+            e.preventDefault();
+            var target = this.hash,
+                    $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing');
+        });
+
         // Responsive
         $.extend(verge);
         var screen_width = $.viewport().width;
