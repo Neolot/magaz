@@ -34,7 +34,7 @@
     }
     @include respond-to(tablet-landscape) {
         .navs, .nav-special {
-
+            float: none;
         }
     }
     &, &.mobile-menu {
@@ -48,19 +48,68 @@
             .dropdown {
                 top: 47px;
             }
+            .searchline-nav {
+                display: none;
+                height: 47px;
+                form {
+                    width: 120px;
+                    height: 47px;
+                    background: 0 center no-repeat url(data:image/svg+xml;base64,PCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIg0KCSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczphPSJodHRwOi8vbnMuYWRvYmUuY29tL0Fkb2JlU1ZHVmlld2VyRXh0ZW5zaW9ucy8zLjAvIg0KCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI4LjhweCIgaGVpZ2h0PSIyOC43cHgiIHZpZXdCb3g9IjAgMCAyOC44IDI4LjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI4LjggMjguNzsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6bm9uZTtzdHJva2U6I0ZGRkZGRjtzdHJva2Utd2lkdGg6MztzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQoJLnN0MXtmaWxsOm5vbmU7c3Ryb2tlOiNGRkZGRkY7c3Ryb2tlLXdpZHRoOjM7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQ0KPC9zdHlsZT4NCjxkZWZzPg0KPC9kZWZzPg0KPGc+DQoJPGNpcmNsZSBjbGFzcz0ic3QwIiBjeD0iMTEuNSIgY3k9IjExLjUiIHI9IjEwIi8+DQoJPGxpbmUgY2xhc3M9InN0MSIgeDE9IjE5LjIiIHkxPSIxOS4xIiB4Mj0iMjcuMyIgeTI9IjI3LjIiLz4NCjwvZz4NCjwvc3ZnPg0K);
+                    background-size: 15px;
+                    padding-left: 25px;
+                    margin: 0 auto;
+                    -webkit-transition: all .3s ease-out;
+                    -moz-transition: all .3s ease-out;
+                    -ms-transition: all .3s ease-out;
+                    -o-transition: all .3s ease-out;
+                    transition: all .3s ease-out;
+                    &.active {
+                        width: 240px;
+                    }
+                    input {
+                        max-width: 100%;
+                        height: 47px;
+                        background: none;
+                        border: none;
+                        font: 2rem 'robotolight';
+                        color: #fff;
+                        outline: none;
+                        &::-webkit-input-placeholder {
+                            color: #fff;
+                            text-transform: uppercase;
+                        }
+                        &::-moz-placeholder {
+                            color: #fff;
+                            text-transform: uppercase;
+                        }
+                        &:-moz-placeholder {
+                            color: #fff;
+                            text-transform: uppercase;
+                        }
+                        &:-ms-input-placeholder {
+                            color: #fff;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
         }
         @include respond-to(mobile-landscape) {
             .navs {
-                max-height: 1000px;
+                max-height: 2000px;
                 text-align: left !important;
                 z-index: 3;
+                overflow: hidden;
                 .divider {
                     display: none;
+                }
+                .searchline-nav {
+                    display: block;
                 }
                 .nav-root {
                     display: block;
                     height: auto;
-                    max-height: 700px;
+                    max-height: 1500px;
                     overflow: visible;
                     padding: 0 !important;
                     &:first-child {
@@ -71,13 +120,14 @@
                     & > li {
                         display: block;
                         line-height: normal;
-                        font: 1.2rem 'robotolight';
+                        font: 2rem 'robotolight';
                         text-transform: uppercase;
                         border-top: 1px solid #999;
                         padding: 0;
                         & > a {
                             display: block;
                             padding: 1rem;
+                            text-align: center;
                             &:hover span {
                                 color: #fff;
                             }
@@ -87,12 +137,12 @@
                                 position: relative;
                                     &:after {
                                     content: '';
-                                    width: 5px;
-                                    height: 9px;
+                                    width: 10px;
+                                    height: 18px;
                                     position: absolute;
                                     top: 50%;
-                                    right: 1rem;
-                                    margin-top: -4px;
+                                    right: 2rem;
+                                    margin-top: -9px;
                                     background: 0 0 no-repeat url(data:image/svg+xml;base64,//48ACEALQAtACAARwBlAG4AZQByAGEAdABvAHIAOgAgAEEAZABvAGIAZQAgAEkAbABsAHUAcwB0AHIAYQB0AG8AcgAgADEAOQAuADAALgAxACwAIABTAFYARwAgAEUAeABwAG8AcgB0ACAAUABsAHUAZwAtAEkAbgAgACAALQAtAD4ADQAKADwAcwB2AGcAIAB2AGUAcgBzAGkAbwBuAD0AIgAxAC4AMQAiAA0ACgAJACAAeABtAGwAbgBzAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAwAC8AcwB2AGcAIgAgAHgAbQBsAG4AcwA6AHgAbABpAG4AawA9ACIAaAB0AHQAcAA6AC8ALwB3AHcAdwAuAHcAMwAuAG8AcgBnAC8AMQA5ADkAOQAvAHgAbABpAG4AawAiACAAeABtAGwAbgBzADoAYQA9ACIAaAB0AHQAcAA6AC8ALwBuAHMALgBhAGQAbwBiAGUALgBjAG8AbQAvAEEAZABvAGIAZQBTAFYARwBWAGkAZQB3AGUAcgBFAHgAdABlAG4AcwBpAG8AbgBzAC8AMwAuADAALwAiAA0ACgAJACAAeAA9ACIAMABwAHgAIgAgAHkAPQAiADAAcAB4ACIAIAB3AGkAZAB0AGgAPQAiADUAcAB4ACIAIABoAGUAaQBnAGgAdAA9ACIAOQAuADIAcAB4ACIAIAB2AGkAZQB3AEIAbwB4AD0AIgAwACAAMAAgADUAIAA5AC4AMgAiACAAcwB0AHkAbABlAD0AIgBlAG4AYQBiAGwAZQAtAGIAYQBjAGsAZwByAG8AdQBuAGQAOgBuAGUAdwAgADAAIAAwACAANQAgADkALgAyADsAIgAgAHgAbQBsADoAcwBwAGEAYwBlAD0AIgBwAHIAZQBzAGUAcgB2AGUAIgA+AA0ACgA8AHMAdAB5AGwAZQAgAHQAeQBwAGUAPQAiAHQAZQB4AHQALwBjAHMAcwAiAD4ADQAKAAkALgBzAHQAMAB7AGYAaQBsAGwAOgBuAG8AbgBlADsAcwB0AHIAbwBrAGUAOgAjADgANwA4ADcAOAA3ADsAcwB0AHIAbwBrAGUALQB3AGkAZAB0AGgAOgAwAC4ANQA7AHMAdAByAG8AawBlAC0AbQBpAHQAZQByAGwAaQBtAGkAdAA6ADEAMAA7AH0ADQAKADwALwBzAHQAeQBsAGUAPgANAAoAPABkAGUAZgBzAD4ADQAKADwALwBkAGUAZgBzAD4ADQAKADwAcABvAGwAeQBsAGkAbgBlACAAYwBsAGEAcwBzAD0AIgBzAHQAMAAiACAAcABvAGkAbgB0AHMAPQAiADAALgAyACwAMAAuADIAIAA0AC4ANgAsADQALgA2ACAAMAAuADIALAA5AC4AMQAgACIALwA+AA0ACgA8AC8AcwB2AGcAPgANAAoA);
                                     background-size: cover;
                                 }
@@ -117,12 +167,14 @@
                                 transition-delay: 0s;
                                 li {
                                     min-height: 20px;
+                                    font-size: 1.4rem;
                                     text-transform: none;
                                     margin: 0;
-                                    padding: .8rem 0;
+                                    padding: .8rem 3rem;
                                 }
                                 .categories {
                                     width: 100%;
+                                    padding: 3rem 1rem;
                                     .row > div {
                                         width: 100%;
                                         float: none;
@@ -199,7 +251,7 @@
             left: 50px;
             text-indent: 18px;
             text-decoration: none;
-            z-index: 3;
+            z-index: 4;
             -webkit-filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
             filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
             span {
@@ -229,6 +281,9 @@
             padding: 0 .8rem;
             @include respond-to(laptop) {
                 font-size: 1.4rem;
+            }
+            @include respond-to(mobile-portrait) {
+                padding: 0 .5rem;
             }
             & > a {
                 display: inline-block;

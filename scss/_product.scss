@@ -6,7 +6,7 @@
         }
         &-wrapper {
             display: inline-block;
-            padding-left: $padding-left;
+            padding-left: 66px;
             position: relative;
             z-index: 102;
             @include respond-to(screen) {
@@ -96,24 +96,29 @@
         margin-top: 1rem;
         a {
             display: inline-block;
-            width: 31px;
-            height: 31px;
+            width: 36px;
+            height: 36px;
             margin: 0 .5rem;
-            background-position: 0 0;
-            background-repeat: no-repeat;
-            background-size: cover;
-            @include effect-fade;
-            &.facebook {
-                background-image: url(data:image/svg+xml;base64,//48ACEALQAtACAARwBlAG4AZQByAGEAdABvAHIAOgAgAEEAZABvAGIAZQAgAEkAbABsAHUAcwB0AHIAYQB0AG8AcgAgADEAOQAuADAALgAxACwAIABTAFYARwAgAEUAeABwAG8AcgB0ACAAUABsAHUAZwAtAEkAbgAgACAALQAtAD4ADQAKADwAcwB2AGcAIAB2AGUAcgBzAGkAbwBuAD0AIgAxAC4AMQAiAA0ACgAJACAAeABtAGwAbgBzAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAwAC8AcwB2AGcAIgAgAHgAbQBsAG4AcwA6AHgAbABpAG4AawA9ACIAaAB0AHQAcAA6AC8ALwB3AHcAdwAuAHcAMwAuAG8AcgBnAC8AMQA5ADkAOQAvAHgAbABpAG4AawAiACAAeABtAGwAbgBzADoAYQA9ACIAaAB0AHQAcAA6AC8ALwBuAHMALgBhAGQAbwBiAGUALgBjAG8AbQAvAEEAZABvAGIAZQBTAFYARwBWAGkAZQB3AGUAcgBFAHgAdABlAG4AcwBpAG8AbgBzAC8AMwAuADAALwAiAA0ACgAJACAAeAA9ACIAMABwAHgAIgAgAHkAPQAiADAAcAB4ACIAIAB3AGkAZAB0AGgAPQAiADMAMQAuADEAcAB4ACIAIABoAGUAaQBnAGgAdAA9ACIAMwAwAC4AOQBwAHgAIgAgAHYAaQBlAHcAQgBvAHgAPQAiADAAIAAwACAAMwAxAC4AMQAgADMAMAAuADkAIgAgAHMAdAB5AGwAZQA9ACIAZQBuAGEAYgBsAGUALQBiAGEAYwBrAGcAcgBvAHUAbgBkADoAbgBlAHcAIAAwACAAMAAgADMAMQAuADEAIAAzADAALgA5ADsAIgANAAoACQAgAHgAbQBsADoAcwBwAGEAYwBlAD0AIgBwAHIAZQBzAGUAcgB2AGUAIgA+AA0ACgA8AHMAdAB5AGwAZQAgAHQAeQBwAGUAPQAiAHQAZQB4AHQALwBjAHMAcwAiAD4ADQAKAAkALgBzAHQAMAB7AGYAaQBsAGwAOgAjADgANwA4ADcAOAA3ADsAfQANAAoAPAAvAHMAdAB5AGwAZQA+AA0ACgA8AGQAZQBmAHMAPgANAAoAPAAvAGQAZQBmAHMAPgANAAoAPABwAGEAdABoACAAYwBsAGEAcwBzAD0AIgBzAHQAMAAiACAAZAA9ACIATQAwAC4AMQAsADEANgAuADgAYwAwAC4AMQAsADAALgA5ACwAMAAuADIALAAxAC4AOAAsADAALgA0ACwAMgAuADcAYwAwAC4AMgAsADEALgAxACwAMAAuADYALAAyACwAMQAuADEALAAzAGMAMAAuADcALAAxAC4AMwAsADEALgA2ACwAMgAuADYALAAyAC4ANgAsADMALgA3AGMAMgAuADEALAAyAC4AMgAsADQALgA4ACwAMwAuADgALAA3AC4AOAAsADQALgA0AA0ACgAJAGMAMAAuADEALAAwACwAMAAuADIALAAwACwAMAAuADMALAAwAC4AMQBjADcALgA4ACwAMQAuADYALAAxADUALgA3AC0AMwAsADEAOAAtADEAMAAuADYAQwAzADMALAAxADEALgA1ACwAMgA4AC4AMgAsADIALgA4ACwAMQA5AC4ANwAsADAALgA0AEMAMQA4AC4AOAAsADAALgAxACwAMQA3AC4AOQAsADAALgAxACwAMQA3ACwAMABjAC0AMAAuADEALAAwAC0AMAAuADEALAAwAC4AMQAtADAALgAxACwAMAAuADEADQAKAAkAYwAtADAALgAyACwAMAAtADAALgA0ACwAMAAtADAALgA1ACwAMABjAC0AMAAuADIALAAwAC0AMAAuADMALAAwAC0AMAAuADUALAAwAGMALQAwAC4AMQAsADAALQAwAC4AMgAsADAALQAwAC4ANAAsADAAYwAtADAALgAyACwAMAAtADAALgAzACwAMAAtADAALgA1ACwAMABjAC0AMAAuADIALAAwAC0AMAAuADQALAAwAC0AMAAuADUALAAwAGMAMAAsADAALQAwAC4AMQAtADAALgAxAC0AMAAuADEALQAwAC4AMQANAAoACQBjAC0AMAAuADMALAAwAC4AMQAtADAALgA2ACwAMAAtADAALgA5ACwAMAAuADEAYwAtADIALgA5ACwAMAAuADQALQA1AC4ANwAsADEALgA3AC0ANwAuADkALAAzAC4ANgBjAC0AMgAuADIALAAxAC4AOQAtADMALgA5ACwANAAuADUALQA0AC4ANwAsADcALgAzAGMALQAwAC4AMgAsADAALgA4AC0AMAAuADYALAAxAC4ANwAtADAALgA3ACwAMgAuADUAYwAtADAALgAxACwAMAAuADgALAAwACwAMQAuADcALAAwACwAMgAuADUADQAKAAkAQwAwAC4AMQAsADEANgAuADIALAAwAC4AMQAsADEANgAuADUALAAwAC4AMQAsADEANgAuADgAegAgAE0AMQAwAC4AOAAsADEAMgAuADQAYwAwAC4ANQAsADAALAAxACwAMAAsADEALgA0ACwAMABjADAALgAzACwAMAAsADAALgAzAC0AMAAuADEALAAwAC4AMwAtADAALgA0AGMAMAAtADAALgA4ACwAMAAtADEALgA2ACwAMAAtADIALgA1AGMAMAAuADEALQAxAC4ANgAsADAALgA5AC0AMgAuADkALAAyAC4ANQAtADMALgA1AA0ACgAJAGMAMAAuADYALQAwAC4AMgAsADEALgAyAC0AMAAuADMALAAxAC4AOAAtADAALgAzAGMAMAAuADkALAAwACwAMQAuADkALAAwACwAMgAuADgALAAwAGMAMAAuADIALAAwACwAMAAuADMALAAwAC4AMQAsADAALgAzACwAMAAuADMAYwAwACwAMQAsADAALAAyACwAMAAsADIALgA5AGMAMAAsADAALgAyAC0AMAAuADEALAAwAC4AMwAtADAALgAzACwAMAAuADMAYwAtADAALgA2ACwAMAAtADEALgAzACwAMAAtADEALgA5ACwAMAANAAoACQBjAC0AMAAuADcALAAwAC0AMQAsADAALgAzAC0AMQAsADEAYwAwACwAMAAuADYALAAwACwAMQAuADIALAAwACwAMQAuADgAYwAwACwAMAAuADIALAAwAC4AMQAsADAALgAzACwAMAAuADMALAAwAC4AMwBjADAALgA5ACwAMAAsADEALgA3ACwAMAAsADIALgA2ACwAMABjADAALgAyACwAMAAsADAALgAzACwAMAAsADAALgAzACwAMAAuADIAYwAtADAALgAxACwAMQAtADAALgAyACwAMgAuADEALQAwAC4AMwAsADMALgAxAA0ACgAJAGMAMAAsADAALgAyAC0AMAAuADEALAAwAC4AMgAtADAALgAzACwAMAAuADIAYwAtADAALgA3ACwAMAAtADEALgA1ACwAMAAtADIALgAyACwAMABjAC0AMAAuADMALAAwAC0AMAAuADQALAAwAC4AMQAtADAALgA0ACwAMAAuADQAYwAwACwAMQAuADYALAAwACwAMwAuADEALAAwACwANAAuADcAYwAwACwAMQAuADYALAAwACwAMwAuADIALAAwACwANAAuADgAYwAwACwAMAAuADMALQAwAC4AMQAsADAALgAzAC0AMAAuADMALAAwAC4AMwANAAoACQBjAC0AMQAuADIALAAwAC0AMgAuADQALAAwAC0AMwAuADUALAAwAGMALQAwAC4AMwAsADAALQAwAC4AMwAtADAALgAxAC0AMAAuADMALQAwAC4AMwBjADAALQAzAC4AMgAsADAALQA2AC4AMwAsADAALQA5AC4ANQBjADAALQAwAC4AMwAtADAALgAxAC0AMAAuADQALQAwAC4ANAAtADAALgA0AGMALQAwAC4ANQAsADAALQAwAC4AOQAsADAALQAxAC4ANAAsADAAYwAtADAALgAyACwAMAAtADAALgAyACwAMAAtADAALgAyAC0AMAAuADIADQAKAAkAYwAwAC0AMQAuADEALAAwAC0AMgAuADEALAAwAC0AMwAuADIAQwAxADAALgA1ACwAMQAyAC4ANAAsADEAMAAuADYALAAxADIALgA0ACwAMQAwAC4AOAAsADEAMgAuADQAegAiAC8APgANAAoAPAAvAHMAdgBnAD4ADQA=);
+            font-family: 'socicon';
+            line-height: 36px;
+            background: $text;
+            border-radius: 50%;
+            font-size: 2rem;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            &.socicon-facebook:hover {
+                background: #3e5b98;
             }
-            &.instagram {
-                background-image: url(data:image/svg+xml;base64,//48ACEALQAtACAARwBlAG4AZQByAGEAdABvAHIAOgAgAEEAZABvAGIAZQAgAEkAbABsAHUAcwB0AHIAYQB0AG8AcgAgADEAOQAuADAALgAxACwAIABTAFYARwAgAEUAeABwAG8AcgB0ACAAUABsAHUAZwAtAEkAbgAgACAALQAtAD4ADQAKADwAcwB2AGcAIAB2AGUAcgBzAGkAbwBuAD0AIgAxAC4AMQAiAA0ACgAJACAAeABtAGwAbgBzAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAwAC8AcwB2AGcAIgAgAHgAbQBsAG4AcwA6AHgAbABpAG4AawA9ACIAaAB0AHQAcAA6AC8ALwB3AHcAdwAuAHcAMwAuAG8AcgBnAC8AMQA5ADkAOQAvAHgAbABpAG4AawAiACAAeABtAGwAbgBzADoAYQA9ACIAaAB0AHQAcAA6AC8ALwBuAHMALgBhAGQAbwBiAGUALgBjAG8AbQAvAEEAZABvAGIAZQBTAFYARwBWAGkAZQB3AGUAcgBFAHgAdABlAG4AcwBpAG8AbgBzAC8AMwAuADAALwAiAA0ACgAJACAAeAA9ACIAMABwAHgAIgAgAHkAPQAiADAAcAB4ACIAIAB3AGkAZAB0AGgAPQAiADMAMQBwAHgAIgAgAGgAZQBpAGcAaAB0AD0AIgAzADAALgA5AHAAeAAiACAAdgBpAGUAdwBCAG8AeAA9ACIAMAAgADAAIAAzADEAIAAzADAALgA5ACIAIABzAHQAeQBsAGUAPQAiAGUAbgBhAGIAbABlAC0AYgBhAGMAawBnAHIAbwB1AG4AZAA6AG4AZQB3ACAAMAAgADAAIAAzADEAIAAzADAALgA5ADsAIgANAAoACQAgAHgAbQBsADoAcwBwAGEAYwBlAD0AIgBwAHIAZQBzAGUAcgB2AGUAIgA+AA0ACgA8AHMAdAB5AGwAZQAgAHQAeQBwAGUAPQAiAHQAZQB4AHQALwBjAHMAcwAiAD4ADQAKAAkALgBzAHQAMAB7AGYAaQBsAGwAOgAjADgANwA4ADcAOAA3ADsAfQANAAoAPAAvAHMAdAB5AGwAZQA+AA0ACgA8AGQAZQBmAHMAPgANAAoAPAAvAGQAZQBmAHMAPgANAAoAPABwAGEAdABoACAAYwBsAGEAcwBzAD0AIgBzAHQAMAAiACAAZAA9ACIATQAwACwAMQA2AC4AOABjADAALgAxACwAMAAuADMALAAwAC4AMQAsADAALgA2ACwAMAAuADEALAAwAC4AOQBDADEALAAyADQALAA2ACwAMgA5AC4AMwAsADEAMgAuADQALAAzADAALgA2AGMANwAuADMALAAxAC4ANQAsADEANAAuADUALQAyAC4AMwAsADEANwAuADQALQA5AC4AMQBjADIALgA1AC0ANQAuADgALAAxAC4AMQAtADEAMgAuADkALQAzAC4ANQAtADEANwAuADIADQAKAAkAYwAtADIALgA3AC0AMgAuADUALQA1AC4AOAAtADMALgA4AC0AOQAuADQALQA0AC4AMgBjADAALAAwAC0AMAAuADEALAAwAC4AMQAtADAALgAxACwAMAAuADEAYwAtADAALgAxACwAMAAtADAALgAyACwAMAAtADAALgA0ACwAMABjAC0AMAAuADEALAAwAC0AMAAuADMALAAwAC0AMAAuADQALAAwAC4AMQBjAC0AMAAuADEALAAwAC0AMAAuADIALQAwAC4AMQAtADAALgAzAC0AMAAuADEAYwAtADAALgAxACwAMAAtADAALgAyACwAMAAtADAALgAyACwAMAANAAoACQBjAC0AMAAuADEALAAwAC0AMAAuADIALAAwAC4AMQAtADAALgAzACwAMAAuADEAYwAtADAALgAxACwAMAAtADAALgAzAC0AMAAuADEALQAwAC4ANAAtADAALgAxAGMALQAwAC4AMQAsADAALQAwAC4AMgAsADAALQAwAC4ANAAsADAAYwAwACwAMAAtADAALgAxAC0AMAAuADEALQAwAC4AMQAtADAALgAxAGMALQAwAC4AMwAsADAALgAxAC0AMAAuADYALAAwAC0AMAAuADkALAAwAC4AMQANAAoACQBDADYALgA4ACwAMQAsADEALgA2ACwANQAuADkALAAwAC4AMwAsADEAMgAuADMAYwAtADAALgAxACwAMAAuADYALQAwAC4AMgAsADEALgAxAC0AMAAuADIALAAxAC4ANwBjADAALAAwAC4AMQAsADAALAAwAC4AMQAsADAALAAwAC4AMgBjADAALAAwAC4AMQAsADAALAAwAC4AMwAsADAALAAwAC4ANABjADAALAAwAC4AMQAsADAALAAwAC4ANgAsADAALAAwAC4ANgBoADAAbAAwACwAMABjADAALAAwACwAMAAsADAALgAxACwAMAAsADAALgAyAA0ACgAJAGMAMAAsADAALgAxACwAMAAsADAALgAyACwAMAAsADAALgAyAGMAMAAsADAALgAxACwAMAAuADEALAAwAC4AMgAsADAALgAxACwAMAAuADMAQwAwACwAMQA1AC4AOQAsADAALAAxADYALgAxACwAMAAsADEANgAuADIAYwAwACwAMAAuADEALAAwACwAMAAuADMALAAwACwAMAAuADQAQwAwACwAMQA2AC4ANwAsADAALAAxADYALgA3ACwAMAAsADEANgAuADgAegAgAE0ANgAuADgALAAxADAALgAxAA0ACgAJAGMAMAAtADIALAAxAC4ANQAtADMALgA1ACwAMwAuADUALQAzAC4ANQBjADMALgA1ACwAMAAsADcALAAwACwAMQAwAC4ANQAsADAAYwAyACwAMAAsADMALgA1ACwAMQAuADUALAAzAC4ANQAsADMALgA1AGMAMAAsADEALgA4ACwAMAAsADMALgA1ACwAMAAsADUALgAzAGMAMAAsADEALgA3ACwAMAAsADMALgA1ACwAMAAsADUALgAyAGMAMAAsADIALgAxAC0AMQAuADUALAAzAC4ANQAtADMALgA1ACwAMwAuADUADQAKAAkAYwAtADMALgA1ACwAMAAtADcALAAwAC0AMQAwAC4ANQAsADAAYwAtADIALAAwAC0AMwAuADUALQAxAC4ANQAtADMALgA1AC0AMwAuADUAQwA2AC4AOAAsADEANwAuADEALAA2AC4AOAAsADEAMwAuADYALAA2AC4AOAAsADEAMAAuADEAegAiAC8APgANAAoAPABwAGEAdABoACAAYwBsAGEAcwBzAD0AIgBzAHQAMAAiACAAZAA9ACIATQA4AC4ANwAsADIAMAAuADgAYwAwAC4AMgAsADAALgA5ACwAMAAuADgALAAxAC4ANAAsADEALgA4ACwAMQAuADQAYwAzAC4AMwAsADAALAA2AC4ANgAsADAALAAxADAALAAwAGMAMAAuADEALAAwACwAMAAuADIALAAwACwAMAAuADMALAAwAGMAMAAuADgALQAwAC4AMQAsADEALgA1AC0AMAAuADcALAAxAC4ANQAtADEALgA1AA0ACgAJAGMAMAAtADAALgA2ACwAMAAtADEALgAyACwAMAAtADEALgA4AGMAMAAtADEALgA3ACwAMAAtADMALgA0ACwAMAAtADUALgAyAGMAMAAtADAALgAxACwAMAAuADEALQAwAC4AMwAtADAALgAyAC0AMAAuADMAYwAtADAALgA3ACwAMAAtADEALgA1ACwAMAAtADIALgAyACwAMABjADAALgAxACwAMAAuADQALAAwAC4AMgAsADAALgA4ACwAMAAuADMALAAxAC4AMgBjADAALAAwAC4ANAAsADAALgAxACwAMAAuADgALAAwACwAMQAuADIADQAKAAkAYwAtADAALgAyACwAMQAuADkALQAxAC4ANQAsADMALgA2AC0AMwAuADQALAA0AC4AMgBjAC0AMQAuADkALAAwAC4ANgAtADQALQAwAC4AMQAtADUALgAyAC0AMQAuADYAYwAtADEALgAxAC0AMQAuADQALQAxAC4AMgAtADIALgA5AC0AMAAuADcALQA0AC4ANgBjADAALgAxAC0AMAAuADIALAAwAC0AMAAuADMALQAwAC4AMgAtADAALgAzAGMALQAwAC4ANgAsADAALQAxAC4AMgAsADAALQAxAC4AOAAsADAADQAKAAkAYwAtADAALgAzACwAMAAtADAALgAzACwAMAAuADEALQAwAC4AMwAsADAALgAzAGMAMAAsADIALgAyACwAMAAsADQALgA0ACwAMAAsADYALgA2AEMAOAAuADYALAAyADAALgA1ACwAOAAuADYALAAyADAALgA3ACwAOAAuADcALAAyADAALgA4AHoAIgAvAD4ADQAKADwAcABhAHQAaAAgAGMAbABhAHMAcwA9ACIAcwB0ADAAIgAgAGQAPQAiAE0AMQA1AC4ANQAsADEAOAAuADMAYwAxAC4ANgAsADAALAAyAC4AOQAtADEALgAzACwAMgAuADkALQAyAC4AOQBjADAALQAxAC4AMwAtADAALgA5AC0AMwAtADIALgA5AC0AMwBjAC0AMgAsADAALQAyAC4AOQAsADEALgA2AC0AMgAuADkALAAyAC4AOQBDADEAMgAuADYALAAxADcALAAxADMALgA5ACwAMQA4AC4AMwAsADEANQAuADUALAAxADgALgAzAHoAIgAvAD4ADQAKADwAcABhAHQAaAAgAGMAbABhAHMAcwA9ACIAcwB0ADAAIgAgAGQAPQAiAE0AMQA5AC4ANwAsADEAMQAuADUAYwAwAC4ANAAsADAALAAwAC4AMwAsADAALAAxAC4AMwAsADAAYwAwACwAMAAsADAALAAwACwAMAAsADAAYwAwACwAMAAsADAALgA3ACwAMAAsADEALgAyACwAMABjADAALgAyACwAMAAsADAALgAyACwAMAAsADAALgAyAC0AMAAuADIAYwAwAC0AMAAuADgALAAwAC0AMQAuADYALAAwAC0AMgAuADQADQAKAAkAYwAwAC0AMAAuADIALQAwAC4AMQAtADAALgAyAC0AMAAuADIALQAwAC4AMgBjAC0AMAAuADgALAAwAC0AMQAuADYALAAwAC0AMgAuADUALAAwAGMALQAwAC4AMgAsADAALQAwAC4AMgAsADAALQAwAC4AMgAsADAALgAyAGMAMAAsADAALgA4ACwAMAAuADEALAAxAC4ANgAsADAALAAyAC4ANABDADEAOQAuADQALAAxADEALgA0ACwAMQA5AC4ANQAsADEAMQAuADUALAAxADkALgA3ACwAMQAxAC4ANQB6ACIALwA+AA0ACgA8AC8AcwB2AGcAPgANAA==);
+            &.socicon-instagram:hover {
+                background: #f09433;
+                background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
             }
-            &.vk {
-                background-image: url(data:image/svg+xml;base64,//48ACEALQAtACAARwBlAG4AZQByAGEAdABvAHIAOgAgAEEAZABvAGIAZQAgAEkAbABsAHUAcwB0AHIAYQB0AG8AcgAgADEAOQAuADAALgAxACwAIABTAFYARwAgAEUAeABwAG8AcgB0ACAAUABsAHUAZwAtAEkAbgAgACAALQAtAD4ADQAKADwAcwB2AGcAIAB2AGUAcgBzAGkAbwBuAD0AIgAxAC4AMQAiAA0ACgAJACAAeABtAGwAbgBzAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAwAC8AcwB2AGcAIgAgAHgAbQBsAG4AcwA6AHgAbABpAG4AawA9ACIAaAB0AHQAcAA6AC8ALwB3AHcAdwAuAHcAMwAuAG8AcgBnAC8AMQA5ADkAOQAvAHgAbABpAG4AawAiACAAeABtAGwAbgBzADoAYQA9ACIAaAB0AHQAcAA6AC8ALwBuAHMALgBhAGQAbwBiAGUALgBjAG8AbQAvAEEAZABvAGIAZQBTAFYARwBWAGkAZQB3AGUAcgBFAHgAdABlAG4AcwBpAG8AbgBzAC8AMwAuADAALwAiAA0ACgAJACAAeAA9ACIAMABwAHgAIgAgAHkAPQAiADAAcAB4ACIAIAB3AGkAZAB0AGgAPQAiADMAMQBwAHgAIgAgAGgAZQBpAGcAaAB0AD0AIgAzADEAcAB4ACIAIAB2AGkAZQB3AEIAbwB4AD0AIgAwACAAMAAgADMAMQAgADMAMQAiACAAcwB0AHkAbABlAD0AIgBlAG4AYQBiAGwAZQAtAGIAYQBjAGsAZwByAG8AdQBuAGQAOgBuAGUAdwAgADAAIAAwACAAMwAxACAAMwAxADsAIgAgAHgAbQBsADoAcwBwAGEAYwBlAD0AIgBwAHIAZQBzAGUAcgB2AGUAIgA+AA0ACgA8AHMAdAB5AGwAZQAgAHQAeQBwAGUAPQAiAHQAZQB4AHQALwBjAHMAcwAiAD4ADQAKAAkALgBzAHQAMAB7AGYAaQBsAGwAOgAjADgANwA4ADcAOAA3ADsAfQANAAoAPAAvAHMAdAB5AGwAZQA+AA0ACgA8AGQAZQBmAHMAPgANAAoAPAAvAGQAZQBmAHMAPgANAAoAPABwAGEAdABoACAAYwBsAGEAcwBzAD0AIgBzAHQAMAAiACAAZAA9ACIATQAxADUALgA0ACwAMABjADAALgAxACwAMAAsADAALgAyACwAMAAsADAALgAyACwAMABjADAALgAxACwAMAAsADAALgAzACwAMAAuADEALAAwAC4ANAAsADAALgAxAGMAMAAuADgALAAwAC4AMQAsADEALgA3ACwAMAAuADEALAAyAC4ANQAsADAALgAzAGMAMwAuADYALAAwAC4ANwAsADYALgA2ACwAMgAuADUALAA4AC4AOQAsADUALgAzAA0ACgAJAGMAMgAuADUALAAzACwAMwAuADcALAA2AC4ANQAsADMALgA2ACwAMQAwAC4ANABjADAALAAxAC4AMQAtADAALgAyACwAMgAuADEALQAwAC4ANAAsADMALgAxAGMALQAwAC4AOAAsADMALgAyAC0AMgAuADQALAA1AC4AOQAtADUALAA4AC4AMQBjAC0AMgAuADkALAAyAC4ANQAtADYALgAzACwAMwAuADcALQAxADAALgAxACwAMwAuADcAYwAtADEALgAyACwAMAAtADIALgAzAC0AMAAuADEALQAzAC4ANAAtADAALgA0AA0ACgAJAGMALQA0AC4ANgAtADEALgAxAC0AOAAtADMALgA3AC0AMQAwAC4AMgAtADcALgA4AGMALQAxAC4AMQAtADIALgAxAC0AMQAuADcALQA0AC4ANAAtADEALgA4AC0ANgAuADcAYwAwAC0AMAAuADEALAAwAC0AMAAuADMALQAwAC4AMQAtADAALgA0AGMAMAAtADAALgAxACwAMAAtADAALgAyACwAMAAtADAALgAyAGMAMAAtADAALgAxACwAMAAuADEALQAwAC4AMwAsADAALgAxAC0AMAAuADQADQAKAAkAYwAwAC4AMQAtADEALAAwAC4AMgAtADIALAAwAC4ANAAtADIALgA5AEMAMQAuADUALAA3AC4ANQAsADQALgAyACwANAAsADgALgA0ACwAMQAuADgAYwAyAC4AMQAtADEALgAxACwANAAuADMALQAxAC4ANwAsADYALgA2AC0AMQAuADcAQwAxADUALgAyACwAMAAuADEALAAxADUALgAzACwAMAAsADEANQAuADQALAAwAHoAIABNADEAMQAuADcALAAxADEALgA2AGMAMAAuADEALAAwACwAMAAuADIALAAwAC4AMQAsADAALgAzACwAMAAuADEADQAKAAkAYwAwAC4ANQAsADAALgAxACwAMAAuADkALAAwAC4ANAAsADAALgA5ACwAMQBjADAALgAxACwAMAAuADgALAAwAC4AMQAsADEALgA2ACwAMAAuADEALAAyAC4ANABjADAALAAwAC4ANAAtADAALgAxACwAMAAuADgALQAwAC4AMgAsADEALgAxAGMALQAwAC4AMQAsADAALgAzAC0AMAAuADMALAAwAC4ANAAtADAALgA2ACwAMAAuADIAYwAtADAALgAzAC0AMAAuADIALQAwAC4ANQAtADAALgA0AC0AMAAuADcALQAwAC4ANwANAAoACQBjAC0AMAAuADgALQAxAC4AMQAtADEALgA1AC0AMgAuADQALQAyAC4AMQAtADMALgA3AGMALQAwAC4AMgAtADAALgA0AC0AMAAuADUALQAwAC4ANwAtADAALgA5AC0AMAAuADcAYwAtADEALAAwAC0AMgAsADAALQAzACwAMABDADUALAAxADEALgAzACwANAAuADgALAAxADEALgA2ACwANQAsADEAMgBjADAALgAxACwAMAAuADIALAAwAC4AMgAsADAALgA0ACwAMAAuADMALAAwAC4ANgANAAoACQBjADEALgAxACwAMgAuADMALAAyAC4AMwAsADQALgA1ACwAMwAuADkALAA2AC4ANgBjADEALgA3ACwAMgAuADIALAA0ACwAMwAuADMALAA2AC4AOQAsADMALgAyAGMAMAAuADYALAAwACwAMAAuADkALQAwAC4AMwAsADAALgA5AC0AMAAuADkAYwAwAC0AMAAuADEALAAwAC0AMAAuADIALAAwAC0AMAAuADIAYwAwAC4AMQAtADAALgA0ACwAMAAuADEALQAwAC4AOQAsADAALgA0AC0AMQAuADMADQAKAAkAYwAwAC4AMgAtADAALgAzACwAMAAuADQALQAwAC4AMwAsADAALgA3AC0AMAAuADIAYwAwAC4AMgAsADAALgAxACwAMAAuADQALAAwAC4AMwAsADAALgA1ACwAMAAuADQAYwAwAC4ANAAsADAALgA0ACwAMAAuADgALAAwAC4AOQAsADEALgAyACwAMQAuADMAYwAwAC4ANQAsADAALgA2ACwAMQAuADIALAAwAC4AOQAsADIALAAwAC4AOABjADAALgA4ACwAMAAsADEALgA1ACwAMAAsADIALgAzACwAMAANAAoACQBjADAALgAyACwAMAAsADAALgA0ACwAMAAsADAALgA3AC0AMAAuADEAYwAwAC4ANgAtADAALgAyACwAMAAuADgALQAwAC4ANgAsADAALgA1AC0AMQAuADEAYwAtADAALgAyAC0AMAAuADQALQAwAC4ANAAtADAALgA3AC0AMAAuADcALQAxAGMALQAwAC4ANgAtADAALgA3AC0AMQAuADMALQAxAC4AMwAtADIALQAyAGMALQAwAC4ANgAtADAALgA3AC0AMAAuADcALQAwAC4AOQAtADAALgAxAC0AMQAuADYADQAKAAkAYwAwAC4ANwAtADAALgA5ACwAMQAuADQALQAxAC4AOAAsADIALQAyAC4AOABjADAALgAzAC0AMAAuADUALAAwAC4ANgAtADEALgAxACwAMAAuADkALQAxAC4ANgBjADAALgAyAC0AMAAuADUALAAwAC0AMAAuADkALQAwAC4ANgAtADAALgA5AGMALQAxAC4AMQAsADAALQAyAC4AMgAsADAALQAzAC4AMwAsADAAYwAtADAALgA3ACwAMAAtADAALgA4ACwAMAAuADEALQAxAC4AMQAsADAALgA3AA0ACgAJAGMALQAwAC4ANAAsADEALgAxAC0AMQAsADIALgAyAC0AMQAuADcALAAzAC4AMgBjAC0AMAAuADMALAAwAC4ANAAtADAALgA2ACwAMAAuADcALQAwAC4AOQAsADEALgAxAGMALQAwAC4AMwAsADAALgAzAC0AMAAuADYALAAwAC4AMgAtADAALgA3AC0AMAAuADIAYwAtADAALgAxAC0AMAAuADIALQAwAC4AMQAtADAALgA1AC0AMAAuADEALQAwAC4AOABjADAALQAxAC4AMQAsADAALQAyAC4AMgAsADAALQAzAC4AMwANAAoACQBjADAALQAwAC4ANgAtADAALgAzAC0AMQAtADAALgA5AC0AMQBjAC0AMAAuADkALQAwAC4AMQAtADEALgA4AC0AMAAuADEALQAyAC4ANwAtADAALgAxAGMALQAwAC4AMwAsADAALQAwAC4ANwAsADAALgAxAC0AMQAsADAALgAyAEMAMQAyACwAMQAxACwAMQAxAC4AOAAsADEAMQAuADIALAAxADEALgA3ACwAMQAxAC4ANgB6ACIALwA+AA0ACgA8AC8AcwB2AGcAPgANAA==);
-            }
-            &:hover {
-                opacity: .5;
+            &.socicon-vkontakte:hover {
+                background: #5a7fa6;
             }
         }
     }
@@ -151,28 +156,67 @@
         @include respond-to(tablet-portrait) {
             text-align: center;
         }
+        @include respond-to(mobile-landscape) {
+            font-size: 3rem;
+        }
     }
 
     &-price {
         line-height: 1.4;
         margin-bottom: 2rem;
-        & > span {
+        & > span, & > div {
             display: inline-block;
             margin-right: 1rem;
-            vertical-align: middle;
         }
         &-actual {
             font-size: 2rem;
             font-weight: bold;
             color: #000;
+            @include respond-to(mobile-landscape) {
+                font-size: 3rem;
+            }
+        }
+        .discount {
+            vertical-align: baseline;
+            margin-left: 1rem;
+        }
+        @include respond-to(mobile-landscape) {
+            margin-bottom: 3rem;
+            .price-old {
+                font: 2rem 'robotolight';
+                color: $text;
+                position: relative;
+                &-wrapper {
+                    display: block;
+                    margin-top: 1.5rem;
+                }
+                .discount {
+                    width: 64px;
+                    height: 30px;
+                    line-height: 30px;
+                    position: absolute;
+                    right: -75px;
+                    top: 50%;
+                    margin-top: -15px;
+                    font-size: 2rem;
+                    background-size: cover;
+                    padding-left: 15px;
+                }
+            }
         }
         .product-available, .qv-available {
             height: 20px;
             font-size: 1.2rem;
-            line-height: 20px;
+            line-height: 18px;
             text-transform: uppercase;
             padding: 0 .7rem;
             border: 1px solid $text;
+            @include respond-to(mobile-landscape) {
+                height: auto;
+                font-size: 2rem;
+                padding: .7rem;
+                margin-top: 2rem;
+            }
         }
         @include respond-to(tablet-portrait) {
             text-align: center;
@@ -254,8 +298,31 @@
                 }
             }
         }
+        .error-text {
+            display: none;
+            text-transform: uppercase;
+            color: $red;
+        }
+        &.error {
+            ul {
+                padding-bottom: 3px;
+                border-bottom: 1px solid $red;
+            }
+            .error-text {
+                display: inline-block;
+            }
+        }
         @include respond-to(tablet-portrait) {
             text-align: center;
+        }
+        @include respond-to(mobile-landscape) {
+            margin-bottom: 3rem;
+            .title {
+                font-size: 2rem;
+            }
+            ul li a {
+                font-size: 2rem;
+            }
         }
     }
 
@@ -284,18 +351,42 @@
         @include respond-to(tablet-portrait) {
             text-align: center;
         }
+        @include respond-to(mobile-landscape) {
+            margin-top: 2rem;
+            a {
+                font-size: 1.6rem;
+            }
+        }
     }
 
     .add-to-cart {
         a {
-            @include button;
+            width: 240px;
+            text-align: center;
+            @include add2cart;
             @include respond-to(tablet-landscape) {
                 display: block;
+                width: auto;
                 font-size: 1.8rem;
             }
+            @include respond-to(mobile-landscape) {
+                font-size: 2.5rem;
+                padding: 1.5rem;
+            }
         }
-        @include respond-to(tablet-portrait) {
-            text-align: center;
+        &.done {
+            a {
+                background-color: $green;
+                &:after {
+                    display: inline-block;
+                    content: '';
+                    width: 25px;
+                    height: 17px;
+                    margin-left: 8px;
+                    background: 0 0 no-repeat url(data:image/svg+xml;base64,PCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIg0KCSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczphPSJodHRwOi8vbnMuYWRvYmUuY29tL0Fkb2JlU1ZHVmlld2VyRXh0ZW5zaW9ucy8zLjAvIg0KCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjQ5cHgiIGhlaWdodD0iMzQuOXB4IiB2aWV3Qm94PSIwIDAgNDkgMzQuOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDkgMzQuOTsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6bm9uZTtzdHJva2U6I0ZGRkZGRjtzdHJva2Utd2lkdGg6NjtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPGRlZnM+DQo8L2RlZnM+DQo8cG9seWxpbmUgY2xhc3M9InN0MCIgcG9pbnRzPSIyLjEsMTQuNCAxOC40LDMwLjcgNDYuOSwyLjEgIi8+DQo8L3N2Zz4NCg==);
+                    background-size: cover;
+                }
+            }
         }
     }
 
@@ -317,10 +408,15 @@
         @include respond-to(tablet-portrait) {
             text-align: center;
         }
+        @include respond-to(mobile-landscape) {
+            .title {
+                font-size: 2rem;
+            }
+        }
     }
 
     &-info {
-        padding-left: $padding-left;
+        padding-left: 66px;
         font-size: 1.4rem;
         margin: 4rem 0;
         &-item {
@@ -350,6 +446,9 @@
                 text-transform: uppercase;
                 margin-bottom: 1rem;
             }
+            @include respond-to(mobile-landscape) {
+                font-size: 1.6rem;
+            }
         }
 
         &-links {
@@ -364,15 +463,15 @@
                 margin: 0 1rem 1.4rem 0;
                 @include effect-invert;
                 &:hover {
-                    color: #fff;
-                    background-color: $text;
+                    color: #5B5B5B;
+                    background-color: #F7F7F7;
                 }
             }
         }
 
         @include respond-to(tablet-portrait) {
             margin: 2rem 0;
-            padding: 2rem 0 2rem 0;
+            padding: 2rem 10px;
             border-top: 1px solid #a5a5a5;
             border-bottom: 1px solid #a5a5a5;
             .sliding-button {
@@ -433,10 +532,17 @@
                 color: $gray;
                 text-decoration: none;
             }
+            @include respond-to(mobile-portrait) {
+                width: 152px;
+            }
             &-thumb {
                 display: block;
                 border: 1px solid transparent;
                 position: relative;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
                 &-wrapper {
                     position: relative;
                     .quickview {
@@ -457,6 +563,18 @@
                 }
                 .price {
                     color: #000;
+                    .price-old {
+                        height: 20px;
+                        font-size: 1rem;
+                        line-height: 20px;
+                        color: $text;
+                        position: relative;
+                        .discount {
+                            position: absolute;
+                            right: -45px;
+                            bottom: 0;
+                        }
+                    }
                 }
             }
 
@@ -471,6 +589,14 @@
             width: auto;
             text-align: center;
             margin-bottom: 3rem;
+        }
+        @include respond-to(mobile-landscape) {
+            .item-bottom {
+                font-size: 1.6rem;
+                .price .price-old {
+                    font-size: 1.4rem;
+                }
+            }
         }
     }
 
@@ -499,12 +625,28 @@
                 .price {
                     color: #000;
                     .price-old {
+                        height: 20px;
                         font-size: 1rem;
+                        line-height: 20px;
                         color: $text;
+                        position: relative;
+                        .discount {
+                            position: absolute;
+                            right: -45px;
+                            bottom: 0;
+                        }
                     }
                 }
                 .quickview {
                     width: 150px;
+                }
+                @include respond-to(mobile-landscape) {
+                    .item-bottom {
+                        font-size: 1.6rem;
+                        .price .price-old {
+                            font-size: 1.4rem;
+                        }
+                    }
                 }
             }
             .owl-nav div {
@@ -517,15 +659,6 @@
             }
         }
         .slider1 .carousel {
-            @include respond-to(mobile-portrait) {
-                &-wrapper {
-                    padding: 0 30px;
-                }
-                .owl-nav div {
-                    width: 25px;
-                    height: 50px;
-                }
-            }
             .item {
                 width: 228px;
                 &-thumb span {
@@ -533,6 +666,12 @@
                 }
                 .quickview {
                     width: 226px;
+                }
+                @include respond-to(mobile-portrait) {
+                    width: 152px;
+                    .quickview {
+                        width: 150px;
+                    }
                 }
             }
         }

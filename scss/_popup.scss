@@ -154,12 +154,37 @@
             outline: none;
         }
         button {
-            @include button;
+            @include add2cart;
         }
     }
     &-image {
         position: absolute;
         top: 0;
         left: 0;
+    }
+    .thanks {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: $green;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        padding-top: 115px;
+        .title {
+            font: 2rem 'Molot';
+            text-align: center;
+        }
+        p {
+            width: 245px;
+            margin: 3rem auto 0;
+            font-size: 1.2rem;
+        }
+    }
+    &.done {
+        .thanks {
+            display: block;
+        }
     }
 }

@@ -18,7 +18,13 @@
                     </div>
 					<a href="#" class="item-bottom">
 						<span class="title">Свободная рубашка NNEDRE</span>
-						<span class="price">3 640 руб. <div class="price-old">5 200 руб.</div> <div class="discount">-30%</div></span>
+						<span class="price">3 640 руб.
+                            <div class="price-old-wrapper">
+                                <div class="price-old">5 200 руб.
+                                    <div class="discount">-30%</div>
+                                </div>
+                            </div>
+                        </span>
 					</a>
 				</figure>
                     <figure class="carousel-cell item">
@@ -120,7 +126,13 @@
                     </div>
 					<a href="#" class="item-bottom">
 						<span class="title">Свободная рубашка NNEDRE</span>
-						<span class="price">3 640 руб. <div class="price-old">5 200 руб.</div> <div class="discount">-30%</div></span>
+						<span class="price">3 640 руб.
+                            <div class="price-old-wrapper">
+                                <div class="price-old">5 200 руб.
+                                    <div class="discount">-30%</div>
+                                </div>
+                            </div>
+                        </span>
 					</a>
 				</figure>
                     <figure class="carousel-cell item">

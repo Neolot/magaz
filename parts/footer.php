@@ -21,7 +21,13 @@
                     </div>
 					<a href="#" class="item-bottom">
 						<span class="title">Свободная рубашка NNEDRE</span>
-						<span class="price">3 640 руб. <div class="price-old">5 200 руб.</div> <div class="discount">-30%</div></span>
+						<span class="price">3 640 руб.
+                            <div class="price-old-wrapper">
+                                <div class="price-old">5 200 руб.
+                                    <div class="discount">-30%</div>
+                                </div>
+                            </div>
+                        </span>
 					</a>
 				</figure>
                     <figure class="carousel-cell item">
@@ -133,11 +139,12 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="bottom">
 		<div class="container">
 			<div class="menu">
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+					<div class="col-lg-4 col-md-4 col-sm-4">
 						<ul>
 							<li><a href="#">О нас</a></li>
 							<li><a href="#">Идеология</a></li>
@@ -145,7 +152,7 @@
 							<li><a href="#">Вакансии</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+					<div class="col-lg-4 col-md-4 col-sm-4">
 						<ul>
 							<li><a href="#">Помощь</a></li>
 							<li><a href="#">Возврат</a></li>
@@ -154,26 +161,30 @@
 							<li><a href="#">Оплата</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5 hidden-xs">
+					<div class="col-lg-5 col-md-5 col-sm-5">
 						<ul>
 							<li><a href="#">Сотрудничество</a></li>
 							<li><a href="#">Партнерские программы</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-5 col-md-5 col-sm-5">
-						<ul>
+                        <ul class="phone visible-xs">
+                            <li>Бесплатный телефон поддержки<br>8–800–555–55–55</li>
+                        </ul>
+
+						<ul class="socials">
 							<li>Мы в соцсетях</li>
-							<li class="socials">
-								<a href="#" rel="external nofollow" class="facebook" title="Facebook" target="_blank"></a>
-								<a href="#" rel="external nofollow" class="instagram" title="Instagram" target="_blank"></a>
-								<a href="#" rel="external nofollow" class="vk" title="Вконтакте" target="_blank"></a>
+							<li>
+                                <a href="#" rel="external nofollow" class="socicon-facebook" title="Facebook" target="_blank"></a>
+                                <a href="#" rel="external nofollow" class="socicon-instagram" title="Instagram" target="_blank"></a>
+                                <a href="#" rel="external nofollow" class="socicon-vkontakte" title="Вконтакте" target="_blank"></a>
 							</li>
 						</ul>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6">
 						<div class="subscribe">
 							<form action="#">
-								<input type="email" name="email" placeholder="Ваш e-mail"/>
+								<input type="email" name="email" placeholder="Ваш email"/>
 								<button type="submit">Подписаться на рассылку</button>
 							</form>
 						</div>

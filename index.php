@@ -3,8 +3,8 @@
 <main class="site-content" id="site-content">
 	<article class="product">
 		<div class="container">
-			<?php include 'parts/product/specs.php' ?>
-			<?php include 'parts/product/info.php' ?>
+            <?php include 'parts/product/specs.php' ?>
+            <?php include 'parts/product/info.php' ?>
 		</div>
 	</article> <!-- /.product -->
 

@@ -3,7 +3,7 @@
 	<figure class="item sale">
         <div class="item-thumb-wrapper">
             <a href="#" class="item-thumb">
-                <img src="http://placehold.it/171x260" width="171" height="260" alt=""/>
+                <img src="http://placehold.it/171x256" width="171" height="256" alt=""/>
             </a>
             <div class="quickview clearfix">
                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
@@ -12,13 +12,13 @@
         </div>
 		<a href="#" class="item-bottom">
 			<span class="title">Свободная рубашка NNEDRE</span>
-			<span class="price">3 640 руб. <div class="price-old">5 200 руб.</div> <div class="discount">-30%</div></span>
+			<span class="price">3 640 руб. <div class="price-old-wrapper"><div class="price-old">5 200 руб.<div class="discount">-30%</div></div></div></span>
 		</a>
 	</figure>
     <figure class="item">
         <div class="item-thumb-wrapper">
             <a href="#" class="item-thumb">
-                <img src="http://placehold.it/171x260" width="171" height="260" alt=""/>
+                <img src="http://placehold.it/171x256" width="171" height="256" alt=""/>
             </a>
             <div class="quickview clearfix">
                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>

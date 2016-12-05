@@ -1,7 +1,7 @@
 .cart {
     display: block;
     position: fixed;
-    width: 326px;
+    width: $cart_width;
     height: 100%;
     padding-top: 32px;
     transition: all .5s cubic-bezier(.645,.045,.355,1);
@@ -16,8 +16,8 @@
     min-height: 500px;
     z-index: 9999;
     margin-top: 0 !important;
-    -webkit-transform: translate3d(326px,0,0);
-    transform: translate3d(326px,0,0);
+    -webkit-transform: translate3d($cart_width + 17px ,0,0);
+    transform: translate3d($cart_width + 17px,0,0);
     &-title {
         height: 48px;
         padding: 0 2rem;
@@ -161,8 +161,8 @@
 
 .cart-open {
     .site-header, .site-content, .site-footer, .triangle {
-        -webkit-transform: translate3d(-326px,0,0);
-        transform: translate3d(-326px,0,0);
+        -webkit-transform: translate3d(-$cart_width + 17px,0,0);
+        transform: translate3d(-$cart_width + 17px,0,0);
     }
     .cart {
         transition: all .5s cubic-bezier(.645,.045,.355,1);

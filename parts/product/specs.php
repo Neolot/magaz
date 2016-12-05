@@ -1,6 +1,6 @@
 <div class="product-specs">
 	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-16">
+		<div class="col-lg-12 col-md-12 col-sm-16 no-padding">
 			<div class="product-gallery-wrapper">
 				<div class="product-gallery" id="product-gallery">
                     <img src="http://lorempixel.com/480/720">
@@ -11,9 +11,9 @@
 				</div>
 				<div id="product-gallery-pager" class="product-gallery-pager"></div>
                 <div class="product-share">
-                    <a href="#" rel="external nofollow" class="facebook" title="Поделиться в Facebook" target="_blank"></a>
-                    <a href="#" rel="external nofollow" class="instagram" title="Поделиться в Instagram" target="_blank"></a>
-                    <a href="#" rel="external nofollow" class="vk" title="Поделиться во Вконтакте" target="_blank"></a>
+                    <a href="#" rel="external nofollow" class="socicon-facebook" title="Поделиться в Facebook" target="_blank"></a>
+                    <a href="#" rel="external nofollow" class="socicon-instagram" title="Поделиться в Instagram" target="_blank"></a>
+                    <a href="#" rel="external nofollow" class="socicon-vkontakte" title="Поделиться во Вконтакте" target="_blank"></a>
                 </div>
 			</div>
 		</div>
@@ -26,12 +26,16 @@
 
 				<div class="product-price">
 					<span class="product-price-actual">3 640 руб.</span>
-					<span class="price-old">5 200 руб.</span>
-					<span class="discount">-30%</span>
-					<span class="product-available">В наличии</span>
+                    <div class="price-old-wrapper">
+                        <div class="price-old">5 200 руб.
+                            <div class="discount">-30%</div>
+                        </div>
+                    </div>
+                    <span class="product-available">В наличии</span>
 				</div>
 
-				<div class="product-color">
+
+				<div class="product-color"> <!-- Добавить класс error если цвет не выбран -->
 					<div class="title">Цвет:</div>
 					<ul class="colors">
 						<li><a href="#" class="color-01"></a></li>
@@ -39,17 +43,19 @@
 						<li><a href="#" class="color-03"></a></li>
 						<li class="notavailable"><a href="#" class="color-04"></a></li>
 					</ul>
+                    <span class="error-text">– пожалуйста, выберите цвет</span>
 				</div>
 
-				<div class="product-size">
+				<div class="product-size"> <!-- Добавить класс error если размер не выбран -->
 					<div class="title">Размер:</div>
-					<ul class="sizes">
+					<ul class="product-sizes">
 						<li class="notavailable"><a href="#">40</a></li>
 						<li class="selected"><a href="#">42</a></li>
 						<li><a href="#">44</a></li>
 						<li class="notavailable"><a href="#">46</a></li>
 						<li class="notavailable"><a href="#">48</a></li>
 					</ul>
+                    <span class="error-text">– пожалуйста, выберите размер</span>
 					<div class="sizes-table-link">
 						<a href="parts/popups/sizes.html" class="popup various fancybox.ajax" data-fancybox-type="ajax">Таблица размеров</a>
 					</div>
@@ -57,6 +63,9 @@
 
 				<div class="add-to-cart">
 					<a href="#">Добавить в корзину</a>
+				</div>
+				<div class="add-to-cart done">
+					<a href="#">Товар в корзине</a>
 				</div>
 				<div class="buy1click">
 					<a href="parts/popups/quickorder.html" data-fancybox-type="ajax" class="popup various fancybox.ajax">Купить в 1 клик</a>

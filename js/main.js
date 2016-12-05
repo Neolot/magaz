@@ -83,30 +83,34 @@
 
         $('#site-footer .carousel-wrapper, #product-sliders .slider2 .carousel-wrapper').owlCarousel({
             loop: true,
-            dots: false,
             navText: [],
             smartSpeed: 500,
             responsiveClass: true,
             nav: true,
             responsive: {
                 0: {
-                    items: 1
+                    items: 1,
+                    dots: true
                 },
                 480: {
                     items: 2,
-                    margin: 27
+                    margin: 27,
+                    dots: true
                 },
                 768: {
                     items: 3,
-                    margin: 67
+                    margin: 67,
+                    dots: true
                 },
                 990: {
                     items: 5,
-                    margin: 12
+                    margin: 12,
+                    dots: false
                 },
                 1200: {
                     items: 6,
-                    margin: 17
+                    margin: 17,
+                    dots: false
                 }
             }
         });
@@ -156,6 +160,13 @@
         $menu_roots.click(function() {
             $(this).toggleClass('active');
             $menu_roots.not($(this)).removeClass('active');
+        });
+
+        $('.searchline-nav input', $navigation).focusin(function() {
+            $(this).closest('form').addClass('active');
+        });
+        $('.searchline-nav input', $navigation).focusout(function() {
+            $(this).closest('form').removeClass('active');
         });
     })
 })(jQuery)
