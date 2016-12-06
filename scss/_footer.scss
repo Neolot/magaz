@@ -36,12 +36,16 @@
             }
             .item {
                 width: 152px;
+                @include respond-to(mobile-landscape) {
+                    width: 210px;
+                }
                 a {
                     color: #fff;
                     text-decoration: none;
                 }
                 &-bottom {
                     .price {
+                        margin-top: .5rem;
                         &-old {
                             height: 20px;
                             font-size: 1rem;
@@ -108,8 +112,9 @@
         a {
             color: #fff;
             text-decoration: none;
+            border-bottom: 1px solid transparent;
             &:hover {
-                text-decoration: underline;
+                border-bottom-color: #fff;
             }
         }
         .phone {

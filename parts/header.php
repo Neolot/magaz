@@ -49,15 +49,15 @@
 					</form>
 				</div>
 			</div>
-			<div class="col-lg-10 col-md-8">
-				<div class="phone visible-lg visible-sm">Бесплатный телефон поддержки 8–800–555–55–55</div>
-				<div class="phone visible-md visible-xs">Тел: 8–800–555–55–55</div>
+			<div class="col-lg-10 col-md-8 col-sm-14">
+				<div class="phone visible-lg">Бесплатный телефон поддержки 8–800–555–55–55</div>
+				<div class="phone visible-md visible-xs visible-sm">Тел: 8–800–555–55–55</div>
 			</div>
-			<div class="col-lg-5 col-md-7 visible-lg visible-md">
+			<div class="col-lg-5 col-md-7 col-sm-10 visible-lg visible-md visible-sm">
 				<div class="lang visible-lg">
 					<a href="#" class="active">Русский</a> / <a href="#">English</a>
 				</div>
-				<div class="lang visible-md">
+				<div class="lang visible-md visible-sm">
 					<a href="#" class="active">Рус</a> / <a href="#">Eng</a>
 				</div>
 			</div>

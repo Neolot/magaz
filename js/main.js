@@ -92,7 +92,7 @@
                     items: 1,
                     dots: true
                 },
-                480: {
+                640: {
                     items: 2,
                     margin: 27,
                     dots: true
@@ -123,11 +123,13 @@
         // Smoothscroll
         $('a[href^="#"]').bind('click.smoothscroll', function (e) {
             e.preventDefault();
-            var target = this.hash,
+            if ( this.hash ) {
+                var target = this.hash,
                     $target = $(target);
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top
-            }, 900, 'swing');
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 40
+                }, 900, 'swing');
+            }
         });
 
         // Responsive

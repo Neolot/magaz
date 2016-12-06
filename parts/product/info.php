@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </div>
-            <a href="javascript:void(0);" class="sliding-button-close visible-xs" id="sliding-button-close"
+            <a href="#sliding-button" class="sliding-button-close visible-xs" id="sliding-button-close"
                title="Свернуть"></a>
         </div>
     </div> <!-- /.product-info -->

@@ -507,8 +507,9 @@
                 -o-transition: all .5s ease;
                 transition: all .5s ease;
                 &.open {
-                    max-height: 1000px;
+                    max-height: 2000px;
                     padding-top: 2rem;
+                    padding-bottom: 3rem;
                     .sliding-button-close {
                         display: block;
                     }
@@ -533,16 +534,14 @@
                 text-decoration: none;
             }
             @include respond-to(mobile-landscape) {
-                width: 152px;
-                .quickview {
-                    width: 150px !important;
-                }
+                width: 210px;
             }
             &-thumb {
                 display: block;
                 border: 1px solid transparent;
                 position: relative;
                 img {
+                    width: 100%;
                     max-width: 100%;
                     height: auto;
                 }
@@ -618,6 +617,9 @@
             }
             .item {
                 width: 152px;
+                @include respond-to(mobile-landscape) {
+                    width: 210px;
+                }
                 a {
                     color: $gray;
                     text-decoration: none;
@@ -627,6 +629,7 @@
                 }
                 .price {
                     color: #000;
+                    margin-top: .5rem;
                     .price-old {
                         height: 20px;
                         font-size: 1rem;
@@ -670,11 +673,8 @@
                 .quickview {
                     width: 226px;
                 }
-                @include respond-to(mobile-portrait) {
-                    width: 152px;
-                    .quickview {
-                        width: 150px;
-                    }
+                @include respond-to(mobile-landscape) {
+                    width: 210px;
                 }
             }
         }

@@ -198,27 +198,21 @@
                     </li>
                 </ul>
 
-                <div class="divider"></div>
-
                 <ul class="nav-root">
                     <li><a href="#"><span>Дом</span></a></li>
                     <li><a href="#"><span>Еда</span></a></li>
                 </ul>
 
-                <div class="divider"></div>
-
                 <ul class="nav-root">
                     <li><a href="#"><span>Сувениры</span></a></li>
                 </ul>
 
-                <div class="divider"></div>
-
                 <ul class="nav-root">
                     <li><a href="#"><span>Спорт</span></a></li>
                 </ul>
-
-                <!-- <div class="divider hidden-sm hidden-xs"></div> -->
             </div>
+
+            <div class="divider super-divider visible-lg visible-md"></div>
 
             <ul class="nav-root nav-special">
                 <li class="menu-link visible-sm-inline-block visible-xs-inline-block"><a href="javascript:void(0);"><span>Меню</span></a></li>
