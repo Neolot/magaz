@@ -14,9 +14,10 @@
                     <figure class="carousel-cell item sale">
                     <div class="item-thumb-wrapper">
                         <a href="#" class="item-thumb">
-                            <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
+                            <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
+                            <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                         </a>
-                        <div class="quickview hidden-xs clearfix">
+                        <div class="quickview hidden-sm hidden-xs clearfix">
                             <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                             <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                         </div>
@@ -35,9 +36,10 @@
                     <figure class="carousel-cell item">
                         <div class="item-thumb-wrapper">
                             <a href="#" class="item-thumb">
-                                <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview hidden-xs clearfix">
+                            <div class="quickview hidden-sm hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -50,9 +52,10 @@
                     <figure class="carousel-cell item">
                         <div class="item-thumb-wrapper">
                             <a href="#" class="item-thumb">
-                                <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview hidden-xs clearfix">
+                            <div class="quickview hidden-sm hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -65,9 +68,10 @@
                     <figure class="carousel-cell item">
                         <div class="item-thumb-wrapper">
                             <a href="#" class="item-thumb">
-                                <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview hidden-xs clearfix">
+                            <div class="quickview hidden-sm hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -80,9 +84,10 @@
                     <figure class="carousel-cell item">
                         <div class="item-thumb-wrapper">
                             <a href="#" class="item-thumb">
-                                <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview hidden-xs clearfix">
+                            <div class="quickview hidden-sm hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -95,9 +100,10 @@
                     <figure class="carousel-cell item">
                         <div class="item-thumb-wrapper">
                             <a href="#" class="item-thumb">
-                                <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview hidden-xs clearfix">
+                            <div class="quickview hidden-sm hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -110,9 +116,10 @@
                     <figure class="carousel-cell item">
                         <div class="item-thumb-wrapper">
                             <a href="#" class="item-thumb">
-                                <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                             </a>
-                            <div class="quickview hidden-xs clearfix">
+                            <div class="quickview hidden-sm hidden-xs clearfix">
                                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
@@ -125,9 +132,10 @@
                     <figure class="carousel-cell item">
                     <div class="item-thumb-wrapper">
                         <a href="#" class="item-thumb">
-                            <img src="http://placehold.it/150x225" width="150" height="225" alt=""/>
+                            <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
+                            <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                         </a>
-                        <div class="quickview hidden-xs clearfix">
+                        <div class="quickview hidden-sm hidden-xs clearfix">
                             <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                             <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                         </div>

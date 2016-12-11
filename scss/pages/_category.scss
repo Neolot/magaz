@@ -1,0 +1,84 @@
+.category {
+    padding: 0 0 3rem;
+    &-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+        text-transform: uppercase;
+    }
+    &-description {
+        font-size: 1.4rem;
+        color: $text;
+        padding-top: 3rem;
+        border-top: 1px solid $text;
+    }
+}
+
+.loop {
+    .item {
+        margin-bottom: 2rem;
+        text-align: center;
+        a {
+            color: $gray;
+            text-decoration: none;
+        }
+        @include respond-to(mobile-landscape) {
+            width: 210px;
+        }
+        &-thumb {
+            display: block;
+            border: 1px solid transparent;
+            position: relative;
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+            &-wrapper {
+                position: relative;
+                .quickview {
+                    width: 195px;
+                }
+                &:hover {
+                    .quickview {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+        &-bottom {
+            font-size: 1.2rem;
+            span {
+                display: block;
+                margin-top: 5px;
+            }
+            .price {
+                color: #000;
+                .price-old {
+                    height: 20px;
+                    font-size: 1rem;
+                    line-height: 20px;
+                    color: $text;
+                    position: relative;
+                    .discount {
+                        position: absolute;
+                        right: -45px;
+                        bottom: 0;
+                    }
+                }
+            }
+            @include respond-to(mobile-landscape) {
+                font-size: 1.6rem;
+                .price .price-old {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        @include respond-to(tablet-landscape) {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 1rem 2rem;
+        }
+    }
+}

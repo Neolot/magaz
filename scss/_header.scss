@@ -19,6 +19,9 @@
             @include respond-to(laptop) {
                 padding-left: 337px;
             }
+            @include respond-to(mobile-landscape) {
+                padding-left: 310px;
+            }
         }
 
         .phone {

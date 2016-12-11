@@ -3,9 +3,10 @@
 	<figure class="item sale">
         <div class="item-thumb-wrapper">
             <a href="#" class="item-thumb">
-                <img src="http://placehold.it/171x256" width="171" height="256" alt=""/>
+                <img src="http://placehold.it/171x256?text=1" width="171" height="256" alt=""/>
+                <img src="http://placehold.it/171x256?text=2" width="171" height="256" alt=""/>
             </a>
-            <div class="quickview hidden-xs clearfix">
+            <div class="quickview hidden-sm hidden-xs clearfix">
                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
             </div>
@@ -18,9 +19,10 @@
     <figure class="item">
         <div class="item-thumb-wrapper">
             <a href="#" class="item-thumb">
-                <img src="http://placehold.it/171x256" width="171" height="256" alt=""/>
+                <img src="http://placehold.it/171x256?text=1" width="171" height="256" alt=""/>
+                <img src="http://placehold.it/171x256?text=2" width="171" height="256" alt=""/>
             </a>
-            <div class="quickview hidden-xs clearfix">
+            <div class="quickview hidden-sm hidden-xs clearfix">
                 <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
             </div>

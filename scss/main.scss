@@ -1,15 +1,18 @@
 @charset "UTF-8";
 
-@import "variables";
-@import "mixins";
-@import "fonts";
-@import "owl.carousel";
-@import "socicon";
-@import "common";
+@import "common/_variables";
+@import "common/_mixins";
+@import "common/_fonts";
+@import "common/_owl.carousel";
+@import "common/_socicon";
+@import "common/_common";
+@import "common/_popup";
+@import "common/_colors";
+
 @import "header";
 @import "navigation";
-@import "product";
 @import "cart";
-@import "popup";
-@import "colors";
 @import "footer";
+
+@import "pages/_product";
+@import "pages/_category";

@@ -17,7 +17,7 @@
                                 <div class="dropdown-top">
                                     <div class="row">
                                         <div class="col-lg-4 col-lg-offset-8 col-md-6 col-sm-6 col-xs-8">
-                                            <div class="promo"><a href="#">Скидки до 70%</a></div>
+                                            <div class="promo"><a href="#">Скидки до <span class="percent">70</span></a></div>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-8">
                                             <div class="promo"><a href="#">Новинки: Обувь</a></div>
@@ -109,7 +109,7 @@
                                 <div class="dropdown-top">
                                     <div class="row">
                                         <div class="col-lg-4 col-lg-offset-8 col-md-6 col-sm-6 col-xs-8">
-                                            <div class="promo"><a href="#">Скидки до 70%</a></div>
+                                            <div class="promo"><a href="#">Скидки до <span class="percent">70</span></a></div>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-8">
                                             <div class="promo"><a href="#">Новинки: Обувь</a></div>

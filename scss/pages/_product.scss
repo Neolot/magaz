@@ -1,4 +1,4 @@
-.product, .qv {
+.product {
     &-gallery {
         img {
             max-width: 100%;
@@ -122,31 +122,9 @@
             }
         }
     }
+}
 
-    &-specs {
-        .product-options {
-            .breadcrumbs {
-                color: $light-gray;
-                a {
-                    color: $light-gray;
-                    text-decoration: none;
-                    &:hover {
-                        color: $text;
-                    }
-                }
-                .breadcrumb_last {
-                    color: $text;
-                }
-                @include respond-to(tablet-portrait) {
-                    text-align: center;
-                }
-                @include respond-to(mobile-portrait) {
-                    display: none;
-                }
-            }
-        }
-    }
-
+.product, .qv {
     &-title {
         font-size: 2rem;
         font-weight: bold;
@@ -544,6 +522,9 @@
                     width: 100%;
                     max-width: 100%;
                     height: auto;
+                    &:nth-child(2) {
+                        display: none;
+                    }
                 }
                 &-wrapper {
                     position: relative;
@@ -553,6 +534,14 @@
                     &:hover {
                         .quickview {
                             visibility: visible;
+                        }
+                        img {
+                            &:nth-child(1) {
+                                display: none;
+                            }
+                            &:nth-child(2) {
+                                display: block;
+                            }
                         }
                     }
                 }
