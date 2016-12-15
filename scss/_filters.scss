@@ -1,0 +1,192 @@
+.filters {
+    position: relative;
+    z-index: 102;
+    margin-top: 75px;
+
+    .divider {
+        height: 1px;
+        background-color: $text;
+        margin: 2rem 0;
+    }
+
+    &-selected {
+        &-meta {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            span {
+                float: left;
+            }
+            a {
+                float: right;
+                color: $text;
+                text-decoration: none;
+                border-bottom: 1px solid $text;
+                &:hover {
+                    color: #000;
+                    border-bottom-color: #000;
+                }
+            }
+        }
+        ul {
+            @include clearlist;
+            li {
+                background-color: $gray2;
+                padding: .5rem .8rem;
+                border: 1px solid $text;
+                font-size: 1.4rem;
+                margin-top: 1rem;
+                position: relative;
+                &:first-child {
+                    margin-top: 0;
+                }
+                span {
+                    &.filters-selected-fieldname {
+                        text-transform: uppercase;
+                    }
+                    &.filters-selected-fieldvalue {
+                        color: #000;
+                    }
+                    &.filters-selected-remove {
+                        width: 16px;
+                        height: 16px;
+                        background: center no-repeat url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE1LjZweCIgaGVpZ2h0PSIxNS42cHgiIHZpZXdCb3g9IjAgMCAxNS42IDE1LjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE1LjYgMTUuNjsiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6Izg3ODc4Nzt9Cjwvc3R5bGU+CjxkZWZzPgo8L2RlZnM+CjxnPgoJPHJlY3QgeD0iLTIuMiIgeT0iNi44IiB0cmFuc2Zvcm09Im1hdHJpeCgwLjcwNzEgMC43MDcxIC0wLjcwNzEgMC43MDcxIDcuNzc4MiAtMy4yMjE4KSIgY2xhc3M9InN0MCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIiLz4KCTxyZWN0IHg9Ii0yLjIiIHk9IjYuOCIgdHJhbnNmb3JtPSJtYXRyaXgoLTAuNzA3MSAwLjcwNzEgLTAuNzA3MSAtMC43MDcxIDE4Ljc3ODIgNy43NzgyKSIgY2xhc3M9InN0MCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIiLz4KPC9nPgo8L3N2Zz4K) ;
+                        position: absolute;
+                        top: .7rem;
+                        right: .8rem;
+                        cursor: pointer;
+                        &:hover {
+                            background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE1LjZweCIgaGVpZ2h0PSIxNS42cHgiIHZpZXdCb3g9IjAgMCAxNS42IDE1LjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE1LjYgMTUuNjsiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxkZWZzPgo8L2RlZnM+CjxnPgoJPHJlY3QgeD0iLTIuMiIgeT0iNi44IiB0cmFuc2Zvcm09Im1hdHJpeCgwLjcwNzEgMC43MDcxIC0wLjcwNzEgMC43MDcxIDcuNzc4MiAtMy4yMjE4KSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIiLz4KCTxyZWN0IHg9Ii0yLjIiIHk9IjYuOCIgdHJhbnNmb3JtPSJtYXRyaXgoLTAuNzA3MSAwLjcwNzEgLTAuNzA3MSAtMC43MDcxIDE4Ljc3ODIgNy43NzgyKSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIiLz4KPC9nPgo8L3N2Zz4K);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .filter {
+        margin-bottom: 1rem;
+        &-lock {
+            display: block;
+            padding: .5rem .8rem;
+            border: 1px solid $text;
+            font-size: 1.4rem;
+            position: relative;
+            color: $text;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:after {
+                content: '';
+                width: 16px;
+                height: 16px;
+                background: right center no-repeat url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjkuMnB4IiBoZWlnaHQ9IjE1LjZweCIgdmlld0JveD0iMCAwIDkuMiAxNS42IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5LjIgMTUuNjsiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6Izg3ODc4Nzt9Cjwvc3R5bGU+CjxkZWZzPgo8L2RlZnM+CjxnPgoJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIwLDEuNCA2LjQsNy44IDAsMTQuMSAxLjQsMTUuNiA3LjgsOS4yIDkuMiw3LjggNy44LDYuNCAxLjQsMCAJIi8+CjwvZz4KPC9zdmc+Cg==);
+                position: absolute;
+                top: .7rem;
+                right: .8rem;
+                -webkit-transition: all .25s ease;
+                -moz-transition: all .25s ease;
+                -ms-transition: all .25s ease;
+                -o-transition: all .25s ease;
+                transition: all .25s ease;
+            }
+            &:hover {
+                &:after {
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjkuMnB4IiBoZWlnaHQ9IjE1LjZweCIgdmlld0JveD0iMCAwIDkuMiAxNS42IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5LjIgMTUuNjsiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzAxMDIwMjt9Cjwvc3R5bGU+CjxkZWZzPgo8L2RlZnM+CjxnPgoJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIwLDEuNCA2LjQsNy44IDAsMTQuMSAxLjQsMTUuNiA3LjgsOS4yIDkuMiw3LjggNy44LDYuNCAxLjQsMCAJIi8+CjwvZz4KPC9zdmc+Cg==);
+                }
+            }
+        }
+
+        &.open {
+            .filter-box {
+                max-height: 300px;
+            }
+            .filter-lock:after {
+                background-position: center;
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+            }
+        }
+
+        &.filter-category.open ul {
+            max-height: 1000px;
+        }
+
+        .filter-box {
+            @include clearlist;
+            max-height: 0;
+            overflow: hidden;
+            -webkit-transition: all .25s ease;
+            -moz-transition: all .25s ease;
+            -ms-transition: all .25s ease;
+            -o-transition: all .25s ease;
+            transition: all .25s ease;
+            li {
+                padding: 0 .8rem;
+                font-size: 1.4rem;
+                margin: .5rem 0;
+                &:hover {
+                    color: #000;
+                    .jq-checkbox {
+                        border-color: #000;
+                    }
+                }
+            }
+        }
+
+        &-button {
+            a {
+                display: block;
+                padding: .5rem .8rem;
+                border: 1px solid $text;
+                font-size: 1.4rem;
+                color: $text;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:hover {
+                    background-color: $gray2;
+                }
+            }
+        }
+
+        &-color {
+            .filter-box {
+                padding: 0 .8rem;
+                li {
+                    display: inline-block;
+                    padding: 0 .2rem;
+                    .jq-checkbox {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .checked {
+                        border: 3px solid $text;
+                        .jq-checkbox__div {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-price {
+            &-fields {
+                padding: .8rem .8rem 0;
+                & > .row {
+                    & .col-xs-12:nth-child(2) {
+                        text-align: right;
+                    }
+                }
+                label {
+                    font-size: 1.4rem;
+                }
+                input {
+                    width: 65%;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

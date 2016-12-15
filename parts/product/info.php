@@ -75,5 +75,5 @@
 
 
 <div class="visible-sm visible-xs">
-	<?php include 'parts/product/additional.php' ?>
+	<?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/product/additional.php' ?>
 </div>

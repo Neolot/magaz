@@ -312,19 +312,6 @@
             text-transform: uppercase;
             text-decoration: none;
             border-bottom: 1px solid $text;
-            &:after {
-                content: '';
-                display: inline-block;
-                width: 5px;
-                height: 9px;
-                background: 0 0 no-repeat url(data:image/svg+xml;base64,//48ACEALQAtACAARwBlAG4AZQByAGEAdABvAHIAOgAgAEEAZABvAGIAZQAgAEkAbABsAHUAcwB0AHIAYQB0AG8AcgAgADEAOQAuADAALgAxACwAIABTAFYARwAgAEUAeABwAG8AcgB0ACAAUABsAHUAZwAtAEkAbgAgACAALQAtAD4ADQAKADwAcwB2AGcAIAB2AGUAcgBzAGkAbwBuAD0AIgAxAC4AMQAiAA0ACgAJACAAeABtAGwAbgBzAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAwAC8AcwB2AGcAIgAgAHgAbQBsAG4AcwA6AHgAbABpAG4AawA9ACIAaAB0AHQAcAA6AC8ALwB3AHcAdwAuAHcAMwAuAG8AcgBnAC8AMQA5ADkAOQAvAHgAbABpAG4AawAiACAAeABtAGwAbgBzADoAYQA9ACIAaAB0AHQAcAA6AC8ALwBuAHMALgBhAGQAbwBiAGUALgBjAG8AbQAvAEEAZABvAGIAZQBTAFYARwBWAGkAZQB3AGUAcgBFAHgAdABlAG4AcwBpAG8AbgBzAC8AMwAuADAALwAiAA0ACgAJACAAeAA9ACIAMABwAHgAIgAgAHkAPQAiADAAcAB4ACIAIAB3AGkAZAB0AGgAPQAiADUAcAB4ACIAIABoAGUAaQBnAGgAdAA9ACIAOQAuADIAcAB4ACIAIAB2AGkAZQB3AEIAbwB4AD0AIgAwACAAMAAgADUAIAA5AC4AMgAiACAAcwB0AHkAbABlAD0AIgBlAG4AYQBiAGwAZQAtAGIAYQBjAGsAZwByAG8AdQBuAGQAOgBuAGUAdwAgADAAIAAwACAANQAgADkALgAyADsAIgAgAHgAbQBsADoAcwBwAGEAYwBlAD0AIgBwAHIAZQBzAGUAcgB2AGUAIgA+AA0ACgA8AHMAdAB5AGwAZQAgAHQAeQBwAGUAPQAiAHQAZQB4AHQALwBjAHMAcwAiAD4ADQAKAAkALgBzAHQAMAB7AGYAaQBsAGwAOgBuAG8AbgBlADsAcwB0AHIAbwBrAGUAOgAjADgANwA4ADcAOAA3ADsAcwB0AHIAbwBrAGUALQB3AGkAZAB0AGgAOgAwAC4ANQA7AHMAdAByAG8AawBlAC0AbQBpAHQAZQByAGwAaQBtAGkAdAA6ADEAMAA7AH0ADQAKADwALwBzAHQAeQBsAGUAPgANAAoAPABkAGUAZgBzAD4ADQAKADwALwBkAGUAZgBzAD4ADQAKADwAcABvAGwAeQBsAGkAbgBlACAAYwBsAGEAcwBzAD0AIgBzAHQAMAAiACAAcABvAGkAbgB0AHMAPQAiADAALgAyACwAMAAuADIAIAA0AC4ANgAsADQALgA2ACAAMAAuADIALAA5AC4AMQAgACIALwA+AA0ACgA8AC8AcwB2AGcAPgANAA==);
-                background-size: cover;
-                margin-left: .5rem;
-            }
-            &:hover {
-                color: #000;
-                border-color: #000;
-            }
         }
         @include respond-to(tablet-portrait) {
             text-align: center;
@@ -442,7 +429,7 @@
                 @include effect-invert;
                 &:hover {
                     color: #5B5B5B;
-                    background-color: #F7F7F7;
+                    background-color: $gray2;
                 }
             }
         }

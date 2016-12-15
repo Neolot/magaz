@@ -3,15 +3,21 @@
 @import "common/_variables";
 @import "common/_mixins";
 @import "common/_fonts";
-@import "common/_owl.carousel";
-@import "common/_socicon";
+
 @import "common/_common";
 @import "common/_popup";
 @import "common/_colors";
 
+@import "common/_owl.carousel";
+@import "common/_socicon";
+@import "common/_jquery.formstyler";
+@import "common/ion.rangeSlider";
+@import "common/ion.rangeSlider.skinFlat";
+
 @import "header";
 @import "navigation";
 @import "cart";
+@import "filters";
 @import "footer";
 
 @import "pages/_product";

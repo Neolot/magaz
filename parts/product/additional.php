@@ -7,7 +7,7 @@
                 <img src="http://placehold.it/171x256?text=2" width="171" height="256" alt=""/>
             </a>
             <div class="quickview hidden-sm hidden-xs clearfix">
-                <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
+                <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
             </div>
         </div>
@@ -23,7 +23,7 @@
                 <img src="http://placehold.it/171x256?text=2" width="171" height="256" alt=""/>
             </a>
             <div class="quickview hidden-sm hidden-xs clearfix">
-                <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
+                <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
             </div>
         </div>

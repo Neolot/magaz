@@ -132,6 +132,84 @@
             }
         });
 
+        // Category view mode
+        var $sitecontent = $('#site-content');
+        var $loop = $('#loop', $sitecontent);
+        $('.viewmode-3col', $sitecontent).click(function() {
+            if ( !$(this).hasClass('active') ) {
+                $(this).addClass('active').siblings('a').removeClass('active');
+            }
+            $(this).addClass('active')
+            if ( !$loop.hasClass('loop-3col') ) {
+                $('> .row', $loop)
+                .animate(
+                    {opacity: 0},
+                    300,
+                    function(){
+                        $('> div', this).removeClass('col-lg-6').addClass('col-lg-8');
+                        $loop.removeClass('loop-4col').addClass('loop-3col');
+                    }
+                )
+                .animate(
+                    {opacity: 1},
+                    300
+                );
+            }
+        });
+        $('.viewmode-4col', $sitecontent).click(function() {
+            if ( !$(this).hasClass('active') ) {
+                $(this).addClass('active').siblings('a').removeClass('active');
+            }
+            if ( !$loop.hasClass('loop-4col') ) {
+                $('> .row', $loop)
+                .animate(
+                    {opacity: 0},
+                    300,
+                    function(){
+                        $('> div', this).removeClass('col-lg-8').addClass('col-lg-6');
+                        $loop.removeClass('loop-3col').addClass('loop-4col');
+                    }
+                )
+                .animate(
+                    {opacity: 1},
+                    300
+                );
+            }
+        });
+
+        // Form Styler
+        $('.hasdropdown input[type="radio"], #filters .filter input[type="checkbox"]').styler();
+
+        // Dropdowns
+        $('.hasdropdown a').click(function() {
+            $(this).parent().toggleClass('open');
+        });
+        $('html').click(function() {
+            $('.hasdropdown').removeClass('open');
+        });
+        $('.hasdropdown').click(function(event) {
+            event.stopPropagation();
+        });
+
+        // Filters
+        var $filters = $('#filters');
+        $('.filter .filter-lock', $filters).click(function() {
+            $(this).parent().toggleClass('open');
+        });
+        $('.filter-range .filter-price-range', $filters).ionRangeSlider({
+            type: 'double',
+            hide_min_max: true,
+            hide_from_to: true,
+            onStart: function (data) {
+                $('.filter-price-from', $filters).val(data.from);
+                $('.filter-price-to', $filters).val(data.to);
+            },
+            onChange: function (data) {
+                $('.filter-price-from', $filters).val(data.from);
+                $('.filter-price-to', $filters).val(data.to);
+            }
+        });
+
         // Responsive
         $.extend(verge);
         var screen_width = $.viewport().width;

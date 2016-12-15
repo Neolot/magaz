@@ -9,12 +9,78 @@
     &-description {
         font-size: 1.4rem;
         color: $text;
-        padding-top: 3rem;
+        padding-top: 1rem;
         border-top: 1px solid $text;
     }
 }
 
+.category-tools {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    a {
+        color: $text;
+        text-decoration: none;
+        border-bottom: 1px solid $text;
+        &:hover {
+            color: #000;
+            border-bottom-color: #000;
+        }
+    }
+    &-top {
+        margin-bottom: 1.5rem;
+    }
+    &-bottom {
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .items-found {
+        span {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+    }
+    .sort {
+        text-align: right;
+    }
+    .viewmode {
+        text-align: center;
+        a {
+            display: inline-block;
+            height: 16px;
+            border: none;
+            margin: 0 .2rem;
+            span {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border: 1px solid $text;
+            }
+            &.active {
+                span {
+                    background-color: $text;
+                }
+            }
+        }
+    }
+}
+
 .loop {
+    &.loop-3col {
+        & > .row > div:nth-child(3n+1) {
+            clear: left;
+        }
+        & .item .quickview {
+            width: 267.5px;
+        }
+    }
+    &.loop-4col {
+        & > .row > div:nth-child(4n+1) {
+            clear: left;
+        }
+        & .item .quickview {
+            width: 195.5px;
+        }
+    }
     .item {
         margin-bottom: 2rem;
         text-align: center;
@@ -33,15 +99,26 @@
                 width: 100%;
                 max-width: 100%;
                 height: auto;
+                &:nth-child(2) {
+                    display: none;
+                }
             }
             &-wrapper {
                 position: relative;
                 .quickview {
-                    width: 195px;
+                    width: 195.5px;
                 }
                 &:hover {
                     .quickview {
                         visibility: visible;
+                    }
+                    img {
+                        &:nth-child(1) {
+                            display: none;
+                        }
+                        &:nth-child(2) {
+                            display: block;
+                        }
                     }
                 }
             }

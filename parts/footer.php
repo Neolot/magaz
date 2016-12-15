@@ -18,7 +18,7 @@
                             <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                         </a>
                         <div class="quickview hidden-sm hidden-xs clearfix">
-                            <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
+                            <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                             <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                                 <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                             </a>
                             <div class="quickview hidden-sm hidden-xs clearfix">
-                                <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
+                                <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
                         </div>
@@ -56,7 +56,7 @@
                                 <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                             </a>
                             <div class="quickview hidden-sm hidden-xs clearfix">
-                                <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
+                                <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                                 <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                             </a>
                             <div class="quickview hidden-sm hidden-xs clearfix">
-                                <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
+                                <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                                 <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                             </a>
                             <div class="quickview hidden-sm hidden-xs clearfix">
-                                <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
+                                <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
                         </div>
@@ -104,7 +104,7 @@
                                 <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                             </a>
                             <div class="quickview hidden-sm hidden-xs clearfix">
-                                <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
+                                <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
                         </div>
@@ -120,7 +120,7 @@
                                 <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                             </a>
                             <div class="quickview hidden-sm hidden-xs clearfix">
-                                <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
+                                <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                                 <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                             </div>
                         </div>
@@ -136,7 +136,7 @@
                             <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
                         </a>
                         <div class="quickview hidden-sm hidden-xs clearfix">
-                            <a href="parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
+                            <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
                             <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
                         </div>
                     </div>
@@ -212,12 +212,14 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/jquery.cycle2.min.js"></script>
-<script src="js/jquery.cycle2.swipe.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/fancybox/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/verge.min.js"></script>
-<script src="js/main.js"></script>
+<script src="/js/jquery.cycle2.min.js"></script>
+<script src="/js/jquery.cycle2.swipe.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="/js/jquery.maskedinput.min.js"></script>
+<script src="/js/verge.min.js"></script>
+<script src="/js/jquery.formstyler.js"></script>
+<script src="/js/ion.rangeSlider.min.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>

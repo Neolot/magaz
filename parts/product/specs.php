@@ -57,7 +57,7 @@
 					</ul>
                     <span class="error-text">– пожалуйста, выберите размер</span>
 					<div class="sizes-table-link">
-						<a href="parts/popups/sizes.html" class="popup various fancybox.ajax" data-fancybox-type="ajax">Таблица размеров</a>
+						<a href="/parts/popups/sizes.html" class="popup arr various fancybox.ajax" data-fancybox-type="ajax">Таблица размеров</a>
 					</div>
 				</div>
 
@@ -68,7 +68,7 @@
 					<a href="#">Товар в корзине</a>
 				</div>
 				<div class="buy1click">
-					<a href="parts/popups/quickorder.html" data-fancybox-type="ajax" class="popup various fancybox.ajax">Купить в 1 клик</a>
+					<a href="/parts/popups/quickorder.html" data-fancybox-type="ajax" class="popup arr various fancybox.ajax">Купить в 1 клик</a>
 				</div>
 
 				<div class="product-brand">
@@ -80,7 +80,7 @@
 		</div>
 
 		<div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
-			<?php include 'parts/product/additional.php' ?>
+			<?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/product/additional.php' ?>
 		</div>
 	</div>
 </div> <!-- /.product-specs -->

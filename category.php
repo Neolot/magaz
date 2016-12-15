@@ -1,4 +1,4 @@
-<?php include 'parts/header.php'?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/header.php'; ?>
 
 <main class="site-content" id="site-content">
     <div class="container">
@@ -9,7 +9,7 @@
 
                     <h1 class="category-title">Рубашки и блузы</h1>
 
-                    <div class="category-tools-top">
+                    <div class="category-tools category-tools-top">
                         <div class="row">
                             <div class="col-lg-8">
                                 <div class="items-found">
@@ -19,21 +19,58 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="viewmode">
-                                    <a href="#" class="viewmode-3col"></a>
-                                    <a href="#" class="viewmode-4col"></a>
+                                    <a href="#" class="viewmode-3col" title="Товары в 3 колонки">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                    <a href="#" class="viewmode-4col active" title="Товары в 4 колонки">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                <div class="sort">
-                                    <a href="#">Сортировать по:</a>
+                                <div class="sort hasdropdown">
+                                    <a href="#" class="arr">Сортировать по:</a>
+                                    <div class="dropdown">
+                                        <ul>
+                                            <li><label><input type="radio" name="sort-mode" checked/> Цена по возростанию</label></li>
+                                            <li><label><input type="radio" name="sort-mode"/> Цена по убыванию</label></li>
+                                            <li><label><input type="radio" name="sort-mode"/> Новинки</label></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <?php include 'parts/category/loop.php' ?>
+                    <?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/category/loop.php' ?>
 
-                    <div class="category-tools-bottom"></div>
+                    <div class="category-tools category-tools-bottom">
+                        <div class="row">
+                            <div class="col-lg-24">
+                                <!--<div class="items-found">
+                                    <span>Всего найдено: 156</span>
+                                    <a href="#">Показать все</a>
+                                </div>-->
+
+                                <div class="pagination">
+                                    <a href="#" class="item previous">Предыдущая страница</a>
+                                    <a href="#" class="item">1</a>
+                                    <a href="#" class="item">2</a>
+                                    <a href="#" class="item current">3</a>
+                                    <a href="#" class="item">4</a>
+                                    <a href="#" class="item">5</a>
+                                    <span>...</span>
+                                    <a href="#" class="item">34</a>
+                                    <a href="#" class="item next">Следующая страница</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="category-description">
                         <p>РУБАШКИ И БЛУЗЫ</p>
@@ -44,12 +81,14 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-lg-pull-18">Sidebar</div>
+                <div class="col-lg-6 col-lg-pull-18">
+                    <?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/category/filters.php'; ?>
+                </div>
             </div>
         </div> <!-- /.category -->
     </div>
 </main>
 
-<?php include 'parts/product/cart.php' ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/product/cart.php'; ?>
 
-<?php include 'parts/footer.php'?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/footer.php'; ?>

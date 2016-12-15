@@ -35,7 +35,8 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/main.css" type="text/css" media="all"/>
-    <!--[if lt IE 9]><script src="js/html5shiv.min.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script><![endif]-->
 </head>
 <body>
     <div class="container">
