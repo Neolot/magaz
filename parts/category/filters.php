@@ -96,10 +96,6 @@
 		</ul>
 	</div>
 
-    <div class="filter filter-button filter-new">
-		<a href="javascript:void(0);">Новинки</a>
-	</div>
-
 	<div class="filter filter-checkbox filter-discount">
 		<a href="javascript:void(0);" class="filter-lock">Скидки:</a>
 		<ul class="filter-box">
@@ -107,6 +103,10 @@
 			<li><label><input type="checkbox"/> 10%</label></li>
 			<li><label><input type="checkbox"/> 30%</label></li>
 		</ul>
+	</div>
+
+    <div class="filter filter-button filter-new">
+		<a href="javascript:void(0);">Новинки</a>
 	</div>
 
 	<div class="filter filter-button filter-sale">

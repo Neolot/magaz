@@ -4,20 +4,20 @@
     <div class="container">
         <div class="category">
             <div class="row">
-                <div class="col-lg-18 col-lg-push-6">
+                <div class="col-lg-18 col-lg-push-6 col-md-17 col-md-push-7 col-sm-15 col-sm-push-9">
                     <div class="breadcrumbs"><span xmlns:v="http://rdf.data-vocabulary.org/#"> <span typeof="v:Breadcrumb"> <a href="#" rel="v:url" property="v:title">Женское</a> / <span class="breadcrumb_last">Рубашки и блузы</span></span></span> </div>
 
                     <h1 class="category-title">Рубашки и блузы</h1>
 
                     <div class="category-tools category-tools-top">
                         <div class="row">
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 col-md-10 col-sm-15">
                                 <div class="items-found">
                                     <span>Всего найдено: 156</span>
                                     <a href="#">Показать все</a>
                                 </div>
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 col-md-7 hidden-sm">
                                 <div class="viewmode">
                                     <a href="#" class="viewmode-3col" title="Товары в 3 колонки">
                                         <span></span>
@@ -32,7 +32,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 col-md-7 col-sm-9">
                                 <div class="sort hasdropdown">
                                     <a href="#" class="arr">Сортировать по:</a>
                                     <div class="dropdown">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-lg-pull-18">
+                <div class="col-lg-6 col-lg-pull-18 col-md-7 col-md-pull-17 col-sm-9 col-sm-pull-15">
                     <?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/category/filters.php'; ?>
                 </div>
             </div>
