@@ -72,8 +72,3 @@
         </div>
     </div> <!-- /.product-info -->
 </div>
-
-
-<div class="visible-sm visible-xs">
-	<?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/product/additional.php' ?>
-</div>

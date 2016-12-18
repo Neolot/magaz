@@ -79,7 +79,7 @@
 			</div>
 		</div>
 
-		<div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
+		<div class="col-lg-4 col-md-4" id="additional_home">
 			<?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/product/additional.php' ?>
 		</div>
 	</div>

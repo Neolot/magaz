@@ -1,10 +1,14 @@
 .category {
     padding: 0 0 3rem;
+    position: relative;
     &-title {
         font-size: 2rem;
         font-weight: bold;
         color: #000;
         text-transform: uppercase;
+        @include respond-to(mobile-landscape) {
+            text-align: center;
+        }
     }
     &-description {
         font-size: 1.4rem;
@@ -28,10 +32,17 @@
     }
     &-top {
         margin-bottom: 1.5rem;
+        @include respond-to(mobile-landscape) {
+            text-align: center;
+        }
+        .mobile-pager {
+            margin-top: 2rem;
+        }
     }
     &-bottom {
         padding-top: 2rem;
         margin-bottom: 2rem;
+        position: relative;
     }
     .items-found {
         span {
@@ -62,31 +73,49 @@
             }
         }
     }
+    .mobile-pager {
+        display: none;
+        font: 1.6rem 'robotoregular';
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem;
+        margin: 2rem 0;
+        color: $text;
+        text-decoration: none !important;
+        border: 1px solid $text;
+        @include respond-to(mobile-portrait) {
+            display: block;
+        }
+    }
 }
 
 .loop {
-    &.loop-3col {
-        & > .row > div:nth-child(3n+1) {
-            clear: left;
-        }
-        & .item .quickview {
-            width: 267.5px;
-        }
-    }
-    &.loop-4col {
+    position: relative;
+    &[data-columns="4"] {
         & > .row > div:nth-child(4n+1) {
             clear: left;
         }
-        & .item .quickview {
-            width: 195.5px;
+    }
+    &[data-columns="3"] {
+        & > .row > div:nth-child(3n+1) {
+            clear: left;
         }
-        @include respond-to(tablet-landscape) {
-            & > .row > div:nth-child(3n+1) {
+    }
+    @include respond-to(tablet-portrait) {
+        &[data-columns="3"] > .row > .col-xs-24 {
+            width: 33.33333333%;
+            &:nth-child(3n+1) {
                 clear: left;
             }
-            & > .row > div:nth-child(4n+1) {
-                clear: none;
+        }
+        &[data-columns="2"] > .row > .col-xs-24 {
+            width: 50%;
+            &:nth-child(2n+1) {
+                clear: left;
             }
+        }
+        &[data-columns="1"] > .row > .col-xs-24 {
+            width: 100%;
         }
     }
     .item {
@@ -96,13 +125,19 @@
             color: $gray;
             text-decoration: none;
         }
-        @include respond-to(mobile-landscape) {
-            width: 210px;
+        @include respond-to(tablet-landscape) {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 0 2rem;
+        }
+        @include respond-to(mobile-portrait) {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         &-thumb {
             display: block;
             border: 1px solid transparent;
-            position: relative;
             img {
                 display: block;
                 width: 100%;
@@ -114,9 +149,6 @@
             }
             &-wrapper {
                 position: relative;
-                .quickview {
-                    width: 195.5px;
-                }
                 &:hover {
                     .quickview {
                         visibility: visible;
@@ -160,11 +192,50 @@
                 }
             }
         }
+    }
+}
 
-        @include respond-to(tablet-landscape) {
-            display: inline-block;
-            vertical-align: top;
-            margin: 0 0 2rem;
+.sort-dropdown {
+    @include respond-to(tablet-portrait) {
+        display: block;
+        position: absolute;
+        width: $filters_width;
+        transition: all .5s cubic-bezier(.645,.045,.355,1);
+        background: #000000;
+        background: -moz-linear-gradient(top,  #000000 0%, #282828 100%);
+        background: -webkit-linear-gradient(top,  #000000 0%,#282828 100%);
+        background: linear-gradient(to bottom,  #000000 0%,#282828 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#282828',GradientType=0 );
+        top: 128px;
+        left: 0;
+        overflow: hidden !important;
+        z-index: 9999;
+        margin-top: 0 !important;
+        -webkit-transform: translate3d(-$filters_width,0,0);
+        transform: translate3d(-$filters_width,0,0);
+        &.open {
+            transition: all .5s cubic-bezier(.645,.045,.355,1);
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        ul {
+            @include clearlist;
+            padding: .5rem;
+            li {
+                padding: .5rem 1rem;
+                label {
+                    font-size: 1.6rem;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+                .jq-radio.checked .jq-radio__div {
+                    background-color: #fff;
+                }
+                .jq-radio {
+                    background-color: $text;
+                }
+            }
         }
     }
 }

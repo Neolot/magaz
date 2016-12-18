@@ -36,6 +36,10 @@
         &-wrapper {
             padding-left: 58px;
             position: relative;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
         }
         &-pager {
             width: 48px;

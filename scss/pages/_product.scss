@@ -515,9 +515,6 @@
                 }
                 &-wrapper {
                     position: relative;
-                    .quickview {
-                        width: 171px;
-                    }
                     &:hover {
                         .quickview {
                             visibility: visible;
@@ -619,9 +616,6 @@
                         }
                     }
                 }
-                .quickview {
-                    width: 150px;
-                }
                 @include respond-to(mobile-landscape) {
                     .item-bottom {
                         font-size: 1.6rem;
@@ -645,9 +639,6 @@
                 width: 228px;
                 &-thumb span {
                     padding: 1.5rem 0 1.2rem;
-                }
-                .quickview {
-                    width: 226px;
                 }
                 @include respond-to(mobile-landscape) {
                     width: 210px;

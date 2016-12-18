@@ -4,7 +4,7 @@
 <!--[if (gt IE 9)|!(IE)]><html><![endif]-->
 <head>
     <meta charset="utf-8"/>
-    <title>Product Page</title>
+    <title>НУМ</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">

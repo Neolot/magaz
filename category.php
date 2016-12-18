@@ -14,10 +14,10 @@
                             <div class="col-lg-8 col-md-10 col-sm-15">
                                 <div class="items-found">
                                     <span>Всего найдено: 156</span>
-                                    <a href="#">Показать все</a>
+                                    <a href="#" class="hidden-xs">Показать все</a>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-7 hidden-sm">
+                            <div class="col-lg-8 col-md-7 hidden-sm hidden-xs">
                                 <div class="viewmode">
                                     <a href="#" class="viewmode-3col" title="Товары в 3 колонки">
                                         <span></span>
@@ -32,10 +32,10 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-7 col-sm-9">
-                                <div class="sort hasdropdown">
+                            <div class="col-lg-8 col-md-7 col-sm-9 hidden-xs">
+                                <div class="sort hasdropdown" id="sort-dropdown-home">
                                     <a href="#" class="arr">Сортировать по:</a>
-                                    <div class="dropdown">
+                                    <div class="sort-dropdown dropdown" id="sort-dropdown">
                                         <ul>
                                             <li><label><input type="radio" name="sort-mode" checked/> Цена по возростанию</label></li>
                                             <li><label><input type="radio" name="sort-mode"/> Цена по убыванию</label></li>
@@ -45,6 +45,7 @@
                                 </div>
                             </div>
                         </div>
+                        <a href="#" class="mobile-pager">Предыдущая страница</a>
                     </div>
 
                     <?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/category/loop.php' ?>
@@ -52,22 +53,28 @@
                     <div class="category-tools category-tools-bottom">
                         <div class="row">
                             <div class="col-lg-24">
+                                <!-- Внизу страницы должен быть либо блок .items-found, либо .pagination, либо .mobile-pager -->
+
                                 <!--<div class="items-found">
                                     <span>Всего найдено: 156</span>
                                     <a href="#">Показать все</a>
                                 </div>-->
 
                                 <div class="pagination">
-                                    <a href="#" class="item previous">Предыдущая страница</a>
-                                    <a href="#" class="item">1</a>
-                                    <a href="#" class="item">2</a>
-                                    <a href="#" class="item current">3</a>
-                                    <a href="#" class="item">4</a>
-                                    <a href="#" class="item">5</a>
-                                    <span>...</span>
-                                    <a href="#" class="item">34</a>
-                                    <a href="#" class="item next">Следующая страница</a>
-                                </div>
+                                     <a href="#" class="item previous">Предыдущая страница</a>
+                                     <a href="#" class="item">1</a>
+                                     <a href="#" class="item">2</a>
+                                     <a href="#" class="item current">3</a>
+                                     <a href="#" class="item">4</a>
+                                     <a href="#" class="item">5</a>
+                                     <span>...</span>
+                                     <a href="#" class="item">34</a>
+                                     <a href="#" class="item next">Следующая страница</a>
+                                 </div>
+
+                                <a href="#" class="mobile-pager">Следующая страница</a>
+
+                                <a href="#top" class="scroll2top scroll2top-mini hidden-xs">Наверх</a>
                             </div>
                         </div>
                     </div>
@@ -81,7 +88,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-lg-pull-18 col-md-7 col-md-pull-17 col-sm-9 col-sm-pull-15">
+                <div class="col-lg-6 col-lg-pull-18 col-md-7 col-md-pull-17 col-sm-9 col-sm-pull-15 sliding" id="filters_home">
                     <?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/category/filters.php'; ?>
                 </div>
             </div>

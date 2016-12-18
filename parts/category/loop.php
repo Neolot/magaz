@@ -1,6 +1,6 @@
-<div class="loop loop-4col" id="loop">
+<div class="loop" id="loop" data-columns="4">
 	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-8">
+		<div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item sale">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -18,7 +18,7 @@
 		        </a>
 		    </figure>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-8">
+		<div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -36,7 +36,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -54,7 +54,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -72,7 +72,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item sale">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -90,7 +90,7 @@
 		        </a>
 		    </figure>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-8">
+		<div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -108,7 +108,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -126,7 +126,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -144,7 +144,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item sale">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -162,7 +162,7 @@
 		        </a>
 		    </figure>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-8">
+		<div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -180,7 +180,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -198,7 +198,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -216,7 +216,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item sale">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -234,7 +234,7 @@
 		        </a>
 		    </figure>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-8">
+		<div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -252,7 +252,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -270,7 +270,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -288,7 +288,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item sale">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -306,7 +306,7 @@
 		        </a>
 		    </figure>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-8">
+		<div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -324,7 +324,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -342,7 +342,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -360,7 +360,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item sale">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -378,7 +378,7 @@
 		        </a>
 		    </figure>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-8">
+		<div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -396,7 +396,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -414,7 +414,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -432,7 +432,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item sale">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -450,7 +450,7 @@
 		        </a>
 		    </figure>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-8">
+		<div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -468,7 +468,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -486,7 +486,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -504,7 +504,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item sale">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -522,7 +522,7 @@
 		        </a>
 		    </figure>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-8">
+		<div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -540,7 +540,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">
@@ -558,7 +558,7 @@
 		        </a>
 		    </figure>
 		</div>
-        <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
 			<figure class="item">
 		        <div class="item-thumb-wrapper">
 		            <a href="#" class="item-thumb">

@@ -66,6 +66,14 @@
 	</div>
 
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/navigation.php' ?>
+
+    <div class="categorynav-mobile visible-xs" id="categorynav-mobile">
+        <ul>
+            <li class="categorynav-mobile-filters"><a href="#"></a></li>
+            <li class="categorynav-mobile-view"><a href="#" data-columns="2"></a></li>
+            <li class="categorynav-mobile-sort"><a href="#" ></a></li>
+        </ul>
+    </div>
 </header>
 
 <div class="triangle"></div>
