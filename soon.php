@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
-<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><html><![endif]-->
+<html class="soon">
 <head>
     <meta charset="utf-8"/>
     <title>НУМ</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="HandheldFriendly" content="true">
 
@@ -38,17 +36,6 @@
     <!--[if lt IE 9]><script src="/js/vendor/html5shiv/html5shiv.min.js"></script><![endif]-->
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-24">
-                <h1>Magaz</h1>
-                <ul>
-                    <li><a href="soon.php">Заглушка</a></li>
-                    <li><a href="product.php">Товар</a></li>
-                    <li><a href="category.php">Категория</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+	<img src="/images/soon.svg">
 </body>
 </html>

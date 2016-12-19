@@ -23,6 +23,7 @@
     }
     &.mobile-menu {
         .navs {
+            max-height: 2000px;
             border-top: 1px solid #999 !important;
         }
         .menu-link a {
@@ -56,7 +57,7 @@
         max-height: 96px;
         position: relative;
         .navs {
-            max-height: 48px;
+            //max-height: 48px;
             .nav-root, .divider {
                 max-height: 48px;
             }
@@ -124,7 +125,6 @@
         }
         @include respond-to(mobile-landscape) {
             .navs {
-                max-height: 2000px;
                 text-align: left !important;
                 z-index: 3;
                 overflow: hidden;
