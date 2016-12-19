@@ -212,14 +212,6 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/js/jquery.cycle2.min.js"></script>
-<script src="/js/jquery.cycle2.swipe.min.js"></script>
-<script src="/js/owl.carousel.min.js"></script>
-<script src="/js/fancybox/jquery.fancybox.pack.js"></script>
-<script src="/js/jquery.maskedinput.min.js"></script>
-<script src="/js/verge.min.js"></script>
-<script src="/js/jquery.formstyler.js"></script>
-<script src="/js/ion.rangeSlider.min.js"></script>
-<script src="/js/main.js"></script>
+<script src="/js/app.min.js"></script>
 </body>
 </html>

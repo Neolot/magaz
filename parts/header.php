@@ -33,9 +33,9 @@
     <link rel="mask-icon" sizes="any" href="/images/mask.svg" color="#D11825">
     <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css" type="text/css" media="all"/>
-    <link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css" type="text/css" media="all"/>
-    <link rel="stylesheet" href="/css/main.css" type="text/css" media="all"/>
-    <!--[if lt IE 9]><script src="/js/html5shiv.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="/js/vendor/fancybox/jquery.fancybox.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="/css/app.min.css" type="text/css" media="all"/>
+    <!--[if lt IE 9]><script src="/js/vendor/html5shiv/html5shiv.min.js"></script><![endif]-->
 </head>
 <body>
 
