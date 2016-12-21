@@ -6,13 +6,12 @@
 
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    sourcemaps = require('gulp-sourcemaps'),
+    autoprefixer = require('gulp-autoprefixer'),
+    combineMq = require('gulp-combine-mq'),
     minifyCss = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
-    autoprefixer = require('gulp-autoprefixer'),
     rename = require("gulp-rename"),
-    concat = require("gulp-concat"),
-    combineMq = require('gulp-combine-mq');
+    concat = require("gulp-concat");
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // scss
@@ -20,13 +19,11 @@ var gulp = require('gulp'),
 
 gulp.task('scss', function () {
     gulp.src('./scss/app.scss')
-        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(combineMq())
         .pipe(autoprefixer({browsers: ['> 1%', 'last 2 version', 'IE 9-11'], cascade: false}))
+        .pipe(combineMq({beautify: false}))
         .pipe(minifyCss())
         .pipe(rename('app.min.css'))
-        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./css'));
 });
 

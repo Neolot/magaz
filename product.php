@@ -1,7 +1,7 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/header.php'?>
 
 <main class="site-content" id="site-content">
-	<article class="product">
+	<article class="product-container">
 		<div class="container">
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/product/specs.php' ?>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/product/info.php' ?>

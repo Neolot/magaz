@@ -39,7 +39,7 @@
 
         // Move additional products
         if ( screen_width <= media.tabletLandscape ) {
-            $('.product-additional', $sitecontent).detach().appendTo('.product .container', $sitecontent);
+            $('.product-additional', $sitecontent).detach().appendTo('.product-container', $sitecontent);
         }
 
         // Move filters
@@ -82,7 +82,7 @@
             }
 
             if ( screen_width <= media.tabletLandscape ) {
-                $('.product-additional', $sitecontent).detach().appendTo('.product .container', $sitecontent);
+                $('.product-additional', $sitecontent).detach().appendTo('.product-container', $sitecontent);
             } else {
                 $('.product-additional', $sitecontent).detach().appendTo('#additional_home');
             }
@@ -378,9 +378,9 @@
         });
 
         // Filters Fixed Sidebar
-        /*if ( $('.category', $sitecontent).length > 0 ) {
+        /*if ( $('.category-container', $sitecontent).length > 0 ) {
             function setCategorySidebarHeight() {
-                var cat_h = $('.category', $sitecontent).height();
+                var cat_h = $('.category-container', $sitecontent).height();
                 $('.sliding', $sitecontent).height(cat_h);
                 return cat_h;
             }
@@ -388,7 +388,7 @@
                 var category_h = setCategorySidebarHeight();
                 var $sidebar = $('.sliding', $sitecontent);
                 var filters_h = $filters.outerHeight(true);
-                var start_offset = $('.category', $sitecontent).offset().top + $filters.offset().top;
+                var start_offset = $('.category-container', $sitecontent).offset().top + $filters.offset().top;
                 var top_margin = 20;
 
                 $(window).scroll(function () {
