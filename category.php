@@ -2,7 +2,7 @@
 
 <main class="site-content" id="site-content">
     <div class="container">
-        <div class="category">
+        <div class="category-container">
             <div class="row">
                 <div class="col-lg-18 col-lg-push-6 col-md-17 col-md-push-7 col-sm-15 col-sm-push-9">
                     <div class="breadcrumbs"><span xmlns:v="http://rdf.data-vocabulary.org/#"> <span typeof="v:Breadcrumb"> <a href="#" rel="v:url" property="v:title">Женское</a> / <span class="breadcrumb_last">Рубашки и блузы</span></span></span> </div>
@@ -48,7 +48,9 @@
                         <a href="#" class="mobile-pager">Предыдущая страница</a>
                     </div>
 
-                    <?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/category/loop.php' ?>
+                    <div class="loop" id="loop" data-columns="4">
+                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/category/loop.php' ?>
+                    </div>
 
                     <div class="category-tools category-tools-bottom">
                         <div class="row">

@@ -37,12 +37,13 @@
     <link rel="stylesheet" href="/css/app.min.css" type="text/css" media="all"/>
     <!--[if lt IE 9]><script src="/js/vendor/html5shiv/html5shiv.min.js"></script><![endif]-->
 </head>
-<body>
+<body <?php echo 'class="' . basename($_SERVER['SCRIPT_NAME'], '.php') . '"'; ?>>
     <div class="container">
         <div class="row">
             <div class="col-lg-24">
                 <h1>Magaz</h1>
                 <ul>
+                    <li><a href="home.php">Главная</a></li>
                     <li><a href="soon.php">Заглушка</a></li>
                     <li><a href="product.php">Товар</a></li>
                     <li><a href="category.php">Категория</a></li>

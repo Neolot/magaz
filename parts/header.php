@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="/css/app.min.css" type="text/css" media="all"/>
     <!--[if lt IE 9]><script src="/js/vendor/html5shiv/html5shiv.min.js"></script><![endif]-->
 </head>
-<body>
+<body <?php echo 'class="' . basename($_SERVER['SCRIPT_NAME'], '.php') . '"'; ?>>
 
 <header class="site-header" id="site-header">
 	<div class="site-header-top" id="top">
