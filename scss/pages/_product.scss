@@ -528,6 +528,11 @@
                             }
                         }
                     }
+                    &.noswap:hover {
+                        img:nth-child(1) {
+                            display: block;
+                        }
+                    }
                 }
             }
             &-bottom {

@@ -126,9 +126,12 @@
     }
     &-image {
         width: 178px;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
         @include respond-to(mobile-portrait) {
             width: 125px;
             img {

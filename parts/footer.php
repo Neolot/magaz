@@ -12,41 +12,25 @@
 				</div>
                 <div class="carousel-wrapper">
                     <figure class="carousel-cell item sale">
-                    <div class="item-thumb-wrapper">
-                        <a href="#" class="item-thumb">
-                            <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
-                            <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
-                        </a>
-                        <div class="quickview hidden-sm hidden-xs clearfix">
-                            <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
-                            <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
+                        <div class="item-thumb-wrapper">
+                            <a href="#" class="item-thumb">
+                                <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
+                            </a>
+                            <div class="quickview hidden-sm hidden-xs clearfix">
+                                <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
+                                <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
+                            </div>
                         </div>
-                    </div>
-					<a href="#" class="item-bottom">
-						<span class="title">Свободная рубашка NNEDRE</span>
-						<span class="price">3 640 руб.
-                            <div class="price-old-wrapper">
-                                <div class="price-old">5 200 руб.
-                                    <div class="discount">-30%</div>
+                        <a href="#" class="item-bottom">
+                            <span class="title">Свободная рубашка NNEDRE</span>
+                            <span class="price">3 640 руб.
+                                <div class="price-old-wrapper">
+                                    <div class="price-old">5 200 руб.
+                                        <div class="discount">-30%</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </span>
-					</a>
-				</figure>
-                    <figure class="carousel-cell item">
-                        <div class="item-thumb-wrapper">
-                            <a href="#" class="item-thumb">
-                                <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
-                                <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
-                            </a>
-                            <div class="quickview hidden-sm hidden-xs clearfix">
-                                <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
-                                <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
-                            </div>
-                        </div>
-                        <a href="#" class="item-bottom">
-                            <span class="title">Свободная рубашка NNEDRE</span>
-                            <span class="price">5 200 руб.</span>
+                            </span>
                         </a>
                     </figure>
                     <figure class="carousel-cell item">
@@ -130,21 +114,37 @@
                         </a>
                     </figure>
                     <figure class="carousel-cell item">
-                    <div class="item-thumb-wrapper">
-                        <a href="#" class="item-thumb">
-                            <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
-                            <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
-                        </a>
-                        <div class="quickview hidden-sm hidden-xs clearfix">
-                            <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
-                            <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
+                        <div class="item-thumb-wrapper">
+                            <a href="#" class="item-thumb">
+                                <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
+                            </a>
+                            <div class="quickview hidden-sm hidden-xs clearfix">
+                                <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
+                                <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
+                            </div>
                         </div>
-                    </div>
-					<a href="#" class="item-bottom">
-						<span class="title">Свободная рубашка NNEDRE</span>
-						<span class="price">5 200 руб.</span>
-					</a>
-				</figure>
+                        <a href="#" class="item-bottom">
+                            <span class="title">Свободная рубашка NNEDRE</span>
+                            <span class="price">5 200 руб.</span>
+                        </a>
+                    </figure>
+                    <figure class="carousel-cell item">
+                        <div class="item-thumb-wrapper">
+                            <a href="#" class="item-thumb">
+                                <img src="http://placehold.it/150x225?text=1" width="150" height="225" alt=""/>
+                                <img src="http://placehold.it/150x225?text=2" width="150" height="225" alt=""/>
+                            </a>
+                            <div class="quickview hidden-sm hidden-xs clearfix">
+                                <a href="/parts/popups/quickview.html" class="popup" data-fancybox-type="ajax"><span>Быстрый просмотр</span></a>
+                                <a href="#" target="_blank"><span>Открыть<br>в новой<br>вкладке</span></a>
+                            </div>
+                        </div>
+                        <a href="#" class="item-bottom">
+                            <span class="title">Свободная рубашка NNEDRE</span>
+                            <span class="price">5 200 руб.</span>
+                        </a>
+                    </figure>
                 </div>
 			</div>
 		</div>

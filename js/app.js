@@ -7,6 +7,7 @@
         var $loop = $('#loop', $sitecontent);
         var $filters = $('#filters');
         var $catnav = $('#categorynav-mobile');
+        var $checkout_form = $('.checkout-form');
 
         // Responsive
         $.extend(verge);
@@ -264,6 +265,11 @@
             log: false
         });
 
+        // View photo on hover
+        $('.item-thumb-wrapper').each(function() {
+            if ( $('img', this).length < 2 ) $(this).addClass('noswap');
+        });
+
         // Inputmask
         $('input[type="tel"]').mask('+7 (999) 999-99-99');
 
@@ -346,17 +352,28 @@
         });
 
         // Form Styler
-        $('.sort-dropdown input[type="radio"], #filters .filter input[type="checkbox"]').styler();
+        $('.sort-dropdown input[type="radio"], #filters .filter input[type="checkbox"], .checkout-form input, .checkout-form select').styler();
 
         // Dropdowns
         $('.hasdropdown a').click(function() {
             $(this).parent().toggleClass('open');
         });
         $('html').click(function() {
-            $('.hasdropdown').removeClass('open');
+            $('.hasdropdown, .hasdropdown-select').removeClass('open');
         });
-        $('.hasdropdown').click(function(event) {
+        $('.hasdropdown, .hasdropdown-select').click(function(event) {
             event.stopPropagation();
+        });
+
+        $('.hasdropdown-select').each(function(index, el) {
+            if ( $('.dropdown li', el).hasClass('selected') ) {
+                $('> a', el).text($('.dropdown li.selected', el).text());
+            }
+            $('.dropdown li', el).click(function() {
+                $(el).attr('data-selected', $(this).text());
+                $('> a', el).text($(this).text());
+                $('html').trigger('click');
+            });
         });
 
         // Filters
@@ -375,6 +392,42 @@
                 $('.filter-price-from', $filters).val(data.from);
                 $('.filter-price-to', $filters).val(data.to);
             }
+        });
+
+        // Checkout
+        var inputs = 'input[type="text"], input[type="email"], input[type="tel"], input[type="password"]';
+        $('.wrapper', $checkout_form).each(function(index, el) {
+            if ( $(inputs, el).length > 0 ) {
+                var placeholder = $(inputs, el).attr('placeholder');
+                $(el).append('<span class="placeholder">'+placeholder+'</span>');
+                $(inputs, el)
+                    .focusin(function() {
+                        $(el).addClass('active').removeClass('invalid');
+                        if ( $(el).find('input').val() == '' ) {
+                            $(el).find('input').val('');
+                        }
+                    })
+                    .focusout(
+                        function() {
+                            $(el).removeClass('active');
+                            if ( $(el).find('input').val() == '' ) {
+                                $(el).find('input').val('');
+                            }
+                        }
+                    );
+            }
+        });
+
+        // Tabs
+        $('ul.tabs').each(function() {
+            $(this).find('li').each(function(i) {
+                $(this).click(function() {
+                    $(this).addClass('current').siblings().removeClass('current');
+                    var p = $(this).parents('div.tabs-wrapper');
+                    p.find('div.box').hide();
+                    p.find('div.box:eq(' + i + ')').fadeToggle('fast');
+                });
+            });
         });
 
         // Filters Fixed Sidebar

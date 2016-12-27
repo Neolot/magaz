@@ -161,12 +161,21 @@
 
 .cart-open {
     .site-header, .site-content, .site-footer, .triangle {
-        -webkit-transform: translate3d(-$cart_width + 17px,0,0);
         transform: translate3d(-$cart_width + 17px,0,0);
     }
     .cart {
         transition: all .5s cubic-bezier(.645,.045,.355,1);
-        -webkit-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
+    }
+
+    &.checkout {
+        .site-header, .site-content, .site-footer, .triangle {
+            transform: none;
+        }
+        @include respond-to(tablet-portrait) {
+            .cart {
+                transform: translate3d($cart_width + 17px,0,0);
+            }
+        }
     }
 }

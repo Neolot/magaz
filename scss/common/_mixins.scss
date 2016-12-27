@@ -55,6 +55,40 @@
     }
 }
 
+@mixin button($color:false) {
+    display: inline-block;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border: 1px solid $text;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $text;
+    @if ($color == green) {
+        background-color: $green;
+        border-color: $green;
+        color: #fff;
+    }
+    @include effect-invert;
+    &:hover {
+        background-color: $gray2;
+
+    }
+    &.done {
+        background-color: $green;
+        border-color: $green;
+        color: #fff;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 13px;
+            margin-left: .8rem;
+            background: center no-repeat url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIxLjZweCIgaGVpZ2h0PSIxNC40cHgiIHZpZXdCb3g9IjAgMCAyMS42IDE0LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIxLjYgMTQuNDsiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6bm9uZTtzdHJva2U6I0ZGRkZGRjtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9Cjwvc3R5bGU+CjxkZWZzPgo8L2RlZnM+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTIxLjIsMC40TDcuOSwxMy42TDAuNCw2LjEiLz4KPC9nPgo8L3N2Zz4=);
+        }
+    }
+}
+
 @mixin respond-to($media) {
     @if ($media == screen) {
         @media only screen and (max-width: 1599px) {

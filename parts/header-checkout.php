@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
-<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><html><![endif]-->
+<html>
 <head>
     <meta charset="utf-8"/>
     <title>НУМ</title>
@@ -37,36 +35,26 @@
     <link rel="stylesheet" href="/css/app.min.css" type="text/css" media="all"/>
     <!--[if lt IE 9]><script src="/js/vendor/html5shiv/html5shiv.min.js"></script><![endif]-->
 </head>
-<body <?php echo 'class="' . basename($_SERVER['SCRIPT_NAME'], '.php') . '"'; ?>>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-24">
-                <h1>Magaz</h1>
-                <ul>
-                    <li><a href="home.php">Главная</a></li>
-                    <li><a href="soon.php">Заглушка</a></li>
-                    <li><a href="product.php">Товар</a></li>
-                    <li><a href="category.php">Категория</a></li>
-                    <br>
-                    <li><a href="#">Оформление заказа</a>
-                        <ul>
-                            <li><a href="checkout.php?step=1&page=begin">Шаг 1 - Начало</a></li>
-                            <li><a href="checkout.php?step=1&page=signup">Шаг 1 - Регистрация</a></li>
-                            <li><a href="checkout.php?step=1&page=signin">Шаг 1 - Вход</a></li>
-                            <li><a href="checkout.php?step=1&page=social">Шаг 1 - Социалки</a></li>
-                            <br>
-                            <li><a href="checkout.php?step=2&page=signup">Шаг 2 - Оформление без регистрации</a></li>
-                            <li><a href="checkout.php?step=2&page=info">Шаг 2 - Информация</a></li>
-                            <br>
-                            <li><a href="checkout.php?step=3">Шаг 3 - Доставка</a></li>
-                            <br>
-                            <li><a href="checkout.php?step=4&page=payment">Шаг 4 - Оплата</a></li>
-                            <li><a href="checkout.php?step=4&page=success">Шаг 4 - Profit!</a></li>
-                        </ul>
-                    </li>
-                </ul>
+<body <?php echo 'class="cart-open ' . basename($_SERVER['SCRIPT_NAME'], '.php') . '"'; ?>>
+
+<header class="site-header" id="site-header">
+	<div class="site-header-top" id="top">
+		<div class="container">
+            <div class="checkout-header">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <a href="/" class="logo"><span>НУМ</span></a>
+                    </div>
+                    <div class="col-lg-15 col-md-14 col-sm-12 col-xs-22">
+                        <div class="checkout-header-inner">
+                            <div class="title">Оформление заказа</div>
+                            <div class="tohome">
+                                <a href="#">На главную</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</body>
-</html>
+		</div>
+	</div>
+</header>

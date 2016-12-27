@@ -12,7 +12,7 @@
     }
 
     &-title {
-        font: 19rem 'Molot';
+        font: 16rem 'Molot';
         color: #fff;
         @include respond-to(laptop) {
             font-size: 15rem;

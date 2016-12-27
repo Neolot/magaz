@@ -1,0 +1,443 @@
+.checkout {
+    .site-header-top {
+        height: auto;
+        .container {
+            padding-left: 10px;
+        }
+    }
+    .logo {
+        top: 0;
+        left: 10px;
+        filter: none;
+        @include respond-to(tablet-landscape) {
+            width: 73px;
+            height: 33px;
+            line-height: normal;
+            text-indent: 8px;
+            top: 10px;
+            span {
+                font-size: 1.4rem;
+                line-height: 28px;
+            }
+        }
+    }
+
+    &-header {
+        margin: 2rem 0 4rem;
+        height: 66px;
+        line-height: 66px;
+        position: relative;
+        @include respond-to(tablet-landscape) {
+            height: 44px;
+            line-height: 44px;
+        }
+        &-inner {
+            border-bottom: 1px solid #A5A5A5;
+        }
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #000;
+            text-align: center;
+            @include respond-to(tablet-landscape) {
+                font-size: 1.4rem;
+            }
+        }
+        .tohome {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            a {
+                font-size: 1.2rem;
+                color: $text;
+                text-decoration: none;
+                border-bottom: 1px solid $text;
+                text-transform: uppercase;
+                @include respond-to(tablet-landscape) {
+                    font-size: 1rem;
+                }
+                &:hover {
+                    color: #000;
+                    border-color: #000;
+                }
+            }
+        }
+    }
+
+    &-steps {
+        ol {
+            @include clearlist;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            counter-reset: list 0;
+            &:after {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: $light-gray;
+                position: absolute;
+                top: 25px;
+                left: 0;
+            }
+            li {
+                width: 120px;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                text-align: center;
+                color: $light-gray;
+                @include respond-to(mobile-portrait) {
+                    font-size: 1rem;
+                }
+                &:before {
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    border: 1px solid $light-gray;
+                    border-radius: 50%;
+                    margin: 0 auto 1rem;
+                    background-color: #fff;
+                    position: relative;
+                    z-index: 1;
+                    font-size: 1.4rem;
+                    line-height: 50px;
+                    counter-increment: list;
+                    content: counter(list) ". ";
+                }
+                span {
+                    display: block;
+                }
+                &.current {
+                    color: #000;
+                    &:before {
+                        border-color: #000;
+                    }
+                }
+                &.done {
+                    color: $green;
+                    &:before {
+                        content: '';
+                        border-color: $green;
+                        background: #fff center no-repeat url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIxLjRweCIgaGVpZ2h0PSIxMy45cHgiIHZpZXdCb3g9IjAgMCAyMS40IDEzLjkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIxLjQgMTMuOTsiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6bm9uZTtzdHJva2U6IzAwODI0NztzdHJva2Utd2lkdGg6MC41O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KPC9zdHlsZT4KPGRlZnM+CjwvZGVmcz4KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMC4zLDYgNy44LDEzLjUgMjEuMSwwLjMgIi8+Cjwvc3ZnPg==);
+                    }
+                }
+            }
+        }
+    }
+
+    &-step {
+        margin-top: 4rem;
+
+        .social-login {
+            a {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                font-size: 3.3rem;
+                color: #fff;
+                text-decoration: none;
+                line-height: 60px;
+                text-align: center;
+                background-color: $text;
+                border-radius: 50%;
+                vertical-align: top;
+                margin: 0 1rem;
+                &:hover {
+                    color: #fff;
+                    &.socicon-facebook {
+                        background-color: #3b5998;
+                    }
+                    &.socicon-vkontakte {
+                        background-color: #507299;
+                    }
+                }
+                &.mailru {
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjM0LjVweCIgaGVpZ2h0PSIzMy4xcHgiIHZpZXdCb3g9IjAgMCAzNC41IDMzLjEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMzMuMTsiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0Y2RjZGNjt9Cjwvc3R5bGU+CjxkZWZzPgo8L2RlZnM+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0zMy4xLDIzLjZjLTAuNywxLjYtMS43LDMtMy4xLDRjLTIuMiwxLjctNS42LDAuNi02LjMtMi4xYy0wLjEtMC41LTAuMS0xLjEtMC4yLTEuNwoJYy00LjQsNC4xLTEwLjUsMy41LTE0LjItMC43Yy0zLjUtMy45LTMuMy05LjUsMC40LTEzLjNjMy43LTMuNyw5LjQtNC4zLDEzLjgtMC4xYzAuMS0wLjksMC42LTEuNCwxLjUtMS41YzAuOSwwLDEuNSwwLjQsMS43LDEuMwoJYzAsMC4yLDAuMSwwLjUsMC4xLDAuOGMwLDQuMywwLDguNiwwLDEyLjljMCwwLjIsMCwwLjQsMCwwLjZjMCwwLjMsMC4yLDAuNiwwLjYsMC43YzAuMywwLjEsMC42LDAuMSwwLjktMC4yCgljMC4zLTAuMiwwLjUtMC41LDAuNy0wLjljMi40LTQuNiwyLjctOS4yLDAtMTMuOGMtMS41LTIuNi00LTQuMi02LjgtNS4yQzE4LjUsMy40LDE1LDMuNCwxMS41LDQuOUM3LjMsNi42LDQuOSwxMCw0LjEsMTQuNAoJYy0xLjQsNy4yLDMuMSwxMy41LDEwLjMsMTQuOWMyLjQsMC41LDQuOCwwLjQsNy4xLTAuNWMwLjktMC40LDEuOC0wLjEsMi4yLDAuNmMwLjUsMC44LDAuMywxLjgtMC40LDIuNGMtMC43LDAuNi0xLjYsMC45LTIuNCwxCgljLTYuNSwxLTEyLjMtMC41LTE2LjgtNS40Yy0yLjMtMi41LTMuNS01LjUtMy44LTguOUMtMC4zLDE0LjcsMC40LDExLjIsMi40LDhjMi42LTQsNi4zLTYuNSwxMS03LjVjNi4zLTEuMywxMiwwLjIsMTYuNyw0LjgKCWMyLjMsMi4yLDMuNSw1LDQuMSw4QzM0LjksMTYuOCwzNC42LDIwLjMsMzMuMSwyMy42eiBNMTcuMywxMC4zYy0yLjMtMC4yLTQuMywwLjUtNS42LDIuNWMtMS4xLDEuNi0xLjMsMy40LTEuMSw1LjMKCWMwLjIsMS42LDAuOSwzLDIuMiw0YzIuMiwxLjYsNC41LDEuNyw2LjksMC42YzIuNC0xLjIsMy41LTMuMiwzLjYtNS4zQzIzLjIsMTMuMSwyMC45LDEwLjYsMTcuMywxMC4zeiIvPgo8L3N2Zz4=);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    &:hover {
+                        background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjM0LjVweCIgaGVpZ2h0PSIzMy4xcHgiIHZpZXdCb3g9IjAgMCAzNC41IDMzLjEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMzMuMTsiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0Y3QTczNTt9Cjwvc3R5bGU+CjxkZWZzPgo8L2RlZnM+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0zMy4xLDIzLjZjLTAuNywxLjYtMS43LDMtMy4xLDRjLTIuMiwxLjctNS42LDAuNi02LjMtMi4xYy0wLjEtMC41LTAuMS0xLjEtMC4yLTEuNwoJYy00LjQsNC4xLTEwLjUsMy41LTE0LjItMC43Yy0zLjUtMy45LTMuMy05LjUsMC40LTEzLjNjMy43LTMuNyw5LjQtNC4zLDEzLjgtMC4xYzAuMS0wLjksMC42LTEuNCwxLjUtMS41YzAuOSwwLDEuNSwwLjQsMS43LDEuMwoJYzAsMC4yLDAuMSwwLjUsMC4xLDAuOGMwLDQuMywwLDguNiwwLDEyLjljMCwwLjIsMCwwLjQsMCwwLjZjMCwwLjMsMC4yLDAuNiwwLjYsMC43YzAuMywwLjEsMC42LDAuMSwwLjktMC4yCgljMC4zLTAuMiwwLjUtMC41LDAuNy0wLjljMi40LTQuNiwyLjctOS4yLDAtMTMuOGMtMS41LTIuNi00LTQuMi02LjgtNS4yQzE4LjUsMy40LDE1LDMuNCwxMS41LDQuOUM3LjMsNi42LDQuOSwxMCw0LjEsMTQuNAoJYy0xLjQsNy4yLDMuMSwxMy41LDEwLjMsMTQuOWMyLjQsMC41LDQuOCwwLjQsNy4xLTAuNWMwLjktMC40LDEuOC0wLjEsMi4yLDAuNmMwLjUsMC44LDAuMywxLjgtMC40LDIuNGMtMC43LDAuNi0xLjYsMC45LTIuNCwxCgljLTYuNSwxLTEyLjMtMC41LTE2LjgtNS40Yy0yLjMtMi41LTMuNS01LjUtMy44LTguOUMtMC4zLDE0LjcsMC40LDExLjIsMi40LDhjMi42LTQsNi4zLTYuNSwxMS03LjVjNi4zLTEuMywxMiwwLjIsMTYuNyw0LjgKCWMyLjMsMi4yLDMuNSw1LDQuMSw4QzM0LjksMTYuOCwzNC42LDIwLjMsMzMuMSwyMy42eiBNMTcuMywxMC4zYy0yLjMtMC4yLTQuMywwLjUtNS42LDIuNWMtMS4xLDEuNi0xLjMsMy40LTEuMSw1LjMKCWMwLjIsMS42LDAuOSwzLDIuMiw0YzIuMiwxLjYsNC41LDEuNyw2LjksMC42YzIuNC0xLjIsMy41LTMuMiwzLjYtNS4zQzIzLjIsMTMuMSwyMC45LDEwLjYsMTcuMywxMC4zeiIvPgo8L3N2Zz4=);
+                        background-color: #168de2;
+                    }
+                }
+            }
+        }
+
+        .button {
+            @include button();
+            width: 100%;
+        }
+
+        .checkout-logins {
+            display: inline-block;
+            margin-bottom: 2rem;
+            & > a {
+                font-size: 1.2rem;
+                color: $text;
+                text-decoration: none;
+                border-bottom: 1px solid $text;
+                &:hover {
+                    color: #000;
+                    border-bottom-color: #000;
+                }
+            }
+            .dropdown {
+                left: 20%;
+                right: auto;
+                ul {
+                    li {
+                        font-size: 1.2rem;
+                        &:hover {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .checkout-form {
+            .tabs-wrapper {
+                .tabs {
+                    @include clearlist;
+                    display: flex;
+                    border: 1px solid $green;
+                    margin-bottom: 1rem;
+                    li {
+                        flex-grow: 1;
+                        height: 36px;
+                        line-height: 36px;
+                        font-size: 1.2rem;
+                        text-align: center;
+                        cursor: pointer;
+                        &.current {
+                            background-color: $green;
+                            color: #fff;
+                        }
+                    }
+                }
+                .box {
+                    display: none;
+                    &.visible {
+                        display: block;
+                    }
+                }
+            }
+
+            form {
+                .wrapper {
+                    height: 36px;
+                    margin: 1rem 0;
+                    position: relative;
+                    &-columns {
+                        display: flex;
+                        align-content: stretch;
+                        .wrapper {
+                            flex-basis: 25%;
+                            margin:0 0 0 1rem;
+                            &:first-child {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                    &.slim {
+                        height: 18px;
+                    }
+                    &.active {
+                        input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+                            padding-top: 12px;
+                        }
+                        .placeholder {
+                            opacity: 1;
+                        }
+                    }
+                    &.valid {
+                        input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+                            border-color: $green;
+                            color: $green;
+                            padding-top: 12px;
+                        }
+                        .placeholder {
+                            opacity: 1;
+                        }
+                    }
+                    &.invalid {
+                        input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+                            border-color: $red;
+                            color: $red;
+                        }
+                        .error {
+                            opacity: 1;
+                        }
+                    }
+                    a {
+                        font-size: 1.2rem;
+                        color: $text;
+                        text-decoration: none;
+                        border-bottom: 1px solid $text;
+                        &:hover {
+                            color: #000;
+                            border-color: #000;
+                        }
+                    }
+                }
+                label {
+                    font: 1.2rem 'robotolight';
+                }
+                input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+                    width: 100%;
+                    height: 36px;
+                    padding: 0 1rem;
+                    font-size: 1.2rem;
+                    color: $text;
+                    border: 1px solid $text;
+                    outline: none;
+                    border-radius: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: all .2s linear;
+                    &:focus {
+                        border: 2px solid #000;
+                        &::-webkit-input-placeholder {
+                            opacity: 0;
+                        }
+                        &::-moz-placeholder {
+                            opacity: 0;
+                        }
+                        &:-ms-input-placeholder {
+                            opacity: 0;
+                        }
+                        &:-moz-placeholder {
+                            opacity: 0;
+                        }
+                    }
+                }
+
+                .jq-checkbox {
+                    width: 18px;
+                    height: 18px;
+                    .jq-checkbox__div {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+                .jq-checkbox {
+                    &.checked {
+                        overflow: visible !important;
+                        .jq-checkbox__div {
+                            position: absolute;
+                            bottom: 3px;
+                            left: 3px;
+                            background: transparent center no-repeat url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIyLjNweCIgaGVpZ2h0PSIxNS40cHgiIHZpZXdCb3g9IjAgMCAyMi4zIDE1LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIyLjMgMTUuNDsiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MjtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9Cjwvc3R5bGU+CjxkZWZzPgo8L2RlZnM+Cjxwb2x5bGluZSBjbGFzcz0ic3QwIiBwb2ludHM9IjAuNyw2LjQgOC4zLDE0IDIxLjYsMC43ICIvPgo8L3N2Zz4=);
+                        }
+                    }
+                }
+
+                .placeholder {
+                    font-size: 1rem;
+                    color: $light-gray;
+                    position: absolute;
+                    top: 2px;
+                    left: 12px;
+                    opacity: 0;
+                    transition: all .2s linear;
+                }
+
+                .error {
+                    font-size: 1rem;
+                    color: $red;
+                    position: absolute;
+                    top: 2px;
+                    right: 12px;
+                    opacity: 0;
+                    transition: all .2s linear;
+                }
+
+                button {
+                    @include button();
+                    width: 100%;
+                    background-color: #fff;
+                    color: #000;
+                    border-color: #000;
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        &.checkout-step1 {
+            p {
+                font-size: 1.2rem;
+                margin: 1.5rem 0;
+            }
+
+            &.checkout-begin {
+                text-align: center;
+                @include respond-to(tablet-landscape) {
+                    .button.first {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+
+        .next-step {
+            margin-top: 2rem;
+            text-align: center;
+            a {
+                font-size: 1.2rem;
+                color: #000;
+                text-transform: uppercase;
+                text-decoration: none;
+                position: relative;
+                &:hover {
+                    border-bottom: 1px solid #000;
+                }
+                &:after {
+                    content: '';
+                    width: 55px;
+                    height: 8px;
+                    background: 0 0 no-repeat url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjU1LjlweCIgaGVpZ2h0PSI4LjJweCIgdmlld0JveD0iMCAwIDU1LjkgOC4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1NS45IDguMjsiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MC41O3N0cm9rZS1taXRlcmxpbWl0OjEwO30KPC9zdHlsZT4KPGRlZnM+CjwvZGVmcz4KPGc+Cgk8bGluZSBjbGFzcz0ic3QwIiB4MT0iMCIgeTE9IjQuMSIgeDI9IjU1LjUiIHkyPSI0LjEiLz4KCTxnPgoJCTxwb2x5bGluZSBjbGFzcz0ic3QwIiBwb2ludHM9IjUxLjYsMC4yIDU1LjUsNC4xIDUxLjYsOC4xIAkJIi8+Cgk8L2c+CjwvZz4KPC9zdmc+);
+                    position: absolute;
+                    top: 50%;
+                    right: -60px;
+                    margin-top: -4px;
+                }
+            }
+        }
+    }
+
+    &-success {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+        background-color: $green;
+        color: #fff;
+        text-align: center;
+        .title {
+            font: 4rem 'Molot';
+        }
+        p {
+            font-size: 1.2rem;
+            margin-top: 3rem;
+        }
+        .close {
+            width: 16px;
+            height: 16px;
+            background: 0 0 no-repeat url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="18.1px" height="18.1px" viewBox="0 0 18.1 18.1" style="enable-background:new 0 0 18.1 18.1;" xml:space="preserve"> <style type="text/css"> .st0{fill:#FFFFFF;} </style> <defs> </defs> <polygon class="st0" points="18.1,2 16.1,0 9.1,7 2,0 0,2 7,9.1 0,16.1 2,18.1 9.1,11.1 16.1,18.1 18.1,16.1 11.1,9.1 "/> </svg>');
+            background-size: cover;
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            &:hover {
+                background-image: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15.6px" height="15.6px" viewBox="0 0 15.6 15.6" style="enable-background:new 0 0 15.6 15.6;" xml:space="preserve"> <style type="text/css"> .st0{fill:#D11825;} </style> <defs> </defs> <g> <rect x="-2.2" y="6.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 7.7782 -3.2218)" class="st0" width="20" height="2"/> <rect x="-2.2" y="6.8" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 18.7782 7.7782)" class="st0" width="20" height="2"/> </g> </svg>');
+            }
+        }
+    }
+}
