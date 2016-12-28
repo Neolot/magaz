@@ -22,6 +22,10 @@
         }
     }
 
+    &-container {
+        padding-bottom: 4rem;
+    }
+
     &-header {
         margin: 2rem 0 4rem;
         height: 66px;
@@ -33,6 +37,16 @@
         }
         &-inner {
             border-bottom: 1px solid #A5A5A5;
+            @include respond-to(mobile-portrait) {
+                border-bottom: none;
+                .title {
+                    text-align: right;
+                }
+                .tohome {
+                    line-height: normal;
+                    top: 40px;
+                }
+            }
         }
         .title {
             font-size: 2rem;
@@ -90,31 +104,39 @@
                 @include respond-to(mobile-portrait) {
                     font-size: 1rem;
                 }
-                &:before {
+                a {
                     display: block;
-                    width: 50px;
-                    height: 50px;
-                    border: 1px solid $light-gray;
-                    border-radius: 50%;
-                    margin: 0 auto 1rem;
-                    background-color: #fff;
-                    position: relative;
-                    z-index: 1;
-                    font-size: 1.4rem;
-                    line-height: 50px;
-                    counter-increment: list;
-                    content: counter(list) ". ";
+                    color: $light-gray;
+                    text-decoration: none;
+                    &:hover {
+                        color: #000;
+                        &:before {
+                            border-color: #000;
+                        }
+                    }
+                    &:before {
+                        display: block;
+                        width: 50px;
+                        height: 50px;
+                        border: 1px solid $light-gray;
+                        border-radius: 50%;
+                        margin: 0 auto 1rem;
+                        background-color: #fff;
+                        position: relative;
+                        z-index: 1;
+                        font-size: 1.4rem;
+                        line-height: 50px;
+                        counter-increment: list;
+                        content: counter(list) ". ";
+                    }
                 }
-                span {
-                    display: block;
-                }
-                &.current {
+                &.current a {
                     color: #000;
                     &:before {
                         border-color: #000;
                     }
                 }
-                &.done {
+                &.done a {
                     color: $green;
                     &:before {
                         content: '';
@@ -142,7 +164,10 @@
                 background-color: $text;
                 border-radius: 50%;
                 vertical-align: top;
-                margin: 0 1rem;
+                margin-left: 2rem;
+                &:first-child {
+                    margin-left: 0;
+                }
                 &:hover {
                     color: #fff;
                     &.socicon-facebook {
@@ -203,6 +228,9 @@
                     display: flex;
                     border: 1px solid $green;
                     margin-bottom: 1rem;
+                    @include respond-to(mobile-portrait) {
+                        display: block;
+                    }
                     li {
                         flex-grow: 1;
                         height: 36px;
@@ -210,6 +238,12 @@
                         font-size: 1.2rem;
                         text-align: center;
                         cursor: pointer;
+                        @include respond-to(mobile-portrait) {
+                            display: block;
+                            height: 48px;
+                            line-height: 48px;
+                            font-size: 1.4rem;
+                        }
                         &.current {
                             background-color: $green;
                             color: #fff;
@@ -229,12 +263,25 @@
                     height: 36px;
                     margin: 1rem 0;
                     position: relative;
+                    @include respond-to(mobile-landscape) {
+                        font-size: 1.2rem;
+                        height: 48px;
+                    }
                     &-columns {
                         display: flex;
                         align-content: stretch;
+                        @include respond-to(mobile-portrait) {
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                        }
                         .wrapper {
                             flex-basis: 25%;
                             margin:0 0 0 1rem;
+                            @include respond-to(mobile-portrait) {
+                                flex-basis: 48%;
+                                margin-left: 0;
+                                margin-bottom: 1rem;
+                            }
                             &:first-child {
                                 margin-left: 0;
                             }
@@ -242,6 +289,9 @@
                     }
                     &.slim {
                         height: 18px;
+                        @include respond-to(mobile-landscape) {
+                            height: 24px;
+                        }
                     }
                     &.active {
                         input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
@@ -283,6 +333,9 @@
                 }
                 label {
                     font: 1.2rem 'robotolight';
+                    @include respond-to(mobile-landscape) {
+                        font-size: 1.6rem;
+                    }
                 }
                 input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
                     width: 100%;
@@ -293,10 +346,15 @@
                     border: 1px solid $text;
                     outline: none;
                     border-radius: 0;
+                    box-shadow: none;
                     position: absolute;
                     top: 0;
                     left: 0;
                     transition: all .2s linear;
+                    @include respond-to(mobile-landscape) {
+                        font-size: 1.6rem;
+                        height: 48px;
+                    }
                     &:focus {
                         border: 2px solid #000;
                         &::-webkit-input-placeholder {
@@ -317,12 +375,25 @@
                 .jq-checkbox {
                     width: 18px;
                     height: 18px;
+                    @include respond-to(mobile-landscape) {
+                        width: 24px;
+                        height: 24px;
+                        .jq-checkbox__div {
+                            width: 22px;
+                            height: 22px;
+                            left: 5px;
+                        }
+                        &.checked {
+                            .jq-checkbox__div {
+                                top: -5px;
+                                left: 5px;
+                            }
+                        }
+                    }
                     .jq-checkbox__div {
                         width: 16px;
                         height: 16px;
                     }
-                }
-                .jq-checkbox {
                     &.checked {
                         overflow: visible !important;
                         .jq-checkbox__div {
@@ -330,6 +401,7 @@
                             bottom: 3px;
                             left: 3px;
                             background: transparent center no-repeat url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIyLjNweCIgaGVpZ2h0PSIxNS40cHgiIHZpZXdCb3g9IjAgMCAyMi4zIDE1LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIyLjMgMTUuNDsiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MjtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9Cjwvc3R5bGU+CjxkZWZzPgo8L2RlZnM+Cjxwb2x5bGluZSBjbGFzcz0ic3QwIiBwb2ludHM9IjAuNyw2LjQgOC4zLDE0IDIxLjYsMC43ICIvPgo8L3N2Zz4=);
+                            background-size: cover;
                         }
                     }
                 }
@@ -342,6 +414,9 @@
                     left: 12px;
                     opacity: 0;
                     transition: all .2s linear;
+                    @include respond-to(mobile-landscape) {
+                        font-size: 1.2rem;
+                    }
                 }
 
                 .error {
@@ -352,6 +427,9 @@
                     right: 12px;
                     opacity: 0;
                     transition: all .2s linear;
+                    @include respond-to(mobile-landscape) {
+                        font-size: 1.2rem;
+                    }
                 }
 
                 button {
@@ -361,6 +439,9 @@
                     color: #000;
                     border-color: #000;
                     margin-top: 2rem;
+                    @include respond-to(mobile-landscape) {
+                        font-size: 1.6rem;
+                    }
                 }
             }
         }
@@ -435,6 +516,13 @@
             position: absolute;
             bottom: 2rem;
             right: 2rem;
+            @include respond-to(mobile-portrait) {
+                top: 2rem;
+                bottom: auto;
+                left: 50%;
+                right: auto;
+                margin-left: -8px;
+            }
             &:hover {
                 background-image: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15.6px" height="15.6px" viewBox="0 0 15.6 15.6" style="enable-background:new 0 0 15.6 15.6;" xml:space="preserve"> <style type="text/css"> .st0{fill:#D11825;} </style> <defs> </defs> <g> <rect x="-2.2" y="6.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 7.7782 -3.2218)" class="st0" width="20" height="2"/> <rect x="-2.2" y="6.8" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 18.7782 7.7782)" class="st0" width="20" height="2"/> </g> </svg>');
             }

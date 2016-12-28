@@ -4,10 +4,10 @@
 			<div class="col-lg-15 col-lg-offset-2 col-md-14 col-md-offset-2 col-sm-14">
                 <div class="checkout-steps">
                     <ol>
-                        <li class="current"><span>Регистрация <br>/ Вход</span></li> <!-- Класс done для завершенных шагов -->
-                        <li><span>Контактная информация</span></li> <!-- Класс current для текущего шага -->
-                        <li><span>Доставка</span></li>
-                        <li><span>Оплата</span></li>
+                        <li class="current"><a href="#">Регистрация <br>/ Вход</a></li> <!-- Класс done для завершенных шагов -->
+                        <li><a href="#">Контактная информация</a></li> <!-- Класс current для текущего шага -->
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
                     </ol>
                 </div>
 

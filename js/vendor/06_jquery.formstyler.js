@@ -466,7 +466,8 @@
 									dataList = '',
 									optionClass = '',
 									optgroupClass = '',
-									dataJqfsClass = '';
+									dataJqfsClass = '',
+									right = '';
 							var disabled = 'disabled';
 							var selDis = 'selected sel disabled';
 							if (op.prop('selected')) liClass = 'selected sel';
@@ -478,6 +479,7 @@
 								optionClass = ' ' + op.attr('class');
 								dataJqfsClass = ' data-jqfs-class="' + op.attr('class') + '"';
 							}
+							if (op.attr('data-right') !== undefined && option.attr('data-right') !== '') right = ' <span class="right">' + op.attr('data-right') + '</span>';
 
 							var data = op.data();
 							for (var k in data) {
@@ -485,7 +487,7 @@
 							}
 
 							if ( (liClass + optionClass) !== '' )   liClasses = ' class="' + liClass + optionClass + '"';
-							li = '<li' + dataJqfsClass + dataList + liClasses + title + id + '>'+ op.html() +'</li>';
+							li = '<li' + dataJqfsClass + dataList + liClasses + title + id + '>'+ op.html() + right + '</li>';
 
 							// если есть optgroup
 							if (op.parent().is('optgroup')) {

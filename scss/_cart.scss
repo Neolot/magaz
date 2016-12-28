@@ -172,9 +172,21 @@
         .site-header, .site-content, .site-footer, .triangle {
             transform: none;
         }
+        .cart {
+            .close {
+                display: none;
+            }
+        }
         @include respond-to(tablet-portrait) {
             .cart {
                 transform: translate3d($cart_width + 17px,0,0);
+            }
+        }
+        @include respond-to(mobile-landscape) {
+            .cart {
+                .close {
+                    display: block;
+                }
             }
         }
     }
