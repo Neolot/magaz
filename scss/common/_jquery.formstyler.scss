@@ -275,6 +275,9 @@
     border: 1px solid $text;
     background: #fff;
     color: $text;
+    @include respond-to(mobile-portrait) {
+        height: 48px;
+    }
 
     &:hover {
     }
@@ -313,6 +316,10 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     font-size: 1.2rem;
+    @include respond-to(mobile-portrait) {
+        font-size: 1.6rem;
+        line-height: 48px;
+    }
 }
 
 .jq-selectbox .placeholder {
@@ -326,6 +333,9 @@
     width: 36px;
     height: 100%;
     border-left: 1px solid $text;
+    @include respond-to(mobile-portrait) {
+        width: 48px;
+    }
 }
 
 .jq-selectbox__trigger-arrow {
@@ -353,6 +363,9 @@
     background: #fff;
     font-size: 1.2rem;
     top: 36px !important;
+    @include respond-to(mobile-portrait) {
+        top: 48px !important;
+    }
 }
 
 .jq-selectbox__search {
@@ -398,14 +411,22 @@
         -ms-user-select: none;
         user-select: none;
         white-space: nowrap;
-        color: #231f20;
+        color: $text;
+        position: relative;
+        .right {
+            min-height: 18px;
+            padding: 5px 0 6px;
+            position: absolute;
+            top: 0;
+            right: 10px;
+        }
 
         &.selected {
             color: $green;
         }
 
         &:hover {
-            color: $green;
+            color: #000;
         }
 
         &.disabled {
@@ -421,7 +442,7 @@
 
             &:hover {
                 background: none;
-                color: #231f20;
+                color: #000;
                 cursor: default;
             }
         }
