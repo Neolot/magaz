@@ -6,8 +6,8 @@
                     <ol>
                         <li class="done"><a href="#">Регистрация <br>/ Вход</a></li> <!-- Класс done для завершенных шагов -->
                         <li class="done"><a href="#">Контактная информация</a></li> <!-- Класс current для текущего шага -->
-                        <li class="current"><a href="#">Доставка</a></li>
-                        <li><a href="#">Оплата</a></li>
+                        <li class="current"><span>Доставка</span></li>
+                        <li><span>Оплата</span></li>
                     </ol>
                 </div>
 
@@ -34,9 +34,9 @@
                                             <div class="wrapper">
                                                 <select name="shipping_method">
                                                     <option disabled selected>Способ доставки</option>
-                                                    <option value="Курьером" data-right="300 руб.">Курьером</option>
-                                                    <option value="Почта России" data-right="120 руб.">Почта России</option>
-                                                    <option value="Самовывоз" data-right="0 руб.">Самовывоз</option>
+                                                    <option value="Курьером" data-value="Курьером" data-right="300 руб." data-shipment="300">Курьером</option>
+                                                    <option value="Почта России" data-value="Почта России" data-right="120 руб." data-shipment="120">Почта России</option>
+                                                    <option value="Самовывоз" data-value="Самовывоз" data-right="0 руб." data-shipment="0">Самовывоз</option>
                                                 </select>
                                             </div>
                                             <div class="wrapper slim">Бесплатная доставка от 5 000 руб.</div>
@@ -69,9 +69,9 @@
                                             <div class="wrapper">
                                                 <select name="shipping_method">
                                                     <option disabled selected>Способ доставки</option>
-                                                    <option value="Курьером" data-right="300 руб.">Курьером</option>
-                                                    <option value="Почта России" data-right="120 руб.">Почта России</option>
-                                                    <option value="Самовывоз" data-right="0 руб.">Самовывоз</option>
+                                                    <option value="Курьером" data-value="Курьером" data-right="300 руб." data-shipment="300">Курьером</option>
+                                                    <option value="Почта России" data-value="Почта России" data-right="120 руб." data-shipment="120">Почта России</option>
+                                                    <option value="Самовывоз" data-value="Самовывоз" data-right="0 руб." data-shipment="0">Самовывоз</option>
                                                 </select>
                                             </div>
                                             <div class="wrapper slim">Бесплатная доставка от 5 000 руб.</div>

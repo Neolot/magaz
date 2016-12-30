@@ -7,7 +7,7 @@
                         <li class="done"><a href="#">Регистрация <br>/ Вход</a></li> <!-- Класс done для завершенных шагов -->
                         <li class="done"><a href="#">Контактная информация</a></li> <!-- Класс current для текущего шага -->
                         <li class="done"><a href="#">Доставка</a></li>
-                        <li class="current"><a href="#">Оплата</a></li>
+                        <li class="current"><span>Оплата</span></li>
                     </ol>
                 </div>
 
