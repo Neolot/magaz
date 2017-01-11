@@ -111,6 +111,9 @@
         position: absolute;
         left: 7%;
         top: 0;
+        @media only screen and (min-width: 1400px) {
+            left: 98px;
+        }
         &:after {
             @include flag-russian;
             margin-left: .5rem;

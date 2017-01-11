@@ -35,7 +35,7 @@
 				</div>
 
 
-				<div class="product-color"> <!-- Добавить класс error если цвет не выбран -->
+				<div class="product-property product-color"> <!-- Добавить класс error если цвет не выбран -->
 					<div class="title">Цвет:</div>
 					<ul class="colors">
 						<li><a href="#" class="color-01"></a></li>
@@ -46,7 +46,18 @@
                     <span class="error-text">– пожалуйста, выберите цвет</span>
 				</div>
 
-				<div class="product-size"> <!-- Добавить класс error если размер не выбран -->
+				<div class="product-property product-text"> <!-- Добавить класс error если цвет не выбран -->
+					<div class="title">Текстовые опции:</div>
+					<ul class="texts">
+						<li><a href="#">Красный</a></li>
+						<li class="selected"><a href="#">Желтый</a></li>
+						<li><a href="#">Оранжевый</a></li>
+						<li class="notavailable"><a href="#">Светло-малиновый</a></li>
+					</ul>
+                    <span class="error-text">– пожалуйста, выберите цвет</span>
+				</div>
+
+				<div class="product-property product-size"> <!-- Добавить класс error если размер не выбран -->
 					<div class="title">Размер:</div>
 					<ul class="product-sizes">
 						<li class="notavailable"><a href="#">40</a></li>

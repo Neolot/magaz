@@ -231,6 +231,9 @@
             $('body').removeClass('cart-open no-scroll');
             $('.fancybox-overlay').remove();
         });
+        $('#cart').on('click', '.cart-title-mini', function() {
+            $('body').addClass('cart-open');
+        });
 
         var $summ_elements = $('#cart .cart-title-summ span, #cart .cart-summary-summ span');
         var $quantity_elements = $('#cart .cart-title-quantity');

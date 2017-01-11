@@ -1,9 +1,13 @@
 <div class="cart" id="cart">
-    <div class="cart-title">Корзина (<span class="cart-title-quantity">2</span>) <div class="cart-title-summ"><span>5 700</span> руб.</div><a href="javascript:void(0);" class="close" title="Закрыть"></a></div>
+    <div class="cart-header">
+        <div class="cart-title">Корзина (<span class="cart-title-quantity">2</span>) <div class="cart-title-summ"><span>5 700</span> руб.</div></div>
+        <a href="javascript:void(0);" class="cart-title-mini"><span>2</span></a>
+        <a href="javascript:void(0);" class="close" title="Закрыть"></a>
+    </div>
 
     <div class="cart-content">
         <div class="cart-list">
-            <div class="item clearfix">
+            <div class="item">
                 <img src="http://lorempixel.com/105/158" width="105" height="158" alt=""/>
                 <div class="item-content">
                     <div class="clearfix">
@@ -19,7 +23,7 @@
                     <div class="item-price">3 200 руб.</div>
                 </div>
             </div>
-            <div class="item clearfix">
+            <div class="item">
                 <img src="http://lorempixel.com/105/158" width="105" height="158" alt=""/>
                 <div class="item-content">
                     <div class="clearfix">
