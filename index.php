@@ -47,6 +47,8 @@
                     <li><a href="soon.php">Заглушка</a></li>
                     <li><a href="product.php">Товар</a></li>
                     <li><a href="category.php">Категория</a></li>
+                    <li><a href="brand.php">Бренд</a></li>
+                    <li><a href="brands.php">Бренды</a></li>
                     <br>
                     <li><a href="#">Оформление заказа</a>
                         <ul>

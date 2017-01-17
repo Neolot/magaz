@@ -1,0 +1,163 @@
+.brand {
+    .filters {
+        margin-top: 0;
+    }
+    .category-description {
+        padding-top: 0;
+        border-top: none;
+        text-align: justify;
+        padding-bottom: 3rem;
+        p {
+            margin: 0;
+        }
+    }
+    .brand-item {
+        padding-bottom: 2rem;
+        &-logo {
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+            @include respond-to(mobile-landscape) {
+                text-align: center;
+            }
+        }
+        &-info {
+            &-container {
+                .row {
+                    display: flex;
+                    @include respond-to(tablet-portrait) {
+                        display: block;
+                    }
+                }
+                @include respond-to(tablet-portrait) {
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+        &-arr {
+            align-self: center;
+            &.next {
+                text-align: right;
+                a {
+                    &:before {
+                        transform: rotate(135deg);
+                        position: absolute;
+                        bottom: -5px;
+                        right: 0;
+                        left: auto;
+                    }
+                }
+            }
+            @include respond-to(tablet-portrait) {
+                &.prev {
+                    bottom: 17px;
+                }
+            }
+            @include respond-to(mobile-portrait) {
+                &.prev {
+                    bottom: 35px;
+                }
+            }
+            a {
+                display: inline-block;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                color: $text;
+                text-decoration: none;
+                position: relative;
+                span {
+                    display: inline-block;
+                    margin: 0 2rem;
+                    @include respond-to(mobile-portrait) {
+                        min-height: 34px;
+                    }
+                }
+                &:before {
+                    content: '';
+                    width: 7px;
+                    height: 7px;
+                    border-top: 1px solid $text;
+                    border-left: 1px solid $text;
+                    transform: rotate(-45deg);
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                }
+                &:after {
+                    display: block;
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    position: relative;
+                    background-color: $text;
+                    bottom: -2px;
+                }
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+        .category-tools-top {
+            padding-top: 3rem;
+            border-top: 1px solid $gray;
+        }
+    }
+}
+
+.brands {
+    &-section {
+        &-title {
+            font: 3rem 'Molot';
+            color: #000;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+    }
+    &-list {
+        & > .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &-item {
+            display: block;
+            margin-bottom: 4rem;
+            color: $text;
+            &:hover {
+                color: #000;
+                text-decoration: none;
+            }
+            &-thumb {
+                position: relative;
+                width: 100%;
+                margin-bottom: 1rem;
+                &:after {
+                    content: '';
+                    display: block;
+                    padding-bottom: 100%;
+                }
+                &-content {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+            &-title {
+                font-size: 1.4rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .divider {
+        height: 1px;
+        background-color: $text;
+        margin-bottom: 3rem;
+    }
+}
