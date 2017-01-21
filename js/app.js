@@ -61,18 +61,7 @@
             $('#sort-dropdown').toggleClass('open');
         });
 
-
-        if ( $.viewport().width <= 375 ) {
-            $loop.attr('data-columns', 1);
-        } else if ( $.viewport().width <= media.mobileLandscape) {
-            $loop.attr('data-columns', 2);
-        } else if ( $.viewport().width < 1024 ) {
-            $loop.attr('data-columns', 3);
-        } else {
-            $loop.attr('data-columns', 4);
-        }
-
-        $(window).on('orientationchange', function(event) {
+        $(window).on('orientationchange', function() {
             screen_width = $.viewport().width;
             responsive_nav(screen_width, media);
             setQuickviewWidth($('.item-thumb-wrapper'));
@@ -87,15 +76,6 @@
                 $('.product-additional', $sitecontent).detach().appendTo('.product-container', $sitecontent);
             } else {
                 $('.product-additional', $sitecontent).detach().appendTo('#additional_home');
-            }
-            if ( $.viewport().width <= 375 ) {
-                $loop.attr('data-columns', 1);
-            } else if ( $.viewport().width <= media.mobileLandscape) {
-                $loop.attr('data-columns', 2);
-            } else if ( $.viewport().width < 1024 ) {
-                $loop.attr('data-columns', 3);
-            } else {
-                $loop.attr('data-columns', 4);
             }
 
             calc_cartContentHeight();

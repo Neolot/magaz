@@ -117,6 +117,9 @@
         & > .row {
             display: flex;
             flex-wrap: wrap;
+            &:before, &:after {
+                content: none;
+            }
         }
         &-item {
             display: block;
@@ -128,7 +131,6 @@
             }
             &-thumb {
                 position: relative;
-                width: 100%;
                 margin-bottom: 1rem;
                 &:after {
                     content: '';

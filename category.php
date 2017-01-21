@@ -48,9 +48,7 @@
                         <a href="#" class="mobile-pager">Предыдущая страница</a>
                     </div>
 
-                    <div class="loop" id="loop" data-columns="4">
-                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/category/loop.php' ?>
-                    </div>
+                    <?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/category/loop.php' ?>
 
                     <div class="category-tools category-tools-bottom">
                         <div class="row">

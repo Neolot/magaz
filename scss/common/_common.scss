@@ -112,8 +112,8 @@ body {
 .sale {
     overflow: hidden !important;
     .item-thumb {
-        border-color: $sale !important;
-        &:after {
+        outline-color: $sale !important;
+        /*&:after {
             content: 'Акция!';
             position: absolute;
             top: 0;
@@ -126,7 +126,7 @@ body {
             @include respond-to(mobile-landscape) {
                 font-size: 1.8rem;
             }
-        }
+        }*/
     }
 }
 
