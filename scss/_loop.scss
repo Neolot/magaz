@@ -19,6 +19,13 @@
             content: none;
         }
     }
+    @include respond-to(mobile-portrait) {
+        &[data-columns="1"] {
+            & > .row > div {
+                width: 100%;
+            }
+        }
+    }
     .item {
         margin-bottom: 2rem;
         text-align: center;
