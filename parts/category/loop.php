@@ -42,7 +42,7 @@
                 </figure>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-8 col-xs-24">
-                <figure class="item">
+                <figure class="item sale">
                     <div class="item-thumb-wrapper">
                         <a href="#" class="item-thumb">
                             <div class="item-thumb-content">
