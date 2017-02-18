@@ -16,9 +16,9 @@
                     </div>
                     <div class="item-data">Голубой, 42</div>
                     <div class="item-quantity">
-                        <button type="button" class="item-quantity-minus"></button>
+                        <button type="button" class="item-quantity-minus">—</button>
                         <label><input type="text" value="1" min="1" step="1" data-price="3200"/> шт.</label>
-                        <button type="button" class="item-quantity-plus"></button>
+                        <button type="button" class="item-quantity-plus">+</button>
                     </div>
                     <div class="item-price">3 200 руб.</div>
                 </div>
@@ -32,9 +32,9 @@
                     </div>
                     <div class="item-data">Голубой, 42</div>
                     <div class="item-quantity">
-                        <button type="button" class="item-quantity-minus"></button>
+                        <button type="button" class="item-quantity-minus">—</button>
                         <label><input type="text" value="1" min="1" step="1" data-price="3200"/> шт.</label>
-                        <button type="button" class="item-quantity-plus"></button>
+                        <button type="button" class="item-quantity-plus">+</button>
                     </div>
                     <div class="item-price">3 200 руб.</div>
                 </div>

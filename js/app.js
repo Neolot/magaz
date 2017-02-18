@@ -34,7 +34,7 @@
         function setQuickviewWidth($selector) {
             $selector.each(function () {
                 var thumb_w = $(this)[0].getBoundingClientRect().width; // Ширина блока с дробной частью
-                $('.quickview', this).width(thumb_w-4);
+                $('.quickview', this).width(thumb_w-4).css('margin-left', -((thumb_w-4)/2+1)+'px');
             });
         }
 
@@ -206,8 +206,10 @@
                 .addClass('cart-open no-scroll')
                 .append('<div class="fancybox-overlay fancybox-overlay-fixed" style="display: block;"/>')
                 .on('click', '.fancybox-overlay', function() {
-                    $('body').removeClass('cart-open no-scroll');
-                    $('.fancybox-overlay').remove();
+                    if ( $(this).find('#quickorder').length == false ) {
+                        $('body').removeClass('cart-open no-scroll');
+                        $('.fancybox-overlay').remove();
+                    }
                 });
         });
         $('#cart').on('click', '.close', function() {
