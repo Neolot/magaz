@@ -66,6 +66,13 @@
                             <li><a href="checkout.php?step=4&page=success">Шаг 4 - Profit!</a></li>
                         </ul>
                     </li>
+                    <br>
+                    <li><a href="error404.php">Ошибка 404</a></li>
+                    <li><a href="error500.php">Ошибка 500</a></li>
+                    <li><a href="news.php">Новости</a></li>
+                    <li><a href="article.php">Статья</a></li>
+                    <li><a href="page.php">Текстовая страница</a></li>
+                    <!-- <li><a href="account.php">Личный кабинет</a></li> -->
                 </ul>
             </div>
         </div>

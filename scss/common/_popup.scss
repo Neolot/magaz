@@ -1,5 +1,35 @@
 .popup-wrapper {
     padding: 3rem;
+    .thanks {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background-color: $green;
+        color: #fff;
+        text-align: center;
+        .title {
+            font: 2rem 'Molot';
+            text-align: center;
+        }
+        p {
+            width: 245px;
+            margin: 3rem auto 0;
+            font-size: 1.2rem;
+        }
+    }
+    &.done {
+        .thanks {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
 }
 
 .sizes {
@@ -238,29 +268,244 @@
             }
         }
     }
-    .thanks {
-        display: none;
-        width: 100%;
-        height: 100%;
-        background-color: $green;
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: #fff;
-        padding-top: 115px;
-        .title {
-            font: 2rem 'Molot';
-            text-align: center;
-        }
-        p {
-            width: 245px;
-            margin: 3rem auto 0;
-            font-size: 1.2rem;
+}
+
+.login {
+    width: 690px;
+    max-width: 100%;
+    min-height: 505px;
+    .social-login {
+        text-align: center;
+        a {
+            margin: 0 1rem;
         }
     }
-    &.done {
-        .thanks {
+
+    .or {
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 2rem 1rem;
+    }
+
+    .section {
+        width: 50%;
+        padding: .5rem 0;
+        &-title {
+            font-size: 1.2rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        @include respond-to(mobile-landscape) {
+            width: 100%;
+        }
+    }
+
+    .forms {
+        display: flex;
+        @include respond-to(mobile-landscape) {
             display: block;
+        }
+    }
+
+    .line {
+        width: 40px;
+        position: relative;
+        &:after {
+            content: '';
+            width: 1px;
+            height: 100%;
+            background-color: $text;
+            position: absolute;
+            top: 0;
+            left: 50%;
+        }
+    }
+
+    form {
+        .wrapper {
+            height: 36px;
+            margin: 1rem 0;
+            position: relative;
+            @include respond-to(mobile-landscape) {
+                font-size: 1.2rem;
+                height: 48px;
+            }
+            &-columns {
+                display: flex;
+                align-content: stretch;
+                @include respond-to(mobile-portrait) {
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+                .wrapper {
+                    flex-basis: 25%;
+                    margin:0 0 0 1rem;
+                    @include respond-to(mobile-portrait) {
+                        flex-basis: 48%;
+                        margin-left: 0;
+                        margin-bottom: 1rem;
+                    }
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+            &.slim {
+                height: 18px;
+                @include respond-to(mobile-landscape) {
+                    height: 24px;
+                }
+            }
+            &.active {
+                input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+                    padding-top: 12px;
+                }
+                .placeholder {
+                    opacity: 1;
+                }
+            }
+            &.valid {
+                input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+                    border-color: $green;
+                    color: $green;
+                    padding-top: 12px;
+                }
+                .placeholder {
+                    opacity: 1;
+                }
+            }
+            &.invalid {
+                input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+                    border-color: $red;
+                    color: $red;
+                }
+                .error {
+                    opacity: 1;
+                }
+            }
+            a {
+                font-size: 1.2rem;
+                color: $text;
+                text-decoration: none;
+                border-bottom: 1px solid $text;
+                &:hover {
+                    color: #000;
+                    border-color: #000;
+                }
+            }
+        }
+        label {
+            font: 1.2rem 'robotolight';
+            @include respond-to(mobile-landscape) {
+                font-size: 1.6rem;
+            }
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+            width: 100%;
+            height: 36px;
+            padding: 0 1rem;
+            font-size: 1.2rem;
+            color: $text;
+            border: 1px solid $text;
+            outline: none;
+            border-radius: 0;
+            box-shadow: none;
+            -webkit-appearance: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .2s linear;
+            @include respond-to(mobile-landscape) {
+                font-size: 1.6rem;
+                height: 48px;
+            }
+            &:focus {
+                border: 2px solid #000;
+                &::-webkit-input-placeholder {
+                    opacity: 0;
+                }
+                &::-moz-placeholder {
+                    opacity: 0;
+                }
+                &:-ms-input-placeholder {
+                    opacity: 0;
+                }
+                &:-moz-placeholder {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .jq-checkbox {
+            width: 18px;
+            height: 18px;
+            @include respond-to(mobile-landscape) {
+                width: 24px;
+                height: 24px;
+                .jq-checkbox__div {
+                    width: 22px;
+                    height: 22px;
+                    left: 5px;
+                }
+                &.checked {
+                    .jq-checkbox__div {
+                        top: -5px;
+                        left: 5px;
+                    }
+                }
+            }
+            .jq-checkbox__div {
+                width: 16px;
+                height: 16px;
+            }
+            &.checked {
+                overflow: visible !important;
+                .jq-checkbox__div {
+                    position: absolute;
+                    bottom: 3px;
+                    left: 3px;
+                    background: transparent center no-repeat url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIyLjNweCIgaGVpZ2h0PSIxNS40cHgiIHZpZXdCb3g9IjAgMCAyMi4zIDE1LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIyLjMgMTUuNDsiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MjtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9Cjwvc3R5bGU+CjxkZWZzPgo8L2RlZnM+Cjxwb2x5bGluZSBjbGFzcz0ic3QwIiBwb2ludHM9IjAuNyw2LjQgOC4zLDE0IDIxLjYsMC43ICIvPgo8L3N2Zz4=);
+                    background-size: cover;
+                }
+            }
+        }
+
+        .placeholder {
+            font-size: 1rem;
+            color: $light-gray;
+            position: absolute;
+            top: 2px;
+            left: 12px;
+            opacity: 0;
+            transition: all .2s linear;
+            @include respond-to(mobile-landscape) {
+                font-size: 1.2rem;
+            }
+        }
+
+        .error {
+            font-size: 1rem;
+            color: $red;
+            position: absolute;
+            top: 2px;
+            right: 12px;
+            opacity: 0;
+            transition: all .2s linear;
+            @include respond-to(mobile-landscape) {
+                font-size: 1.2rem;
+            }
+        }
+
+        button {
+            @include button();
+            width: 100%;
+            background-color: #fff;
+            color: #000;
+            border-color: #000;
+            margin-top: 2rem;
+            @include respond-to(mobile-landscape) {
+                font-size: 1.6rem;
+            }
         }
     }
 }

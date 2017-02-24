@@ -93,6 +93,7 @@ body {
         span {
             font: 1rem/1 'robotolight';
             color: $text;
+            text-align: center;
             background-size: cover !important;
             padding-top: 4px;
             position: absolute;
@@ -250,6 +251,9 @@ body {
     text-decoration: none !important;
     border: 1px solid $text;
     position: relative;
+    &:hover {
+        color: #000;
+    }
     &:after {
         content: '';
         width: 28px;
@@ -269,6 +273,13 @@ body {
         right: 10px;
         bottom: 0;
         margin: 0;
+        padding: 2rem 1rem .5rem;
+        &:after {
+            width: 20px;
+            height: 10px;
+            margin-left: -10px;
+            top: 7px;
+        }
         @include respond-to(laptop) {
             width: 4rem;
             height: 4rem;
@@ -412,6 +423,266 @@ body {
             }
             @include respond-to(tablet-landscape) {
                 right: 10px;
+            }
+        }
+    }
+}
+
+.searchform {
+    width: 440px;
+    max-width: 100%;
+    margin: 0 auto 5rem;
+    .wrapper {
+        border: 1px solid $text;
+        position: relative;
+    }
+    input {
+        width: 100%;
+        height: 35px;
+        background: none;
+        border: none;
+        padding: 0 36px 0 10px;
+        color: #fff;
+        outline: none;
+        font-size: 1.2rem;
+    }
+    button {
+        width: 16px;
+        height: 16px;
+        background: center no-repeat url(data:image/svg+xml;base64,PCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIg0KCSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczphPSJodHRwOi8vbnMuYWRvYmUuY29tL0Fkb2JlU1ZHVmlld2VyRXh0ZW5zaW9ucy8zLjAvIg0KCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE1LjZweCIgaGVpZ2h0PSIxNS42cHgiIHZpZXdCb3g9IjAgMCAxNS42IDE1LjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE1LjYgMTUuNjsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6I0E1QTVBNTt9DQo8L3N0eWxlPg0KPGRlZnM+DQo8L2RlZnM+DQo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNi44LDBjMC4zLDAsMC41LDAuMSwwLjgsMC4xQzksMC40LDEwLjEsMSwxMS4xLDJjMC45LDEsMS41LDIuMSwxLjcsMy40YzAuMiwxLjUsMCwzLTAuOCw0LjMNCgljMCwwLjEtMC4xLDAuMS0wLjEsMC4yYzAsMCwwLjEsMC4xLDAuMSwwLjFjMS4xLDEuMSwyLjIsMi4yLDMuMywzLjNjMC41LDAuNSwwLjYsMS4zLDAuMSwxLjhjLTAuNSwwLjYtMS40LDAuNy0yLDAuMQ0KCWMtMS4xLTEuMS0yLjItMi4yLTMuMy0zLjNjMCwwLDAtMC4xLTAuMS0wLjFjLTAuMiwwLjEtMC40LDAuMi0wLjYsMC40Yy0xLjgsMC45LTMuNiwxLTUuNCwwLjJjLTIuMi0wLjktMy41LTIuNi0zLjktNQ0KCUMwLDcuMiwwLDcsMCw2LjhDMCw2LjYsMCw2LjMsMCw2YzAtMC4yLDAtMC40LDAuMS0wLjZDMC4zLDQuMSwwLjksMywxLjgsMmMwLjktMSwyLjEtMS42LDMuNC0xLjlDNS41LDAuMSw1LjgsMCw2LDANCglDNi4zLDAsNi42LDAsNi44LDB6IE02LjUsMi4yYy0yLjMsMC00LjIsMS44LTQuMiw0LjJjMCwyLjMsMS45LDQuMiw0LjIsNC4yYzIuMywwLDQuMi0xLjksNC4yLTQuMkMxMC43LDQuMiw4LjgsMi4zLDYuNSwyLjJ6Ii8+DQo8L3N2Zz4NCg==);
+        background-size: cover;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -8px;
+        border: none;
+    }
+}
+
+.checkout-form, .login .form {
+    .tabs-wrapper {
+        .tabs {
+            @include clearlist;
+            display: flex;
+            border: 1px solid $green;
+            margin-bottom: 1rem;
+            @include respond-to(mobile-portrait) {
+                display: block;
+            }
+            li {
+                flex-grow: 1;
+                height: 36px;
+                line-height: 36px;
+                font-size: 1.2rem;
+                text-align: center;
+                cursor: pointer;
+                @include respond-to(mobile-portrait) {
+                    display: block;
+                    height: 48px;
+                    line-height: 48px;
+                    font-size: 1.4rem;
+                }
+                &.current {
+                    background-color: $green;
+                    color: #fff;
+                }
+            }
+        }
+        .box {
+            display: none;
+            &.visible {
+                display: block;
+            }
+        }
+    }
+
+    form {
+        .wrapper {
+            height: 36px;
+            margin: 1rem 0;
+            position: relative;
+            @include respond-to(mobile-landscape) {
+                font-size: 1.2rem;
+                height: 48px;
+            }
+            &-columns {
+                display: flex;
+                align-content: stretch;
+                @include respond-to(mobile-portrait) {
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+                .wrapper {
+                    flex-basis: 25%;
+                    margin:0 0 0 1rem;
+                    @include respond-to(mobile-portrait) {
+                        flex-basis: 48%;
+                        margin-left: 0;
+                        margin-bottom: 1rem;
+                    }
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+            &.slim {
+                height: 18px;
+                @include respond-to(mobile-landscape) {
+                    height: 24px;
+                }
+            }
+            &.active {
+                input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+                    padding-top: 12px;
+                }
+                .placeholder {
+                    opacity: 1;
+                }
+            }
+            &.valid {
+                input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+                    border-color: $green;
+                    color: $green;
+                    padding-top: 12px;
+                }
+                .placeholder {
+                    opacity: 1;
+                }
+            }
+            &.invalid {
+                input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+                    border-color: $red;
+                    color: $red;
+                }
+                .error {
+                    opacity: 1;
+                }
+            }
+            a {
+                font-size: 1.2rem;
+                color: $text;
+                text-decoration: none;
+                border-bottom: 1px solid $text;
+                &:hover {
+                    color: #000;
+                    border-color: #000;
+                }
+            }
+        }
+        label {
+            font: 1.2rem 'robotolight';
+            @include respond-to(mobile-landscape) {
+                font-size: 1.6rem;
+            }
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+            width: 100%;
+            height: 36px;
+            padding: 0 1rem;
+            font-size: 1.2rem;
+            color: $text;
+            border: 1px solid $text;
+            outline: none;
+            border-radius: 0;
+            box-shadow: none;
+            -webkit-appearance: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .2s linear;
+            @include respond-to(mobile-landscape) {
+                font-size: 1.6rem;
+                height: 48px;
+            }
+            &:focus {
+                border: 2px solid #000;
+                &::-webkit-input-placeholder {
+                    opacity: 0;
+                }
+                &::-moz-placeholder {
+                    opacity: 0;
+                }
+                &:-ms-input-placeholder {
+                    opacity: 0;
+                }
+                &:-moz-placeholder {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .jq-checkbox {
+            width: 18px;
+            height: 18px;
+            @include respond-to(mobile-landscape) {
+                width: 24px;
+                height: 24px;
+                .jq-checkbox__div {
+                    width: 22px;
+                    height: 22px;
+                    left: 5px;
+                }
+                &.checked {
+                    .jq-checkbox__div {
+                        top: -5px;
+                        left: 5px;
+                    }
+                }
+            }
+            .jq-checkbox__div {
+                width: 16px;
+                height: 16px;
+            }
+            &.checked {
+                overflow: visible !important;
+                .jq-checkbox__div {
+                    position: absolute;
+                    bottom: 3px;
+                    left: 3px;
+                    background: transparent center no-repeat url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6YT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZVNWR1ZpZXdlckV4dGVuc2lvbnMvMy4wLyIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIyLjNweCIgaGVpZ2h0PSIxNS40cHgiIHZpZXdCb3g9IjAgMCAyMi4zIDE1LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIyLjMgMTUuNDsiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MjtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9Cjwvc3R5bGU+CjxkZWZzPgo8L2RlZnM+Cjxwb2x5bGluZSBjbGFzcz0ic3QwIiBwb2ludHM9IjAuNyw2LjQgOC4zLDE0IDIxLjYsMC43ICIvPgo8L3N2Zz4=);
+                    background-size: cover;
+                }
+            }
+        }
+
+        .placeholder {
+            font-size: 1rem;
+            color: $light-gray;
+            position: absolute;
+            top: 2px;
+            left: 12px;
+            opacity: 0;
+            transition: all .2s linear;
+            @include respond-to(mobile-landscape) {
+                font-size: 1.2rem;
+            }
+        }
+
+        .error {
+            font-size: 1rem;
+            color: $red;
+            position: absolute;
+            top: 2px;
+            right: 12px;
+            opacity: 0;
+            transition: all .2s linear;
+            @include respond-to(mobile-landscape) {
+                font-size: 1.2rem;
+            }
+        }
+
+        button {
+            @include button();
+            width: 100%;
+            background-color: #fff;
+            color: #000;
+            border-color: #000;
+            margin-top: 2rem;
+            @include respond-to(mobile-landscape) {
+                font-size: 1.6rem;
+            }
+            @at-root .login .form button {
+                margin-top: 0 !important;
             }
         }
     }

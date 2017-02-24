@@ -20,6 +20,7 @@
 @import "cart";
 @import "filters";
 @import "loop";
+@import "sidebar";
 @import "footer";
 
 @import "pages/_home";
@@ -27,5 +28,9 @@
 @import "pages/_category";
 @import "pages/_brands";
 @import "pages/_checkout";
+@import "pages/_errors";
+@import "pages/_news";
+@import "pages/_article";
+@import "pages/_account";
 
 @import "soon";

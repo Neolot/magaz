@@ -8,6 +8,7 @@
         var $filters = $('#filters');
         var $catnav = $('#categorynav-mobile');
         var $checkout_form = $('.checkout-form');
+        var $news = $('.news');
 
         // Responsive
         $.extend(verge);
@@ -22,7 +23,7 @@
             mobilePortrait: 480
         };
         responsive_nav(screen_width, media);
-        setQuickviewWidth($('.item-thumb-wrapper'));
+        setQuickviewWidth($('.item-thumb-wrapper, .article .image, .page .image'));
         function responsive_nav(screen_width, media) {
             if ( screen_width <= media.tabletLandscape ) {
                 $('.nav-special', $navigation).detach().insertBefore('.navs', $navigation);
@@ -64,7 +65,7 @@
         $(window).on('orientationchange', function() {
             screen_width = $.viewport().width;
             responsive_nav(screen_width, media);
-            setQuickviewWidth($('.item-thumb-wrapper'));
+            setQuickviewWidth($('.item-thumb-wrapper, .article .image, .page .image'));
 
             if ( screen_width <= media.tabletPortrait ) {
                 $filters.detach().appendTo('body');
@@ -79,6 +80,7 @@
             }
 
             calc_cartContentHeight();
+            news_fitTextByImages();
         });
 
         $(window).click(function() {
@@ -321,6 +323,29 @@
                     pagerTemplate: '<a href="javascript:void(0);"><img src="{{src}}" width="48" height="72"></a>',
                     log: false
                 });
+                $('.login input[type="checkbox"]').styler();
+
+                $('.login .form .wrapper').each(function(index, el) {
+                    if ( $(inputs, el).length > 0 ) {
+                        var placeholder = $(inputs, el).attr('placeholder');
+                        $(el).append('<span class="placeholder">'+placeholder+'</span>');
+                        $(inputs, el)
+                            .focusin(function() {
+                                $(el).addClass('active').removeClass('invalid');
+                                if ( $(el).find('input').val() == '' ) {
+                                    $(el).find('input').val('');
+                                }
+                            })
+                            .focusout(
+                                function() {
+                                    $(el).removeClass('active');
+                                    if ( $(el).find('input').val() == '' ) {
+                                        $(el).find('input').val('');
+                                    }
+                                }
+                            );
+                    }
+                });
             },
             afterShow: function() {
                 $('input[type="tel"]').mask('+7 (999) 999-99-99');
@@ -502,6 +527,19 @@
                     p.find('div.box:eq(' + i + ')').fadeToggle('fast');
                 });
             });
+        });
+
+        // Fixes
+        function news_fitTextByImages() {
+            if ( screen_width > media.mobilePortrait ) {
+                $('.news-list .news-item', $news).each(function() {
+                    var image_h = $('img', this).height();
+                    $('.news-item-text').css('max-height', image_h);
+                });
+            }
+        }
+        $('img', $news).load(function() {
+            news_fitTextByImages();
         });
 
         // Filters Fixed Sidebar
