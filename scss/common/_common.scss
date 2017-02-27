@@ -316,6 +316,11 @@ body {
         color: #000 !important;
         border-bottom-color: #000 !important;
     }
+    &.active {
+        &:after {
+            transform: rotate(90deg);
+        }
+    }
 }
 
 .hasdropdown {
@@ -459,7 +464,7 @@ body {
     }
 }
 
-.checkout-form, .login .form {
+.checkout-form, .login .form, .account .section-data {
     .tabs-wrapper {
         .tabs {
             @include clearlist;
@@ -527,6 +532,10 @@ body {
             }
             &.slim {
                 height: 18px;
+                span {
+                    font-size: 1.2rem;
+                    margin-right: 1rem;
+                }
                 @include respond-to(mobile-landscape) {
                     height: 24px;
                 }
@@ -570,10 +579,8 @@ body {
             }
         }
         label {
-            font: 1.2rem 'robotolight';
-            @include respond-to(mobile-landscape) {
-                font-size: 1.6rem;
-            }
+            font-size: 1.2rem;
+            margin-right: 1rem;
         }
         input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
             width: 100%;
@@ -611,31 +618,31 @@ body {
             }
         }
 
-        .jq-checkbox {
+        .jq-checkbox, .jq-radio {
             width: 18px;
             height: 18px;
             @include respond-to(mobile-landscape) {
                 width: 24px;
                 height: 24px;
-                .jq-checkbox__div {
+                .jq-checkbox__div, .jq-radio__div {
                     width: 22px;
                     height: 22px;
                     left: 5px;
                 }
                 &.checked {
-                    .jq-checkbox__div {
+                    .jq-checkbox__div, .jq-radio__div {
                         top: -5px;
                         left: 5px;
                     }
                 }
             }
-            .jq-checkbox__div {
+            .jq-checkbox__div, .jq-radio__div {
                 width: 16px;
                 height: 16px;
             }
             &.checked {
                 overflow: visible !important;
-                .jq-checkbox__div {
+                .jq-checkbox__div, .jq-radio__div {
                     position: absolute;
                     bottom: 3px;
                     left: 3px;

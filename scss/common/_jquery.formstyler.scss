@@ -1,4 +1,4 @@
-.jq-checkbox {
+.jq-checkbox, .jq-radio {
     top: -1px;
     vertical-align: middle;
     width: 16px;
@@ -8,34 +8,9 @@
     background: #fff;
     cursor: pointer;
 
-    &.checked .jq-checkbox__div {
+    &.checked .jq-checkbox__div, &.checked .jq-radio__div {
         width: 16px;
         height: 16px;
-        background: $text;
-    }
-
-    &.focused {
-
-    }
-
-    &.disabled {
-        opacity: .55;
-    }
-}
-
-.jq-radio {
-    top: -1px;
-    vertical-align: middle;
-    width: 16px;
-    height: 16px;
-    margin: 0 4px 0 0;
-    border: 1px solid $text;
-    background-color: #ffffff;
-    cursor: pointer;
-
-    &.checked .jq-radio__div {
-        width: 15px;
-        height: 15px;
         background: $text;
     }
 

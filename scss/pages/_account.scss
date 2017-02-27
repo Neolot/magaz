@@ -1,4 +1,215 @@
 .account {
+    .site-content {
+        a {
+            color: $text;
+            text-decoration: none;
+            border-bottom: 1px solid $text;
+            text-transform: uppercase;
+            &:hover {
+                color: #000;
+                border-bottom-color: #000;
+            }
+        }
+    }
 
+    &-header {
+        position: relative;
+        margin-bottom: 3rem;
+        @include respond-to(tablet-portrait) {
+            margin-bottom: 2rem;
+        }
+    }
+    &-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &-logout {
+        position: absolute;
+        right: 0;
+        top: 11px;
+        @include respond-to(tablet-portrait) {
+            display: none;
+        }
+    }
 
+    .section {
+        margin-bottom: 3rem;
+        &-header {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-bottom: 5px;
+            border-bottom: 1px solid $light-gray;
+            @include respond-to(tablet-portrait) {
+                text-align: center;
+            }
+        }
+        &-title {
+            font-size: 1.4rem;
+            color: #000;
+            text-transform: uppercase;
+            @include respond-to(tablet-portrait) {
+                margin-bottom: 1rem;
+            }
+        }
+        &-edit {
+            position: absolute;
+            right: 0;
+            top: 4px;
+            @include respond-to(tablet-portrait) {
+                position: static;
+                display: inline-block;
+                margin-bottom: 1rem;
+            }
+        }
+        &-data {
+            @include respond-to(tablet-portrait) {
+                text-align: center;
+            }
+            &-title {
+                font-size: 1.2rem;
+                padding-bottom: 1rem;
+            }
+            form {
+                width: 440px;
+                max-width: 100%;
+                .remove {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    margin-top: -.6rem;
+                    @include respond-to(mobile-portrait) {
+                        position: static;
+                        margin-top: .6rem;
+                        text-align: center;
+                    }
+                }
+                .wrapper {
+                    @include respond-to(mobile-landscape) {
+                        text-align: left;
+                        &.address-title {
+                            height: 48px;
+                        }
+                    }
+                }
+                .wrapper-columns {
+                    margin-bottom: 1rem;
+                }
+                .add-address {
+                    text-align: center !important;
+                    margin-top: 2rem;
+                }
+                button {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &-table {
+            display: table;
+            margin-bottom: 1rem;
+            @include respond-to(tablet-portrait) {
+                display: block;
+            }
+            &-row {
+                display: table-row;
+                @include respond-to(tablet-portrait) {
+                    display: block;
+                    margin-bottom: 1rem;
+                }
+                & > div {
+                    display: table-cell;
+                    font-size: 1.2rem;
+                    padding-bottom: 1rem;
+                    min-width: 160px;
+                    position: relative;
+                    @include respond-to(tablet-portrait) {
+                        display: block;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &-orders {
+        .section-table {
+            width: 100%;
+            &-row > div {
+                &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                    width: 160px;
+                    @include respond-to(tablet-portrait) {
+                        width: auto;
+                    }
+                }
+                span {
+                    display: block;
+                }
+                @include respond-to(tablet-portrait) {
+                    margin-bottom: 1rem;
+                }
+            }
+            &-header {
+                @include respond-to(tablet-portrait) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &-order-details {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease-in-out;
+        &.open {
+            max-height: 500px;
+        }
+        .wrapper {
+            border: 1px solid $light-gray;
+            padding: 1rem 1rem 3rem;
+            margin-top: 1.5rem;
+            position: relative;
+            .close {
+                border: none;
+                position: absolute;
+                bottom: 15px;
+                right: 25px;
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                background: 0 0 no-repeat url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15.6px" height="15.6px" viewBox="0 0 15.6 15.6" style="enable-background:new 0 0 15.6 15.6;" xml:space="preserve"> <defs> </defs> <g> <rect x="-2.2" y="6.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 7.7782 -3.2218)" width="20" height="2"/> <rect x="-2.2" y="6.8" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 18.7782 7.7782)" width="20" height="2"/> </g> </svg>');
+                background-size: cover;
+                &:hover {
+                    background-image: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15.6px" height="15.6px" viewBox="0 0 15.6 15.6" style="enable-background:new 0 0 15.6 15.6;" xml:space="preserve"> <style type="text/css"> .st0{fill:#D11825;} </style> <defs> </defs> <g> <rect x="-2.2" y="6.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 7.7782 -3.2218)" class="st0" width="20" height="2"/> <rect x="-2.2" y="6.8" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 18.7782 7.7782)" class="st0" width="20" height="2"/> </g> </svg>');
+                }
+            }
+        }
+        &-row {
+            display: flex;
+            align-items: center;
+            min-height: 40px;
+            margin: 1rem 0;
+            & > div {
+                margin: 0 1rem;
+            }
+        }
+    }
+
+    &-social {
+        @include share;
+        text-align: left;
+        margin-top: 0;
+        a {
+            width: 50px;
+            height: 50px;
+            font-size: 3rem;
+            line-height: 50px;
+            color: #fff !important;
+            margin: 0 1rem 0 0;
+            border: none !important;
+        }
+    }
 }

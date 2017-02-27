@@ -72,7 +72,7 @@
                     <li><a href="news.php">Новости</a></li>
                     <li><a href="article.php">Статья</a></li>
                     <li><a href="page.php">Текстовая страница</a></li>
-                    <!-- <li><a href="account.php">Личный кабинет</a></li> -->
+                    <li><a href="account.php">Личный кабинет</a></li>
                 </ul>
             </div>
         </div>

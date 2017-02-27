@@ -10,35 +10,37 @@
 
     <div class="forms">
         <div class="section">
-            <div class="section-title">Регистрация нового пользователя</div>
+            <button class="section-lock" type="button">Я &mdash; новый пользователь</button>
+            <div class="section-wrapper">
+                <div class="section-title">Регистрация нового пользователя</div>
                 <div class="form">
                     <form action="javascript:void(0);">
                         <div class="wrapper valid"><input type="text" placeholder="Имя"/></div>
                         <div class="wrapper"><input type="text" placeholder="Фамилия"/></div>
                         <div class="wrapper invalid"><input type="email" placeholder="Email"/><span class="error">Некорректный email</span></div>
-                        <div class="wrapper slim">
-                            <label><input type="checkbox"/> Подписаться на рассылку</label>
-                        </div>
+                        <div class="wrapper slim"><label><input type="checkbox"/> Подписаться на рассылку</label></div>
                         <div class="wrapper"><input type="password" placeholder="Придумайте пароль"/></div>
                         <div class="wrapper"><input type="password" placeholder="Повторите пароль"/></div>
                         <button type="submit">Зарегистрироваться</button>
                     </form>
                 </div>
+            </div>
         </div>
 
         <div class="line"></div>
 
         <div class="section">
-            <div class="section-title">Вход</div>
-            <div class="form">
-                <form action="javascript:void(0);">
-                    <div class="wrapper"><input type="email" placeholder="Email"/></div>
-                    <div class="wrapper"><input type="password" placeholder="Пароль"/></div>
-                    <div class="wrapper slim">
-                        <label><input type="checkbox" checked/> Запомнить меня<span class="hidden-xs">на этом компьютере</span></label>
-                    </div>
-                    <button type="submit">Войти</button>
-                </form>
+            <button class="section-lock" type="button">Войти</button>
+            <div class="section-wrapper">
+                <div class="section-title">Вход</div>
+                <div class="form">
+                    <form action="javascript:void(0);">
+                        <div class="wrapper"><input type="email" placeholder="Email"/></div>
+                        <div class="wrapper"><input type="password" placeholder="Пароль"/></div>
+                        <div class="wrapper slim"><label><input type="checkbox" checked/> Запомнить меня<span class="hidden-xs">на этом компьютере</span></label> </div>
+                        <button type="submit">Войти</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -46,4 +48,6 @@
     <div class="thanks">
         <div class="title">Добро пожаловать, Екатерина!</div>
     </div>
+
+    <a title="Закрыть" class="fancybox-item fancybox-close" id="fancybox-close" href="javascript:;"></a>
 </div>
