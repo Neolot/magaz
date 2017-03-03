@@ -168,7 +168,7 @@ body {
     .item {
         margin: 0 auto;
         text-align: center;
-        &-thumb {
+        /*&-thumb {
             display: block;
             margin-bottom: .5rem;
             outline: 1px solid transparent;
@@ -182,6 +182,54 @@ body {
             }
             &-wrapper {
                 position: relative;
+                &:hover {
+                    .quickview {
+                        visibility: visible;
+                    }
+                    img {
+                        &:nth-child(1) {
+                            display: none;
+                        }
+                        &:nth-child(2) {
+                            display: block;
+                        }
+                    }
+                }
+                &.noswap:hover {
+                    img:nth-child(1) {
+                        display: block;
+                    }
+                }
+            }
+        }*/
+        &-thumb {
+            position: relative;
+            display: block;
+            outline: 1px solid transparent;
+            outline-offset: -1px;
+            &:after {
+                content: '';
+                display: block;
+                padding-bottom: 149%;
+            }
+            &-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+            &-wrapper {
+                position: relative;
+                margin-bottom: 5px;
                 &:hover {
                     .quickview {
                         visibility: visible;
