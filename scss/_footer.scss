@@ -133,6 +133,9 @@
                 @include share;
                 margin-top: 0;
                 text-align: left;
+                @include respond-to(tablet-portrait) {
+                    text-align: center;
+                }
                 a {
                     background: #fff;
                     border-bottom: none;

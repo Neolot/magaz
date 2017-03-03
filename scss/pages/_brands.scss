@@ -123,7 +123,7 @@
         }
         &-item {
             display: block;
-            margin-bottom: 4rem;
+            margin-bottom: 5px;
             color: $text;
             &:hover {
                 color: #000;
@@ -131,7 +131,6 @@
             }
             &-thumb {
                 position: relative;
-                margin-bottom: 1rem;
                 &:after {
                     content: '';
                     display: block;
@@ -153,6 +152,14 @@
             &-title {
                 font-size: 1.4rem;
                 text-align: center;
+                margin-bottom: 3rem;
+                a {
+                    color: $text;
+                    &:hover {
+                        color: #000;
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }

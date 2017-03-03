@@ -13,8 +13,10 @@
                                     <img src="http://lorempixel.com/100/100" width="100" height="100" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Сумки</div>
                         </a>
+                        <div class="brands-list-item-title">
+                            <a href="#">Сумки</a>
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                         <a href="#" class="brands-list-item">
@@ -23,8 +25,9 @@
                                     <img src="http://lorempixel.com/270/270" width="270" height="270" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Спортивная одежда, атрибутика, сувенирная продукция</div>
                         </a>
+                        <div class="brands-list-item-title"><a href="#">Спортивная одежда</a>, <a href="#">атрибутика</a>,
+                            <a href="#">сувенирная продукция</a></div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                         <a href="#" class="brands-list-item">
@@ -33,8 +36,10 @@
                                     <img src="http://lorempixel.com/100/100" width="100" height="100" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Сумки</div>
                         </a>
+                        <div class="brands-list-item-title">
+                            <a href="#">Сумки</a>
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                         <a href="#" class="brands-list-item">
@@ -43,8 +48,9 @@
                                     <img src="http://lorempixel.com/270/270" width="270" height="270" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Спортивная одежда, атрибутика, сувенирная продукция</div>
                         </a>
+                        <div class="brands-list-item-title"><a href="#">Спортивная одежда</a>, <a href="#">атрибутика</a>,
+                            <a href="#">сувенирная продукция</a></div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                         <a href="#" class="brands-list-item">
@@ -53,8 +59,10 @@
                                     <img src="http://lorempixel.com/100/100" width="100" height="100" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Сумки</div>
                         </a>
+                        <div class="brands-list-item-title">
+                            <a href="#">Сумки</a>
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                         <a href="#" class="brands-list-item">
@@ -63,8 +71,9 @@
                                     <img src="http://lorempixel.com/270/270" width="270" height="270" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Спортивная одежда, атрибутика, сувенирная продукция</div>
                         </a>
+                        <div class="brands-list-item-title"><a href="#">Спортивная одежда</a>, <a href="#">атрибутика</a>,
+                            <a href="#">сувенирная продукция</a></div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                         <a href="#" class="brands-list-item">
@@ -73,8 +82,10 @@
                                     <img src="http://lorempixel.com/100/100" width="100" height="100" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Сумки</div>
                         </a>
+                        <div class="brands-list-item-title">
+                            <a href="#">Сумки</a>
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                         <a href="#" class="brands-list-item">
@@ -83,8 +94,9 @@
                                     <img src="http://lorempixel.com/270/270" width="270" height="270" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Спортивная одежда, атрибутика, сувенирная продукция</div>
                         </a>
+                        <div class="brands-list-item-title"><a href="#">Спортивная одежда</a>, <a href="#">атрибутика</a>,
+                            <a href="#">сувенирная продукция</a></div>
                     </div>
                 </div>
             </div>
@@ -103,8 +115,10 @@
                                     <img src="http://lorempixel.com/100/100" width="100" height="100" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Сумки</div>
                         </a>
+                        <div class="brands-list-item-title">
+                            <a href="#">Сумки</a>
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                         <a href="#" class="brands-list-item">
@@ -113,8 +127,9 @@
                                     <img src="http://lorempixel.com/270/270" width="270" height="270" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Спортивная одежда, атрибутика, сувенирная продукция</div>
                         </a>
+                        <div class="brands-list-item-title"><a href="#">Спортивная одежда</a>, <a href="#">атрибутика</a>,
+                            <a href="#">сувенирная продукция</a></div>
                     </div>
                 </div>
             </div>
@@ -133,8 +148,10 @@
                                     <img src="http://lorempixel.com/100/100" width="100" height="100" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Сумки</div>
                         </a>
+                        <div class="brands-list-item-title">
+                            <a href="#">Сумки</a>
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                         <a href="#" class="brands-list-item">
@@ -143,8 +160,9 @@
                                     <img src="http://lorempixel.com/270/270" width="270" height="270" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Спортивная одежда, атрибутика, сувенирная продукция</div>
                         </a>
+                        <div class="brands-list-item-title"><a href="#">Спортивная одежда</a>, <a href="#">атрибутика</a>,
+                            <a href="#">сувенирная продукция</a></div>
                     </div>
                 </div>
             </div>
@@ -163,8 +181,10 @@
                                     <img src="http://lorempixel.com/100/100" width="100" height="100" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Сумки</div>
                         </a>
+                        <div class="brands-list-item-title">
+                            <a href="#">Сумки</a>
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                         <a href="#" class="brands-list-item">
@@ -173,8 +193,9 @@
                                     <img src="http://lorempixel.com/270/270" width="270" height="270" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Спортивная одежда, атрибутика, сувенирная продукция</div>
                         </a>
+                        <div class="brands-list-item-title"><a href="#">Спортивная одежда</a>, <a href="#">атрибутика</a>,
+                            <a href="#">сувенирная продукция</a></div>
                     </div>
                 </div>
             </div>
@@ -193,8 +214,10 @@
                                     <img src="http://lorempixel.com/100/100" width="100" height="100" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Сумки</div>
                         </a>
+                        <div class="brands-list-item-title">
+                            <a href="#">Сумки</a>
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                         <a href="#" class="brands-list-item">
@@ -203,8 +226,9 @@
                                     <img src="http://lorempixel.com/270/270" width="270" height="270" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Спортивная одежда, атрибутика, сувенирная продукция</div>
                         </a>
+                        <div class="brands-list-item-title"><a href="#">Спортивная одежда</a>, <a href="#">атрибутика</a>,
+                            <a href="#">сувенирная продукция</a></div>
                     </div>
                 </div>
             </div>
@@ -223,8 +247,10 @@
                                     <img src="http://lorempixel.com/100/100" width="100" height="100" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Сумки</div>
                         </a>
+                        <div class="brands-list-item-title">
+                            <a href="#">Сумки</a>
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                         <a href="#" class="brands-list-item">
@@ -233,8 +259,9 @@
                                     <img src="http://lorempixel.com/270/270" width="270" height="270" alt=""/>
                                 </div>
                             </div>
-                            <div class="brands-list-item-title">Спортивная одежда, атрибутика, сувенирная продукция</div>
                         </a>
+                        <div class="brands-list-item-title"><a href="#">Спортивная одежда</a>, <a href="#">атрибутика</a>,
+                            <a href="#">сувенирная продукция</a></div>
                     </div>
                 </div>
             </div>
