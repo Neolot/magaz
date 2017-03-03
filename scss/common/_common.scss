@@ -18,6 +18,15 @@ body {
     }
 }
 
+.site-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.site-content {
+    flex: 1 0 auto;
+}
+
 .site-header, .site-content, .site-footer, .triangle {
     transition-property: -webkit-transform;
     transition-property: transform;

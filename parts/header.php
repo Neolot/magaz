@@ -37,41 +37,42 @@
 </head>
 <body <?php echo 'class="' . basename($_SERVER['SCRIPT_NAME'], '.php') . '"'; ?>>
 
-<header class="site-header" id="site-header">
-	<div class="site-header-top" id="top">
-		<div class="container">
-			<div class="col-lg-4 col-lg-offset-5 col-md-6 col-md-offset-3 visible-lg visible-md">
-				<div class="searchline">
-					<form action="#">
-						<input type="text" name="s" placeholder="Поиск"/>
-					</form>
-				</div>
-			</div>
-			<div class="col-lg-10 col-md-8 col-sm-14">
-				<div class="phone visible-lg">Бесплатный телефон поддержки 8–800–555–55–55</div>
-				<div class="phone visible-md visible-xs visible-sm">Тел: 8–800–555–55–55</div>
-			</div>
-			<div class="col-lg-5 col-md-7 col-sm-10 visible-lg visible-md visible-sm">
-				<div class="lang visible-lg">
-					<a href="#" class="active">Русский</a> / <a href="#">English</a>
-				</div>
-				<div class="lang visible-md visible-sm">
-					<a href="#" class="active">Рус</a> / <a href="#">Eng</a>
-				</div>
-			</div>
-		</div>
-		<div class="madeinrussia">Товары произведенные в России</div>
-	</div>
-
-	<?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/navigation.php' ?>
-
-    <div class="categorynav-mobile visible-xs" id="categorynav-mobile">
-        <ul>
-            <li class="categorynav-mobile-filters"><a href="#"></a></li>
-            <li class="categorynav-mobile-view"><a href="#" data-columns="2"></a></li>
-            <li class="categorynav-mobile-sort"><a href="#" ></a></li>
-        </ul>
-    </div>
-</header>
-
 <div class="triangle"></div>
+
+<div class="site-wrapper">
+    <header class="site-header" id="site-header">
+        <div class="site-header-top" id="top">
+            <div class="container">
+                <div class="col-lg-4 col-lg-offset-5 col-md-6 col-md-offset-3 visible-lg visible-md">
+                    <div class="searchline">
+                        <form action="#">
+                            <input type="text" name="s" placeholder="Поиск"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-8 col-sm-14">
+                    <div class="phone visible-lg">Бесплатный телефон поддержки 8–800–555–55–55</div>
+                    <div class="phone visible-md visible-xs visible-sm">Тел: 8–800–555–55–55</div>
+                </div>
+                <div class="col-lg-5 col-md-7 col-sm-10 visible-lg visible-md visible-sm">
+                    <div class="lang visible-lg">
+                        <a href="#" class="active">Русский</a> / <a href="#">English</a>
+                    </div>
+                    <div class="lang visible-md visible-sm">
+                        <a href="#" class="active">Рус</a> / <a href="#">Eng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="madeinrussia">Товары произведенные в России</div>
+        </div>
+
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/parts/navigation.php' ?>
+
+        <div class="categorynav-mobile visible-xs" id="categorynav-mobile">
+            <ul>
+                <li class="categorynav-mobile-filters"><a href="#"></a></li>
+                <li class="categorynav-mobile-view"><a href="#" data-columns="2"></a></li>
+                <li class="categorynav-mobile-sort"><a href="#" ></a></li>
+            </ul>
+        </div>
+    </header>

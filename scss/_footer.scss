@@ -1,6 +1,7 @@
 .site-footer {
     font-size: 1.2rem;
     color: #fff;
+    flex: 0 0 auto;
     @include respond-to(mobile-landscape) {
         font-size: 1.6rem;
     }
