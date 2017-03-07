@@ -299,14 +299,16 @@
         var $cart_promocode = $('#cart .promocode');
         $('button', $cart_promocode).click(function() {
             if ( $('input', $cart_promocode).val() != '' ) {
-                $(this).find('span').text('Промокод активирован');
-                $(this).attr('disabled', 'disabled');
+                var $promocode_button = $(this);
+                $promocode_button.find('span').text('Промокод активирован');
+                $promocode_button.attr('disabled', 'disabled');
                 $cart_promocode.addClass('done');
                 setTimeout(function() {
-                    $cart_promocode.fadeOut(1000, function(){
-                        $cart_promocode.remove();
-                    });
-                }, 3000);
+                    $('input', $cart_promocode).val('');
+                    $promocode_button.find('span').text('Активировать');
+                    $promocode_button.removeAttr('disabled');
+                    $cart_promocode.removeClass('done');
+                }, 2000);
             }
         });
 
