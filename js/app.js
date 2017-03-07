@@ -316,6 +316,7 @@
             closeBtn: false,
             beforeShow: function() {
                 $('#qv-gallery').cycle({
+                    autoHeight: 'container',
                     fx: 'fade',
                     timeout: 0,
                     pager: '#qv-gallery-pager',
@@ -358,10 +359,14 @@
                 $('#login .section-wrapper').removeClass('open');
                 $(this).next('.section-wrapper').addClass('open');
                 $.fancybox.update();
+            })
+            .on('cycle-initialized', '#qv-gallery', function () {
+                $.fancybox.update();
             });
 
         // Product gallery
         $('#product-gallery').cycle({
+            autoHeight: 'container',
             speed: 200,
             fx: 'fade',
             timeout: 0,
