@@ -12,14 +12,10 @@
     }
 
     &-title {
-        font: 16rem 'Molot';
+        font: 12rem 'Molot';
         color: #fff;
-        @include respond-to(laptop) {
-            font-size: 15rem;
-        }
-        @include respond-to(tablet-landscape) {
-            font-size: 12rem;
-        }
+        display: flex;
+        justify-content: center;
         @include respond-to(tablet-portrait) {
             font-size: 10rem;
             margin-bottom: 3rem;
@@ -29,6 +25,9 @@
         }
         @include respond-to(mobile-portrait) {
             font-size: 5rem;
+        }
+        &-wrapper {
+            flex-basis: 50%;
         }
         span {
             color: $red;

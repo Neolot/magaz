@@ -2,7 +2,11 @@
 
 <main class="site-content" id="site-content">
     <div class="container">
-        <div class="home-title"><span>!</span>Только российские бренды<span>!</span></div>
+        <div class="home-title">
+            <div class="home-title-wrapper">
+                <span>!</span>Только российские бренды<span>!</span>
+            </div>
+        </div>
 
         <div class="home-main-categories">
             <div class="row">
