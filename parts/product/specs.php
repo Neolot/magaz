@@ -3,13 +3,18 @@
 		<div class="col-lg-12 col-md-12 col-sm-16 no-padding">
 			<div class="product-gallery-wrapper">
 				<div class="product-gallery" id="product-gallery">
-                    <img src="http://lorempixel.com/480/720">
-				    <img src="http://lorempixel.com/480/720">
-				    <img src="http://lorempixel.com/480/720">
-				    <img src="http://lorempixel.com/480/720">
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
 					<div class="product-gallery-sale">Товар участвует в акции</div>
 				</div>
-				<div id="product-gallery-pager" class="product-gallery-pager"></div>
+				<div id="product-gallery-pager" class="product-gallery-pager">
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                </div>
                 <div class="product-share">
                     <a href="#" rel="external nofollow" class="socicon-facebook" title="Поделиться в Facebook" target="_blank"></a>
                     <a href="#" rel="external nofollow" class="socicon-instagram" title="Поделиться в Instagram" target="_blank"></a>

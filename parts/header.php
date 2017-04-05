@@ -28,6 +28,8 @@
     <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#D11825">
 
+    <link rel="stylesheet" href="/js/vendor/ilightbox/css/ilightbox.css" type="text/css" media="all"/>
+
     <link rel="mask-icon" sizes="any" href="/images/mask.svg" color="#D11825">
     <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css" type="text/css" media="all"/>

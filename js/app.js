@@ -484,6 +484,7 @@
 
         // Product gallery
         $('#product-gallery').cycle({
+            slides: '> a',
             autoHeight: 'container',
             speed: 200,
             fx: 'fade',
@@ -491,9 +492,10 @@
             swipe: true,
             swipeFx: 'scrollHorz',
             pager: '#product-gallery-pager',
-            pagerTemplate: '<a href="javascript:void(0);"><img src="{{src}}" width="48" height="72"></a>',
+            pagerTemplate: '',
             log: false
         });
+        $('a[rel="product-gallery"]').iLightBox();
 
         // View photo on hover
         $('.item-thumb-wrapper').each(function() {
