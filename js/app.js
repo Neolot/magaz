@@ -398,7 +398,12 @@
 
         // Cart shipment
         var $cart_chipment = $('#cart .cart-shipment');
-        $('.checkout-form select').styler({
+        $('.checkout-form select[name="city"]').each(function() {
+            $(this).select2({
+                language: "ru"
+            });
+        });
+        $('.checkout-form select[name="shipping_method"]').styler({
             onFormStyled: function() {
                 $('.checkout-form select[name="shipping_method"]').siblings('.jq-selectbox__dropdown').find('li').click(function () {
                     var shipment_cost = $(this).attr('data-shipment');
@@ -414,7 +419,7 @@
         // Cart promocode
         var $cart_promocode = $('#cart .promocode');
         $('button', $cart_promocode).click(function() {
-            if ( $('input', $cart_promocode).val() != '' ) {
+            if ( $('input', $cart_promocode).val() !== '' ) {
                 var $promocode_button = $(this);
                 $promocode_button.find('span').text('Промокод активирован');
                 $promocode_button.attr('disabled', 'disabled');
@@ -523,7 +528,12 @@
         });
 
         // Form Styler
-        $('.sort-dropdown input[type="radio"], #filters .filter input[type="checkbox"], .checkout-form input, .account .section-data input[type="checkbox"], .account .section-data input[type="radio"], .account .section-data select').styler();
+        $('.sort-dropdown input[type="radio"], #filters .filter input[type="checkbox"], .checkout-form input, .account .section-data input[type="checkbox"], .account .section-data input[type="radio"]').styler();
+        $('.account .section-data select').each(function() {
+            $(this).select2({
+                language: "ru"
+            });
+        });
 
         // Dropdowns
         $('.hasdropdown a').click(function() {
@@ -618,6 +628,12 @@
                     var p = $(this).parents('div.tabs-wrapper');
                     p.find('div.box').hide();
                     p.find('div.box:eq(' + i + ')').fadeToggle('fast');
+
+                    if ( $(this).closest('.checkout-form').length ) {
+                        $('.checkout-form select[name="city"]').select2({
+                            language: "ru"
+                        });
+                    }
                 });
             });
         });
@@ -635,7 +651,12 @@
         $('#account-address').on('click', '.add-address a', function() {
             $.get('parts/account/address-template.php', function(data) {
                 $('#account-address .add-address').before(data);
-                $('.account .section-data input[type="checkbox"], .account .section-data input[type="radio"], .account .section-data select').styler();
+                $('.account .section-data input[type="checkbox"], .account .section-data input[type="radio"]').styler();
+                $('.account .section-data select').each(function() {
+                    $(this).select2({
+                        language: "ru"
+                    });
+                });
             });
         });
         // Remove address

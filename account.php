@@ -38,8 +38,8 @@
                 <a href="#" class="section-edit">Изменить</a>
             </div>
             <div class="section-data account-address" id="account-address"> <!-- Контейнер для вставки содержимого ajax-запроса -->
-                <?php include 'parts/account/address-read.php'?>
-                <?php //include 'parts/account/address-edit.php'?>
+                <?php //include 'parts/account/address-read.php'?>
+                <?php include 'parts/account/address-edit.php'?>
             </div>
         </div>
 

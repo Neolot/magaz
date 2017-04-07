@@ -18,7 +18,7 @@ var gulp = require('gulp'),
 
 gulp.task('watch', function () {
     gulp.watch('./scss/**/*.scss', ['scss']);
-    gulp.watch(['./js/vendor/*.js', './js/vendor/fancybox/jquery.fancybox.js', './js/vendor/ilightbox/ilightbox.js', './js/app.js'], ['js']);
+    gulp.watch(['./js/vendor/*.js', './js/vendor/fancybox/jquery.fancybox.js', './js/vendor/ilightbox/ilightbox.js', './js/vendor/select2/i18n/ru.js', './js/app.js'], ['js']);
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39,9 +39,9 @@ gulp.task('scss', function () {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 gulp.task('js', function () {
-    gulp.src(['./js/vendor/*.js', './js/vendor/fancybox/jquery.fancybox.js', './js/vendor/ilightbox/ilightbox.js', './js/app.js'])
+    gulp.src(['./js/vendor/*.js', './js/vendor/fancybox/jquery.fancybox.js', './js/vendor/ilightbox/ilightbox.js', './js/vendor/select2/i18n/ru.js', './js/app.js'])
         .pipe(concat('app.min.js'))
-        .pipe(uglify().on('error', function () {}))
+        .pipe(uglify())
         .pipe(gulp.dest('./js'));
 });
 

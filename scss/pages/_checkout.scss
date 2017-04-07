@@ -1,4 +1,8 @@
 .checkout {
+    select {
+        width: 100%;
+    }
+
     .site-header {
         margin-bottom: 0;
     }
@@ -183,6 +187,7 @@
 
     &-step {
         margin-top: 4rem;
+
         .button {
             @include button();
             width: 100%;
