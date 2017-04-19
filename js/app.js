@@ -628,12 +628,6 @@
                     var p = $(this).parents('div.tabs-wrapper');
                     p.find('div.box').hide();
                     p.find('div.box:eq(' + i + ')').fadeToggle('fast');
-
-                    if ( $(this).closest('.checkout-form').length ) {
-                        $('.checkout-form select[name="city"]').select2({
-                            language: "ru"
-                        });
-                    }
                 });
             });
         });
