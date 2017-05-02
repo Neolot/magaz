@@ -9,6 +9,7 @@
         var $catnav = $('#categorynav-mobile');
         var $checkout_form = $('.checkout-form');
         var $news = $('.news');
+        var $sort_dropdown = $('#sort-dropdown');
 
         // Responsive
         $.extend(verge);
@@ -155,6 +156,12 @@
             });
         }
 
+        function hideOtherUI($exclude) {
+            if ( $exclude !== $filters && $filters.hasClass('open') ) $filters.removeClass('open');
+            if ( $exclude !== $navigation && $navigation.hasClass('mobile-menu') ) $navigation.removeClass('mobile-menu');
+            if ( $exclude !== $sort_dropdown && $sort_dropdown.hasClass('open') ) $sort_dropdown.removeClass('open');
+        }
+
         // Move additional products
         if ( screen_width <= media.tabletLandscape ) {
             $('.product-additional', $sitecontent).detach().appendTo('.product-container', $sitecontent);
@@ -167,15 +174,17 @@
 
         $('.categorynav-mobile-filters a', $catnav).click(function() {
             $filters.toggleClass('open');
+            hideOtherUI($filters);
         });
 
         // Move sorting
         if ( screen_width <= media.tabletPortrait ) {
-            $('#sort-dropdown').detach().appendTo('body');
+            $sort_dropdown.detach().appendTo('body');
         }
 
         $('.categorynav-mobile-sort a', $catnav).click(function() {
-            $('#sort-dropdown').toggleClass('open');
+            $sort_dropdown.toggleClass('open');
+            hideOtherUI($sort_dropdown);
         });
 
         $(window).on('orientationchange', function() {
@@ -204,7 +213,7 @@
             $navigation.removeClass('mobile-menu');
             $menu_roots.removeClass('active');
             $filters.removeClass('open');
-            $('#sort-dropdown').removeClass('open');
+            $sort_dropdown.removeClass('open');
         });
         $navigation.click(function(e){
             e.stopPropagation();
@@ -212,7 +221,7 @@
         $filters.click(function(e){
             e.stopPropagation();
         });
-        $('#sort-dropdown').click(function(e){
+        $sort_dropdown.click(function(e){
             e.stopPropagation();
         });
         $('.categorynav-mobile-filters a, .categorynav-mobile-sort a', $catnav).click(function(e){
@@ -221,6 +230,7 @@
 
         $('.menu-link', $navigation).click(function() {
             $navigation.toggleClass('mobile-menu');
+            hideOtherUI($navigation);
         });
 
         $menu_roots.click(function() {
