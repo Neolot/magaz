@@ -216,7 +216,9 @@
             $sort_dropdown.removeClass('open');
         });
         $navigation.click(function(e){
-            e.stopPropagation();
+            if ( $(e.target).parent().hasClass('popup') === false ) {
+                e.stopPropagation();
+            }
         });
         $filters.click(function(e){
             e.stopPropagation();
