@@ -12,6 +12,9 @@
         width: 16px;
         height: 16px;
         background: $text;
+        position: relative;
+        top: -1px;
+        left: -1px;
     }
 
     &.focused {
