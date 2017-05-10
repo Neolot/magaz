@@ -623,6 +623,22 @@ body {
                     border-color: $red;
                     color: $red;
                 }
+                .jq-selectbox {
+                    &__select, &__trigger {
+                        border-color: $red;
+                    }
+                    & + .error {
+                        right: 44px;
+                    }
+                }
+                .select2 {
+                    & .select2-selection--single, & .select2-selection--single .select2-selection__arrow {
+                        border-color: $red;
+                    }
+                    & + .error {
+                        right: 44px;
+                    }
+                }
                 .error {
                     opacity: 1;
                 }
@@ -731,8 +747,8 @@ body {
             position: absolute;
             top: 2px;
             right: 12px;
+            z-index: 100;
             opacity: 0;
-            transition: all .2s linear;
             @include respond-to(mobile-landscape) {
                 font-size: 1.2rem;
             }

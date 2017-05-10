@@ -29,7 +29,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="wrapper">
+                                    <div class="wrapper invalid">
                                         <select name="city">
                                             <option disabled selected>Город</option>
                                             <option value="Москва">Москва</option>
@@ -37,14 +37,16 @@
                                             <option value="Новосибирск">Новосибирск</option>
                                             <option value="Екатеринбург">Екатеринбург</option>
                                         </select>
+                                        <span class="error">Выберите ваш город</span>
                                     </div>
-                                    <div class="wrapper">
+                                    <div class="wrapper invalid">
                                         <select name="shipping_method">
                                             <option disabled selected>Способ доставки</option>
                                             <option value="Курьером" data-value="Курьером" data-right="300 руб." data-shipment="300">Курьером</option>
                                             <option value="Почта России" data-value="Почта России" data-right="120 руб." data-shipment="120">Почта России</option>
                                             <option value="Самовывоз" data-value="Самовывоз" data-right="0 руб." data-shipment="0">Самовывоз</option>
                                         </select>
+                                        <span class="error">Выберите способ доставки</span>
                                     </div>
                                     <div class="wrapper slim">Бесплатная доставка от 5 000 руб.</div>
                                     <div class="wrapper"><input type="text" placeholder="Улица"/></div>
