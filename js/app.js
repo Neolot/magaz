@@ -352,7 +352,7 @@
         });
 
         var $summ_elements = $('#cart .cart-title-summ span, #cart .cart-summary-summ span');
-        var $quantity_elements = $('#cart .cart-title-quantity');
+        var $quantity_elements = $('#cart .cart-title-quantity, #cart-link i');
         $('#cart .item').each(function() {
             var $item_qty_wrapper = $(this).find('.item-quantity');
             var item_qty = $('input', $item_qty_wrapper).val();

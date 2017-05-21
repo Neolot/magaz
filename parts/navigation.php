@@ -217,7 +217,7 @@
             <ul class="nav-root nav-special">
                 <li class="menu-link visible-sm-inline-block visible-xs-inline-block"><a href="javascript:void(0);"><span>Меню</span></a></li>
                 <li class="profile-link loggedin"><a href="#"><span>Личный кабинет</span> <div>Приветствуем, Катя!</div></a></li>
-                <li class="cart-link"><a href="javascript:void(0);" id="cart-link"><span>Корзина (2)</span> <div>256 700 руб.</div></a></li>
+                <li class="cart-link"><a href="javascript:void(0);" id="cart-link"><i>2</i><span>Корзина (2)</span> <div>256 700 руб.</div></a></li>
             </ul>
 		</div>
 	</div>

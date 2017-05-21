@@ -44,6 +44,15 @@
     }
     .nav-special {
         float: right;
+        i {
+            display: none;
+            width: 100%;
+            font: normal 1rem 'robotoregular', sans-serif;
+            position: absolute;
+            top: 22px;
+            left: 0;
+            text-align: center;
+        }
     }
     @include respond-to(tablet-landscape) {
         .navs, .nav-special {
@@ -454,6 +463,9 @@
                     height: 48px;
                     span, div {
                         display: none;
+                    }
+                    i {
+                        display: block;
                     }
                 }
             }
