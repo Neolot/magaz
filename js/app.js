@@ -445,6 +445,33 @@
             }
         });
 
+        // Cart City Popup
+        var $cart_checkout = $('#cart-checkout');
+        $('.cart-checkout-city ul', $cart_checkout).mCustomScrollbar();
+        $('.cart-checkout-city .dropdown li', $cart_checkout).on('click', function () {
+            var city_selected = $(this).text();
+            $('.cart-checkout-city-current', $cart_checkout).text(city_selected);
+            $.ajax({ // Запрос на стоимость бесплатной доставки для выбранного города
+                type: 'POST',
+                url: '#',
+                dataType: 'json',
+                data: {
+                    city: city_selected
+                },
+                success: function(data){
+                    $('.cart-checkout-shipment span', $cart_checkout).text(data.shipping_cost);
+                }
+            });
+            $(this).closest('.hasdropdown').removeClass('open');
+        });
+
+        // https://github.com/stidges/jquery-searchable
+        $('.cart-checkout-city ul', $cart_checkout).searchable({
+            searchField: '#cart-checkout .city-search input',
+            selector: 'li',
+            childSelector: 'span'
+        });
+
         // Popups
         $('.popup').fancybox({
             padding: 0,
@@ -548,8 +575,11 @@
         });
 
         // Dropdowns
-        $('.hasdropdown a').click(function() {
+        $('.hasdropdown > a').click(function() {
             $(this).parent().toggleClass('open');
+        });
+        $('.hasdropdown .fancybox-close').click(function() {
+            $(this).closest('.hasdropdown').removeClass('open');
         });
         $('html').click(function() {
             $('.hasdropdown, .hasdropdown-select').removeClass('open');

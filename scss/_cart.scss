@@ -14,7 +14,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#282828',GradientType=0 );
     top: 0;
     right: 0;
-    overflow: hidden !important;
+    //overflow: hidden !important;
     z-index: 9999;
     margin-top: 0 !important;
     -webkit-transform: translate3d($cart_width + 17px ,0,0);
@@ -326,6 +326,68 @@
                     background: 0 0 no-repeat url(data:image/svg+xml;base64,//48ACEALQAtACAARwBlAG4AZQByAGEAdABvAHIAOgAgAEEAZABvAGIAZQAgAEkAbABsAHUAcwB0AHIAYQB0AG8AcgAgADEAOQAuADAALgAxACwAIABTAFYARwAgAEUAeABwAG8AcgB0ACAAUABsAHUAZwAtAEkAbgAgACAALQAtAD4ADQAKADwAcwB2AGcAIAB2AGUAcgBzAGkAbwBuAD0AIgAxAC4AMQAiAA0ACgAJACAAeABtAGwAbgBzAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAwAC8AcwB2AGcAIgAgAHgAbQBsAG4AcwA6AHgAbABpAG4AawA9ACIAaAB0AHQAcAA6AC8ALwB3AHcAdwAuAHcAMwAuAG8AcgBnAC8AMQA5ADkAOQAvAHgAbABpAG4AawAiACAAeABtAGwAbgBzADoAYQA9ACIAaAB0AHQAcAA6AC8ALwBuAHMALgBhAGQAbwBiAGUALgBjAG8AbQAvAEEAZABvAGIAZQBTAFYARwBWAGkAZQB3AGUAcgBFAHgAdABlAG4AcwBpAG8AbgBzAC8AMwAuADAALwAiAA0ACgAJACAAeAA9ACIAMABwAHgAIgAgAHkAPQAiADAAcAB4ACIAIAB3AGkAZAB0AGgAPQAiADUAcAB4ACIAIABoAGUAaQBnAGgAdAA9ACIAOQAuADIAcAB4ACIAIAB2AGkAZQB3AEIAbwB4AD0AIgAwACAAMAAgADUAIAA5AC4AMgAiACAAcwB0AHkAbABlAD0AIgBlAG4AYQBiAGwAZQAtAGIAYQBjAGsAZwByAG8AdQBuAGQAOgBuAGUAdwAgADAAIAAwACAANQAgADkALgAyADsAIgAgAHgAbQBsADoAcwBwAGEAYwBlAD0AIgBwAHIAZQBzAGUAcgB2AGUAIgA+AA0ACgA8AHMAdAB5AGwAZQAgAHQAeQBwAGUAPQAiAHQAZQB4AHQALwBjAHMAcwAiAD4ADQAKAAkALgBzAHQAMAB7AGYAaQBsAGwAOgBuAG8AbgBlADsAcwB0AHIAbwBrAGUAOgAjAGYAZgBmAGYAZgBmADsAcwB0AHIAbwBrAGUALQB3AGkAZAB0AGgAOgAwAC4ANQA7AHMAdAByAG8AawBlAC0AbQBpAHQAZQByAGwAaQBtAGkAdAA6ADEAMAA7AH0ADQAKADwALwBzAHQAeQBsAGUAPgANAAoAPABkAGUAZgBzAD4ADQAKADwALwBkAGUAZgBzAD4ADQAKADwAcABvAGwAeQBsAGkAbgBlACAAYwBsAGEAcwBzAD0AIgBzAHQAMAAiACAAcABvAGkAbgB0AHMAPQAiADAALgAyACwAMAAuADIAIAA0AC4ANgAsADQALgA2ACAAMAAuADIALAA5AC4AMQAgACIALwA+AA0ACgA8AC8AcwB2AGcAPgANAAoA);
                     background-size: cover;
                     margin-left: .5rem;
+                }
+            }
+            .dropdown {
+                width: 360px;
+                height: 360px;
+                border: 2px solid #000;
+                font-size: 1.2rem;
+                color: $text;
+                padding: 2rem 4rem 2rem 0;
+                overflow: hidden;
+                &.dropup {
+                    left: auto;
+                    right: 78%;
+                    bottom: 22px;
+                    @include respond-to(mobile-portrait) {
+                        right: -1.2rem;
+                    }
+                }
+                .fancybox-close {
+                    border: none;
+                }
+                .city-search {
+                    margin-bottom: 1.5rem;
+                    margin-left: 3rem;
+                    input {
+                        display: block;
+                        width: 100%;
+                        max-width: 100%;
+                        border: 0;
+                        border-bottom: 1px solid $text;
+                        border-radius: 0;
+                        outline: none;
+                        color: #000;
+                    }
+                }
+                ul {
+                    max-height: 282px;
+                    li {
+                        margin-bottom: 1rem;
+                        cursor: pointer;
+                        &:hover {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+
+            .mCustomScrollBox {
+                padding-left: 3rem;
+            }
+            .mCSB_scrollTools {
+                width: 6px;
+                right: auto;
+                left: 7px;
+                .mCSB_draggerRail {
+                    background: none;
+                }
+                .mCSB_dragger {
+                    .mCSB_dragger_bar {
+                        width: 6px;
+                        background-color: $text;
+                    }
                 }
             }
         }

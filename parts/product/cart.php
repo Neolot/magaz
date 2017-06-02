@@ -58,14 +58,48 @@
             <div class="cart-summary-summ"><span>5 700</span> руб.</div>
         </div>
 
-        <div class="cart-checkout">
+        <div class="cart-checkout" id="cart-checkout">
             <div class="cart-checkout-button">
                 <a href="#">Оформить заказ</a>
             </div>
-            <div class="cart-checkout-city">
-                <a href="#">Москва</a>
+            <div class="cart-checkout-city hasdropdown">
+                <a href="javascript:void(0);" class="cart-checkout-city-current">Москва</a>
+                <div class="dropdown dropup">
+                    <div class="city-search">
+                        <input type="text" placeholder="Введите название города"/>
+                    </div>
+                    <ul>
+                        <li><span>Москва</span></li>
+                        <li><span>Санкт-Петербург</span></li>
+                        <li><span>Vestibulum</span></li>
+                        <li><span>Etiam</span></li>
+                        <li><span>Maecenas</span></li>
+                        <li><span>Vivamus</span></li>
+                        <li><span>Vestibulum</span></li>
+                        <li><span>Etiam</span></li>
+                        <li><span>Maecenas</span></li>
+                        <li><span>Vivamus</span></li>
+                        <li><span>Vestibulum</span></li>
+                        <li><span>Etiam</span></li>
+                        <li><span>Maecenas</span></li>
+                        <li><span>Vivamus</span></li>
+                        <li><span>Vestibulum</span></li>
+                        <li><span>Etiam</span></li>
+                        <li><span>Maecenas</span></li>
+                        <li><span>Vivamus</span></li>
+                        <li><span>Vestibulum</span></li>
+                        <li><span>Etiam</span></li>
+                        <li><span>Maecenas</span></li>
+                        <li><span>Vivamus</span></li>
+                        <li><span>Vestibulum</span></li>
+                        <li><span>Etiam</span></li>
+                        <li><span>Maecenas</span></li>
+                        <li><span>Vivamus</span></li>
+                    </ul>
+                    <a href="javascript:void(0);" class="fancybox-close"></a>
+                </div>
             </div>
-            <div class="cart-checkout-shipment">Бесплатная доставка от 5 000 руб.</div>
+            <div class="cart-checkout-shipment">Бесплатная доставка от <span>5 000 руб.</span></div>
         </div>
     </div>
 </div>
