@@ -7,9 +7,33 @@
                     <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
                     <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
                     <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
+                    <a href="images/test/960x1440.png" rel="product-gallery"><img src="images/test/480x720.png"></a>
 					<div class="product-gallery-sale">Товар участвует в акции</div>
 				</div>
 				<div id="product-gallery-pager" class="product-gallery-pager">
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
+                    <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
                     <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
                     <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>
                     <a href="javascript:void(0);"><img src="images/test/48x72.png" width="48" height="72"></a>

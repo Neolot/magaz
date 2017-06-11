@@ -540,6 +540,7 @@
             log: false
         });
         $('a[rel="product-gallery"]').iLightBox();
+        $('#product-gallery-pager').mCustomScrollbar();
 
         // View photo on hover
         $('.item-thumb-wrapper').each(function() {
