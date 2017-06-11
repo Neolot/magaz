@@ -485,6 +485,7 @@
                     pagerTemplate: '<a href="javascript:void(0);"><img src="{{src}}" width="48" height="72"></a>',
                     log: false
                 });
+                $('#qv-gallery-pager').mCustomScrollbar();
                 $('.login input[type="checkbox"]').styler();
 
                 $('.login .form .wrapper').each(function(index, el) {
@@ -540,6 +541,7 @@
             log: false
         });
         $('a[rel="product-gallery"]').iLightBox();
+        $('#product-gallery-pager, #qv-gallery-pager').mCustomScrollbar();
 
         // View photo on hover
         $('.item-thumb-wrapper').each(function() {

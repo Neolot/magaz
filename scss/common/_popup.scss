@@ -64,6 +64,7 @@
     min-height: 484px;
     &-gallery {
         &-wrapper {
+            min-height: 424px;
             padding-left: 58px;
             position: relative;
             img {
@@ -72,7 +73,8 @@
             }
         }
         &-pager {
-            width: 48px;
+            width: 54px;
+            max-height: 100%;
             position: absolute;
             top: 0;
             left: 0;
@@ -90,6 +92,19 @@
                 }
                 &:hover {
                     opacity: 1;
+                }
+            }
+            .mCSB_scrollTools {
+                width: 4px;
+                right: 0;
+                .mCSB_draggerRail {
+                    background: none;
+                }
+                .mCSB_dragger {
+                    .mCSB_dragger_bar {
+                        width: 4px;
+                        background-color: $text !important;
+                    }
                 }
             }
         }
