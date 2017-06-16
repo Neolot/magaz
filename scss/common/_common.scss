@@ -302,61 +302,50 @@ body {
 }
 
 .scroll2top {
-    font: 1.6rem 'robotoregular';
+    font: 1.2rem 'robotoregular';
+    font-weight: 300;
     text-transform: uppercase;
     text-align: center;
-    padding: 3rem 1rem 1rem;
-    margin: 0 1rem 1rem;
+    padding: 2rem 1rem .5rem;
+    margin: 0;
+    background-color: #fff;
     color: $text;
     text-decoration: none !important;
-    border: 1px solid $text;
-    position: relative;
+    border: 1px solid $text !important;
+    position: fixed;
+    right: 4rem;
+    bottom: 4rem;
+    width: 68px;
+    height: 44px;
+    opacity: .5;
+    transition: opacity .2s;
     &:hover {
         color: #000;
+        opacity: 1;
     }
     &:after {
         content: '';
-        width: 28px;
-        height: 15px;
+        width: 20px;
+        height: 10px;
         background: 0 0 no-repeat url(data:image/svg+xml;base64,PCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIg0KCSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczphPSJodHRwOi8vbnMuYWRvYmUuY29tL0Fkb2JlU1ZHVmlld2VyRXh0ZW5zaW9ucy8zLjAvIg0KCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjU3LjNweCIgaGVpZ2h0PSIyOS40cHgiIHZpZXdCb3g9IjAgMCA1Ny4zIDI5LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU3LjMgMjkuNDsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6bm9uZTtzdHJva2U6I0E1QTVBNTtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPGRlZnM+DQo8L2RlZnM+DQo8cG9seWxpbmUgY2xhc3M9InN0MCIgcG9pbnRzPSIwLjQsMjkgMjguNiwwLjcgNTYuOSwyOSAiLz4NCjwvc3ZnPg0K);
         background-size: cover;
         position: absolute;
         top: 10px;
         left: 50%;
-        margin-left: -14px;
+        margin-left: -10px;
     }
-    &-mini {
-        @extend .scroll2top;
-        font-size: 1.2rem;
-        font-weight: 300;
-        position: absolute;
-        right: 10px;
-        bottom: 0;
-        margin: 0;
-        padding: 2rem 1rem .5rem;
+    @include respond-to(laptop) {
+        width: 4rem;
+        height: 4rem;
+        text-indent: -10000px;
+        padding: 0;
+        opacity: 1;
+        right: 2rem;
+        bottom: 2rem;
         &:after {
-            width: 20px;
-            height: 10px;
-            margin-left: -10px;
-            top: 7px;
-        }
-        @include respond-to(laptop) {
-            width: 4rem;
-            height: 4rem;
-            text-indent: -10000px;
-            padding: 0;
-            &:after {
-                top: 50%;
-                margin-top: -8px;
-            }
-        }
-        @include respond-to(tablet-landscape) {
-            right: auto;
-            left: -5rem;
-            bottom: -5px;
-        }
-        @include respond-to(tablet-portrait) {
-            display: none;
+            top: 50%;
+            left: 50%;
+            margin: -5px 0 0 -10px;
         }
     }
 }

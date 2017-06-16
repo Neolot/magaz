@@ -74,7 +74,7 @@
 
                                 <a href="#" class="mobile-pager">Следующая страница</a>
 
-                                <a href="#top" class="scroll2top scroll2top-mini hidden-xs">Наверх</a>
+                                <a href="#top" class="scroll2top">Наверх</a>
                             </div>
                         </div>
                     </div>
