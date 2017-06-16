@@ -43,7 +43,7 @@
         }
         width: 50%;
         order: 2;
-        @include respond-to(mobile-portrait) {
+        @include respond-to(tablet-landscape) {
             width: 100%;
             order: 1;
         }
@@ -160,7 +160,7 @@
         p, ul, ol {
             margin-left: 25%;
             margin-right: 25%;
-            @include respond-to(mobile-portrait) {
+            @include respond-to(tablet-landscape) {
                 margin-left: 0;
                 margin-right: 0;
             }
@@ -196,14 +196,14 @@
             .caption {
                 right: 0;
             }
-            @include respond-to(mobile-portrait) {
+            @include respond-to(tablet-landscape) {
                 padding-right: 0;
                 .caption {
                     width: 50%;
                     position: static;
                     margin: 1rem auto 0;
                     padding: 0;
-                    @include respond-to(mobile-portrait) {
+                    @include respond-to(tablet-landscape) {
                         width: 100%;
                     }
                 }
@@ -215,7 +215,7 @@
                 left: 0;
                 text-align: right;
             }
-            @include respond-to(mobile-portrait) {
+            @include respond-to(tablet-landscape) {
                 padding-left: 0;
                 .caption {
                     width: 50%;
@@ -223,7 +223,7 @@
                     margin: 1rem auto 0;
                     padding: 0;
                     text-align: left;
-                    @include respond-to(mobile-portrait) {
+                    @include respond-to(tablet-landscape) {
                         width: 100%;
                     }
                 }
@@ -238,7 +238,7 @@
                 position: static;
                 margin: 1rem auto 0;
                 padding: 0;
-                @include respond-to(mobile-portrait) {
+                @include respond-to(tablet-landscape) {
                     width: 100%;
                 }
             }
@@ -249,28 +249,8 @@
         margin-left: 25%;
         margin-bottom: 4rem;
         position: relative;
-        @include respond-to(mobile-portrait) {
+        @include respond-to(tablet-landscape) {
             margin-left: 0;
-        }
-        .scroll2top {
-            font-size: 1.2rem;
-            font-weight: 300;
-            position: absolute;
-            left: -87px;
-            top: -41px;
-            right: auto;
-            bottom: auto;
-            margin: 0;
-            padding: 2rem 1rem .5rem;
-            @include respond-to(mobile-portrait) {
-                display: none;
-            }
-            &:after {
-                width: 20px;
-                height: 10px;
-                margin-left: -10px;
-                top: 7px;
-            }
         }
     }
 }
@@ -279,9 +259,13 @@
     &-info {
         margin-left: 25%;
         margin-right: 25%;
-        @include respond-to(mobile-portrait) {
+        @include respond-to(tablet-landscape) {
             margin-left: 0;
             margin-right: 0;
+            padding-top: 4rem;
+        }
+        @include respond-to(mobile-landscape) {
+            padding-top: 0;
         }
         &-wrapper {
             display: block;

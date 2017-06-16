@@ -105,18 +105,6 @@
             font-size: 1.8rem;
         }
     }
-
-    .scroll2top {
-        left: -77px;
-        right: auto;
-        bottom: 30px;
-        @include respond-to(tablet-landscape) {
-            left: 10px;
-        }
-        @include respond-to(tablet-portrait) {
-            left: 0;
-        }
-    }
 }
 
 .tagcloud {
