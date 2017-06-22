@@ -218,8 +218,14 @@
 				</div>
 			</div>
 
-			<div class="lang">
-				<a href="#">Россия / Руб.</a>
+			<div class="currency hasdropdown dropup" id="currency">
+                <a href="javascript:void(0);" class="currency-rub">RUB / USD</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="javascript:void(0);" class="currency-rub">RUB / USD</a></li>
+                        <li><a href="javascript:void(0);" class="currency-usd">USD / RUB</a></li>
+                    </ul>
+                </div>
 			</div>
 
 			<div class="copyright">НУМ 2016. Все права защищены.</div>

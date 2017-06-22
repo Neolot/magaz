@@ -472,6 +472,15 @@
             childSelector: 'span'
         });
 
+        // Currency Selector
+        var $currency = $('#currency');
+        $('.dropdown li a', $currency).on('click', function () {
+            var currency_selected = $(this).text();
+            var currency_class = $(this).attr('class');
+            $('> a', $currency).text(currency_selected).removeAttr('class').addClass(currency_class);
+            $(this).closest('.hasdropdown').removeClass('open');
+        });
+
         // Popups
         $('.popup').fancybox({
             padding: 0,

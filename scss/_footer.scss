@@ -197,24 +197,16 @@
             }
         }
     }
-    .lang {
+    .currency {
         padding-top: 2rem;
         text-align: center;
         text-transform: uppercase;
-        a {
+        & > a {
             color: #fff;
             border-bottom: 1px solid #a5a5a5;
             text-decoration: none;
             &:hover {
                 border-bottom: none;
-            }
-            &:before {
-                @include flag-russian;
-                margin-right: 5px;
-                @include respond-to(mobile-landscape) {
-                    width: 24px;
-                    height: 12px;
-                }
             }
             &:after {
                 content: '';
@@ -227,6 +219,42 @@
                 @include respond-to(mobile-landscape) {
                     vertical-align: 1px;
                 }
+            }
+        }
+        a.currency-rub:before {
+            @include flag-russian;
+            margin-right: 5px;
+            @include respond-to(mobile-landscape) {
+                width: 24px;
+                height: 18px;
+            }
+        }
+        a.currency-usd:before {
+            @include flag-usa;
+            margin-right: 5px;
+            @include respond-to(mobile-landscape) {
+                width: 24px;
+                height: 18px;
+            }
+        }
+        .dropdown {
+            width: 105px;
+            top: auto;
+            bottom: 25px;
+            left: 50%;
+            margin-left: -53px;
+            padding-top: 0;
+            padding-bottom: 0;
+            @include respond-to(mobile-landscape) {
+                width: 130px;
+                bottom: 35px;
+                margin-left: -65px;
+            }
+            li {
+                margin: 8px 0 !important;
+            }
+            a {
+                border-bottom: none;
             }
         }
     }
