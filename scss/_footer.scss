@@ -197,7 +197,8 @@
             }
         }
     }
-    .currency {
+
+    .currency, .language {
         padding-top: 2rem;
         text-align: center;
         text-transform: uppercase;
@@ -221,7 +222,7 @@
                 }
             }
         }
-        a.currency-rub:before {
+        a.currency-rub:before, a.russian:before {
             @include flag-russian;
             margin-right: 5px;
             @include respond-to(mobile-landscape) {
@@ -229,7 +230,7 @@
                 height: 18px;
             }
         }
-        a.currency-usd:before {
+        a.currency-usd:before, a.english:before {
             @include flag-usa;
             margin-right: 5px;
             @include respond-to(mobile-landscape) {
@@ -255,6 +256,7 @@
             }
             a {
                 border-bottom: none;
+                color: #000;
             }
         }
     }

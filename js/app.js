@@ -481,6 +481,15 @@
             $(this).closest('.hasdropdown').removeClass('open');
         });
 
+        // Language Selector
+        var $language = $('#language');
+        $('.dropdown li a', $language).on('click', function () {
+            var language_selected = $(this).text();
+            var language_class = $(this).attr('class');
+            $('> a', $language).text(language_selected).removeAttr('class').addClass(language_class);
+            $(this).closest('.hasdropdown').removeClass('open');
+        });
+
         // Popups
         $('.popup').fancybox({
             padding: 0,
