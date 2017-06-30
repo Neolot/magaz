@@ -748,6 +748,14 @@
         }
         operateAccountOrdersTableHeaders();
 
+        // Read more for product info
+        $('#sliding-wrapper .product-info-item').curtail({
+            limit: 150,
+            ellipsis: '...',
+            toggle: true,
+            text: ['Свернуть', 'Читать далее']
+        });
+
         // Filters Fixed Sidebar
         /*if ( $('.category-container', $sitecontent).length > 0 ) {
             function setCategorySidebarHeight() {
