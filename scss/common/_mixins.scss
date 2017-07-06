@@ -62,10 +62,10 @@
         height: 36px;
         margin: 0 .5rem;
         font-family: 'socicon';
-        line-height: 36px;
+        line-height: 38px;
         background: $text;
         border-radius: 50%;
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-decoration: none;
         color: #fff;
         text-align: center;
@@ -81,6 +81,9 @@
         }
         &.socicon-vkontakte:hover {
             background: #5a7fa6;
+        }
+        &.socicon-telegram:hover {
+            background: #0088cc;
         }
     }
 }

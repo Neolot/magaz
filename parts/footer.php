@@ -204,6 +204,7 @@
                                 <a href="#" rel="external nofollow" class="socicon-facebook" title="Facebook" target="_blank"></a>
                                 <a href="#" rel="external nofollow" class="socicon-instagram" title="Instagram" target="_blank"></a>
                                 <a href="#" rel="external nofollow" class="socicon-vkontakte" title="Вконтакте" target="_blank"></a>
+                                <a href="#" rel="external nofollow" class="socicon-telegram" title="Telegram" target="_blank"></a>
 							</li>
 						</ul>
 					</div>
