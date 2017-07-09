@@ -334,17 +334,17 @@
         // Cart
         $('#cart-link').click(function() {
             $('body')
-                .addClass('cart-open no-scroll')
+                .addClass('cart-open')
                 .append('<div class="fancybox-overlay fancybox-overlay-fixed" style="display: block;"/>')
                 .on('click', '.fancybox-overlay', function() {
                     if ( $(this).find('#quickorder').length == false ) {
-                        $('body').removeClass('cart-open no-scroll');
+                        $('body').removeClass('cart-open');
                         $('.fancybox-overlay').remove();
                     }
                 });
         });
         $('#cart').on('click', '.close', function() {
-            $('body').removeClass('cart-open no-scroll');
+            $('body').removeClass('cart-open');
             $('.fancybox-overlay').remove();
         });
         $('#cart').on('click', '.cart-title-mini', function() {
