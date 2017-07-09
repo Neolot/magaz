@@ -204,6 +204,11 @@
                 $('.product-additional', $sitecontent).detach().appendTo('#additional_home');
             }
 
+            if ( $.viewport().width > $.viewport().height ) {
+                $('body').removeClass('cart-open');
+                $('.fancybox-overlay').remove();
+            }
+
             calc_cartContentHeight();
             news_fitTextByImages();
             operateAccountOrdersTableHeaders();
