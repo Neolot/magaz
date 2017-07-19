@@ -421,6 +421,7 @@
             });
         });
         $('.checkout-form select[name="shipping_method"]').styler({
+            selectSmartPositioning: false,
             onFormStyled: function() {
                 $('.checkout-form select[name="shipping_method"]').siblings('.jq-selectbox__dropdown').find('li').click(function () {
                     var shipment_cost = $(this).attr('data-shipment');
@@ -509,7 +510,7 @@
                     pagerTemplate: '',
                     log: false
                 });
-                $('.login input[type="checkbox"]').styler();
+                $('.login input[type="checkbox"]').styler({selectSmartPositioning: false});
 
                 $('.login .form .wrapper').each(function(index, el) {
                     if ( $(inputs, el).length > 0 ) {
@@ -592,7 +593,7 @@
         });
 
         // Form Styler
-        $('.sort-dropdown input[type="radio"], #filters .filter input[type="checkbox"], .checkout-form input, .account .section-data input[type="checkbox"], .account .section-data input[type="radio"]').styler();
+        $('.sort-dropdown input[type="radio"], #filters .filter input[type="checkbox"], .checkout-form input, .account .section-data input[type="checkbox"], .account .section-data input[type="radio"]').styler({selectSmartPositioning: false});
         $('.account .section-data select').each(function() {
             $(this).select2({
                 language: "ru"
@@ -712,7 +713,7 @@
         $('#account-address').on('click', '.add-address a', function() {
             $.get('parts/account/address-template.php', function(data) {
                 $('#account-address .add-address').before(data);
-                $('.account .section-data input[type="checkbox"], .account .section-data input[type="radio"]').styler();
+                $('.account .section-data input[type="checkbox"], .account .section-data input[type="radio"]').styler({selectSmartPositioning: false});
                 $('.account .section-data select').each(function() {
                     $(this).select2({
                         language: "ru"
