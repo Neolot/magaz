@@ -496,6 +496,20 @@
             $(this).closest('.hasdropdown').removeClass('open');
         });
 
+        // Scroll2top, hide or show
+        var $scroll2top = $('.scroll2top');
+        if ( isMobile.any() ) {
+            $scroll2top.removeClass('visible-xs');
+        }
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            if ( scrollTop > $(window).height() ) {
+                $scroll2top.show();
+            } else {
+                $scroll2top.hide();
+            }
+        });
+
         // Popups
         $('.popup').fancybox({
             padding: 0,
@@ -762,55 +776,87 @@
             text: ['Свернуть', 'Читать далее']
         });
 
-        // Filters Fixed Sidebar
-        /*if ( $('.category-container', $sitecontent).length > 0 ) {
-            function setCategorySidebarHeight() {
-                var cat_h = $('.category-container', $sitecontent).height();
-                $('.sliding', $sitecontent).height(cat_h);
-                return cat_h;
-            }
-            setTimeout(function() {
-                var category_h = setCategorySidebarHeight();
-                var $sidebar = $('.sliding', $sitecontent);
-                var filters_h = $filters.outerHeight(true);
-                var start_offset = $('.category-container', $sitecontent).offset().top + $filters.offset().top;
-                var top_margin = 20;
+        // Fixed Filters
+        if ( !isMobile.any() ) {
+            $('.category-container, .brand .brand-item > .row').each(function () {
+                var $wrapper = $(this);
+                var cat_h = $wrapper.height();
+                $('.sliding', $wrapper).height(cat_h);
+
+                var top_offset = 20;
+                var margin_top = $filters.css('margin-top');
+                var viewport_h = $(window).height();
+                var start_offset = $wrapper.offset().top + margin_top.replace(/[^-\d\.]/g, '');
+                var brand_item_h = 0;
+                var lastScrollTop = 0;
+                if ( $('.brand-item-info-container').length ) {
+                    brand_item_h = $('.brand-item-info-container').outerHeight();
+                }
 
                 $(window).scroll(function () {
+                    var filters_h = $filters.outerHeight(true);
                     var top_scroll = $(window).scrollTop();
+
                     if ( top_scroll >= start_offset )  {
-                        $sidebar.addClass('fixed');
-                        $filters.css({
-                            position: 'fixed',
-                            top: top_margin,
-                            width: $('.sliding', $sitecontent).width()
-                        });
+                        if ( filters_h > viewport_h ) {
+                            $filters.css({
+                                position: 'fixed',
+                                'margin-top': 0,
+                                width: $('.sliding', $sitecontent).width()
+                            });
+                            if ( top_scroll >= lastScrollTop ) {
+                                // downscroll code
+                                $filters.css({
+                                    top: 'auto',
+                                    bottom: 20
+                                });
+                            } else {
+                                // upscroll code
+                                $filters.css({
+                                    top: top_offset,
+                                    bottom: 'auto',
+                                    width: $('.sliding', $sitecontent).width()
+                                });
+                            }
+                            lastScrollTop = top_scroll;
+
+                            if ( top_scroll > (cat_h - filters_h - top_offset + brand_item_h) ) {
+                                $filters.css({
+                                    position: 'absolute',
+                                    top: 'auto',
+                                    bottom: 20,
+                                    'margin-top': 0,
+                                    width: $('.sliding', $sitecontent).width()
+                                });
+                            }
+                        } else {
+                            if ( top_scroll > (cat_h - filters_h - top_offset + brand_item_h) ) {
+                                $filters.css({
+                                    position: 'absolute',
+                                    top: 'auto',
+                                    bottom: 20,
+                                    'margin-top': 0,
+                                    width: $('.sliding', $sitecontent).width()
+                                });
+                            } else {
+                                $filters.css({
+                                    position: 'fixed',
+                                    top: top_offset,
+                                    bottom: 'auto',
+                                    'margin-top': 0,
+                                    width: $('.sliding', $sitecontent).width()
+                                });
+                            }
+                        }
                     } else {
-                        $sidebar.removeClass('fixed');
                         $filters.css({
                             position: 'static',
-                            top: start_offset
-                        });
-                    }
-                    if ( top_scroll > (category_h - filters_h - top_margin) ) {
-                        $filters.css({
-                            position: 'absolute',
-                            top: 'auto',
-                            bottom: 0
+                            top: start_offset,
+                            'margin-top': margin_top
                         });
                     }
                 });
-
-                $filters.change(function () {
-                    if ( $filters.height() >= $(window).height() ) {
-                        $filters.css({
-                            position: 'absolute',
-                            top: 'auto',
-                            bottom: 0
-                        });
-                    }
-                });
-            }, 500);
-        }*/
+            });
+        }
     })
 })(jQuery)
