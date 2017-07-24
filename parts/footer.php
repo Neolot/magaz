@@ -1,5 +1,5 @@
 <footer class="site-footer" id="site-footer">
-    <a href="#top" class="scroll2top visible-xs" id="scroll2top">Наверх</a>
+    <a href="#top" class="scroll2top" id="scroll2top">Наверх</a>
 
 	<div class="slider">
 		<div class="container">

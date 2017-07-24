@@ -498,9 +498,6 @@
 
         // Scroll2top, hide or show
         var $scroll2top = $('.scroll2top');
-        if ( isMobile.any() ) {
-            $scroll2top.removeClass('visible-xs');
-        }
         $(window).scroll(function () {
             var scrollTop = $(window).scrollTop();
             if ( scrollTop > $(window).height() ) {
@@ -778,15 +775,15 @@
 
         // Fixed Filters
         if ( !isMobile.any() ) {
-            $('.category-container, .brand .brand-item > .row').each(function () {
+            $('.category-container > .row, .brand .brand-item > .row').each(function () {
                 var $wrapper = $(this);
                 var cat_h = $wrapper.height();
                 $('.sliding', $wrapper).height(cat_h);
 
                 var top_offset = 20;
-                var margin_top = $filters.css('margin-top');
+                var margin_top = parseFloat($filters.css('margin-top'));
                 var viewport_h = $(window).height();
-                var start_offset = $wrapper.offset().top + margin_top.replace(/[^-\d\.]/g, '');
+                var start_offset = $wrapper.offset().top + margin_top;
                 var brand_item_h = 0;
                 var lastScrollTop = 0;
                 if ( $('.brand-item-info-container').length ) {
